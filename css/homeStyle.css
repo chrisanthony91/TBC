@@ -1,0 +1,95 @@
+body {
+  margin:0; 
+  background: black;
+}
+
+a, a:hover {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+ul{
+  white-space: nowrap;
+}
+li{
+    display: inline-block;
+    color: white;
+    padding: 0 10%;
+}
+ .box {
+  padding-top: 10px;
+  position: fixed;
+  top:50px;
+  right: 10%;
+  display: block;  
+/*  background: lightblue; */
+  overflow: hidden;
+}
+#menu {
+  width: 22%;
+  opacity: 0;
+}
+#menu.show {
+  opacity: 1;
+  width: 30%;
+}
+#menuToggle{
+  position: fixed;
+  top:50px;
+  right: 3%;
+}
+#logoSpace{
+  position: absolute;
+  top: 40%;
+}
+
+
+/* ---- reset ---- */ 
+canvas{ 
+  display: block; 
+  /* vertical-align: bottom;  */
+} 
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+  position:absolute;
+  top: 0;
+  z-index: -10000;
+  width: 100%; 
+  height: 100%; 
+  background-color: black; 
+  background-image: url(""); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+} 
+/* ---- stats.js ---- */ 
+/* .count-particles{ 
+  background: #000022; 
+  position: absolute; 
+  top: 48px; 
+  left: 0; 
+  width: 80px; 
+  color: #13E8E9; 
+  font-size: .8em; 
+  text-align: left; 
+  text-indent: 4px; 
+  line-height: 14px; 
+  padding-bottom: 2px; 
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold; 
+} 
+.js-count-particles{ 
+  font-size: 1.1em; 
+} 
+#stats, .count-particles{ 
+  -webkit-user-select: none; 
+  margin-top: 5px; 
+  margin-left: 5px; 
+} 
+#stats{ 
+  border-radius: 3px 3px 0 0; 
+  overflow: hidden; 
+}
+.count-particles{ 
+  border-radius: 0 0 3px 3px; 
+} */
