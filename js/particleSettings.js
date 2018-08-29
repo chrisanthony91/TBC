@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
             "line_linked":{
                 "enable":true,
                 "distance":150,
-                "color":"#ffffff",
+                "color":"#5f8fbb",
                 "opacity":0.3,
                 "width":1
             },
