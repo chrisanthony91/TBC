@@ -2,7 +2,6 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TheBlackChris.com | Home</title>
         <!-- Normalize -->
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
@@ -22,15 +21,15 @@
 
     <body>
         <div id="barba-wrapper">
-            <div class="barba-container">
+            <div id="Home" class="barba-container">
 
                 <!-- menu -->
-                <a href="index.html#Home"><img id="logo" src="images/Logo.png" width="10%"></a>
+                <a href="#Home"><img id="logo" src="images/Logo.png" width="10%"></a>
                 <ul id="menu">
-                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="#About">About</a></li>
                     <li><a href="process.html">Process</a></li>
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
                 <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
                 <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
@@ -48,7 +47,7 @@
                 <div class="container-fluid">
                     <div id="About" class="row">
                         <div id="plaxA" class="col-5 align-self-end">
-                            <img data-depth="0.2" class="portraitIn mx-auto" src="images/MePortrait-color2.png" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim">
+                            <img data-depth="0.2" class="portraitIn mx-auto" src="images/MePortrait-color2.png" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: removeAnim">
                         </div>
                         <div id="plaxA2" class="col-7 align-self-center">
                             <div data-depth="0.1">
@@ -88,11 +87,11 @@
                 <div id="Contact" class="container">
                     <div id="plaxC" class="row" style="height: 110vh">
                         <img data-depth="0.05" src="images/background007-1.jpg" width="100%" height="auto" style="opacity: 0.2">
-                        <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:30%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
+                        <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:25%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
                             <h1>CONTACT</h1>
                             <p>- Talk to the man himself -</p>
                         </div>
-                        <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:40%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
+                        <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:35%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
                             <h4><a href="mailto:chrisanthonsmith91@gmail.com">Email</a></h4>
                             <h4><a href="https://www.linkedin.com/in/christopher-smith-3aa477a1/">LinkedIn</a></h4>
                             <h4><a href="https://github.com/chrisanthony91">GitHub</a></h4>
@@ -119,33 +118,6 @@
         <script>
             $(document).ready(function() {
                 Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-                    $('#menuToggle').click(function(){
-                        // $('#menuToggle').toggleClass('rotate');
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#menu').toggleClass( 'show', 600, 'swing' );
-                    });    
-                    
-                    AniJS.run();
-
-                    var scene1 = $('#plaxC').get(0);
-                    var scene2 = $('#plaxA').get(0);
-                    var scene3 = $('#plaxA2').get(0);
-                    var parallaxInstance = new Parallax(scene1, {
-                        relativeInput: true,
-                        pointerEvents: true,
-                        hoverOnly: true,
-                    });
-                    var parallaxInstance = new Parallax(scene2, {
-                        relativeInput: true,
-                        // pointerEvents: true,
-                        hoverOnly: true,
-                    });
-                    var parallaxInstance = new Parallax(scene3, {
-                        relativeInput: true,
-                        pointerEvents: true,
-                        hoverOnly: true,
-                    });
-
                     particlesJS("particles-js", {
                         "particles":{
                             "number":{
@@ -224,6 +196,60 @@
                         },
                         "retina_detect":true}
                     );
+                    // $('a[href^="#"]').click(function(event) {
+                    //     var target = $(this.getAttribute('href'));
+                    //     if( target.length ) {
+                    //         event.preventDefault();
+                    //         $('html, body').stop().animate({
+                    //             scrollTop: target.offset().top
+                    //         }, 800);
+                    //     }
+                    // });
+                    $('a[href^="#"]').click(function(event) {
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+                            // Store hash
+                            var hash = this.hash;
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                                    // Add hash (#) to URL when done scrolling (default click behavior)
+                                    window.location.hash = hash;
+                                });
+                            } // End if
+                        });
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#menu').toggleClass( 'show', 600, 'swing' );
+                    });
+                
+                    
+                    AniJS.run();
+
+                    var scene1 = $('#plaxC').get(0);
+                    var scene2 = $('#plaxA').get(0);
+                    var scene3 = $('#plaxA2').get(0);
+                    var parallaxInstance = new Parallax(scene1, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    });
+                    var parallaxInstance = new Parallax(scene2, {
+                        relativeInput: true,
+                        // pointerEvents: true,
+                        hoverOnly: true,
+                    });
+                    var parallaxInstance = new Parallax(scene3, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    });
+
+                    
                 });
                 var transEffect = Barba.BaseTransition.extend({
                     start: function(){
@@ -236,7 +262,7 @@
                             nc.css('visibility', 'visible');
                             scroll(0,0);
                             nc.fadeIn(1000, function(){
-                            _this.done();
+                                _this.done();
                             })
                         });
                     }

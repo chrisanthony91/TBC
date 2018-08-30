@@ -11,6 +11,12 @@ a{
 /* button:focus {
   outline:0;
 } */
+h1, h2{
+  color: #26A5E8;
+}
+ol{
+  padding-left: 1em;
+}
 ul{
   padding: 0;
 }
