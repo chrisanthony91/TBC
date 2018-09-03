@@ -79,9 +79,13 @@ ul#menu li{
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
   background-color: #26A5E8;
 }
-
+.big{
+  height: 75vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .full{
-  height: 110vh;
+  height: 100vh;
   margin-top: 2%;
   margin-bottom: 2%;
 }
