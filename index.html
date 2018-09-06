@@ -118,10 +118,10 @@
 
         <script>
             $(document).ready(function() {
-                // document.addEventListener('swup:contentReplaced', function(){
+                document.addEventListener('swup:contentReplaced', function(){
                     // fullpage.js
                     if ($('html').hasClass( 'fp-enabled' )){
-                        $.fn.fullpage.destroy('all');
+                        fullpage_api.destroy('all');
                     }
                     $('#fullpage').fullpage({
                     //options here
@@ -294,7 +294,7 @@
                     debugMode: true,
                 };
                 var swup = new Swup(options);
-            // });
+            });
         </script>
     </body>
 </html>
