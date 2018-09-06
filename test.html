@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>TheBlackChris.com | Home</title>
+        <title>TheBlackChris.com | test page</title>
         <!-- Normalize -->
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <!-- Fonts & Icons-->
@@ -15,6 +15,8 @@
         <link href="css/hamburgers.css" rel="stylesheet">
         <!-- Animate css -->
         <link href="css/animate.css" type="text/css" rel="stylesheet">
+        <!-- AniCollection.css library -->
+        <!-- <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">    -->
         <!--custom css-->
         <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
@@ -23,10 +25,10 @@
         <div id="swup">
             <div class="a-fade">
                 <!-- menu -->
-                <a href="#home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
+                <a href="index.html#home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
                 <ul id="menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="test.html#top">Process</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#">Process</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -40,15 +42,14 @@
                 <div id="fullpage">
                     <div class="section active">
                         <div id="intro">
-                            <h1>Christopher Smith</h1>
-                            <h3>Digital Designer</h3>
+                            <h1>This is a Test Page</h1>
                         </div>
                         <!-- particles.js container --> 
                         <div id="particles-js"></div>
                     </div>
                     
                             
-                    <div class="container-fluid section" data-anchor="about">
+                    <div class="container-fluid section" data-anchor="middle">
                         <div class="row">
                             <div id="portraitParallax" class="col-lg-5 align-self-end portraitAnimation">
                                 <img data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
@@ -111,8 +112,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-        <script src="js/parallax.min.js" type="text/javascript"></script>
-        <script src="js/particles.min.js" type="text/javascript"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/particles.min.js"></script>
         <script src="js/fullpage.js" type="text/javascript"></script>
         <script src="js/swup.js" type="text/javascript"></script>
 
@@ -128,13 +129,14 @@
                         //navigation
                         navigation: true,
                         navigationPosition: 'left',
-                        navigationTooltips: ['home', 'about', 'contact'],
+                        navigationTooltips: ['top', 'middle', 'contact'],
                         showActiveTooltip: true,
-                        anchors:['home', 'about', 'contact'],
+                        anchors:['top', 'middle', 'contact'],
 
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
                         // callbacks
+                        
                         onLeave: function(origin, destination, direction){
                             var leavingSection = this;
                             if( destination.index == 0){
@@ -152,7 +154,7 @@
                             }
                         }
                     });
-        
+            
                     // particle.js
                     particlesJS("particles-js", {
                         "particles":{
@@ -261,7 +263,7 @@
                         },
                     });
                     $('#intro').animateCss('fadeIntro');
-
+                 
                     // parallax.js
                     // parallax scenes
                     var scene1 = $('#portraitParallax').get(0);
@@ -293,7 +295,7 @@
                     LINK_SELECTOR: 'a',
                     debugMode: true,
                 };
-                var swup = new Swup(options);
+                var swup = new Swup(options);;
             // });
         </script>
     </body>

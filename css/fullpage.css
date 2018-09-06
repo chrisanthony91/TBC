@@ -102,6 +102,7 @@ html.fp-enabled,
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 #fp-nav.fp-right {
     right: 17px;
@@ -184,6 +185,7 @@ html.fp-enabled,
     width: 10px;
     height: 10px;
     margin: -5px 0px 0px -5px;
+    background-color: skyblue;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
