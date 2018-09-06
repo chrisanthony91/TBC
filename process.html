@@ -9,318 +9,328 @@
         <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2" rel="stylesheet">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!--Hanburger css-->
+        <!--Hamburger css-->
         <link href="css/hamburgers.css" rel="stylesheet">
+        <!-- fullpage.js -->
+        <link href="css/fullpage.css" type="text/css" rel="stylesheet">
         <!--Animate css-->
         <link href="css/animate.css" type="text/css" rel="stylesheet">
-        <!-- AniCollection.css library -->
-        <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">   
         <!--custom css-->
-        <link href="css/homeStyle.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
-        <div id="barba-wrapper">
-            <div class="barba-container">
+        <!-- menu -->
+        <a href="index.html#Home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
+        <ul id="menu">
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
+        <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
 
-                <!-- menu -->
-                <a href="index.html#Home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
-                <ul id="menu">
-                    <li><a href="index.html#About">About</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-                <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
-                <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-                <div id="intro" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
-                    <h1>PROCESS</h1>
+
+        <div id="fullpage">
+            <div class="section active" data-anchor="process">
+                <div id="intro">
+                    <h1>MY PROCESS</h1>
                 </div>
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
+            </div>
                         
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-3"></div>
-                        <div class="col-6 align-self-center">
-                            <div class="text-center">
-                                <h1>WORK SMARTER, NOT HARDER</h1>
-                                <p>- A lil elbow grease never hurts though-<p>
-                            </div>
-                            <div style="margin-top: 5%">
-                                <p> I put 100% into any project I'm a part of: if my name is attached to it, I want it 
-                                    to be great! I believe that with ample planning, clear vision, and an open mind you 
-                                    can succeed at any creative endeavor; I strive to bring these ideals into every project I work on.<br>
-                                </p>
-                                <p>
-                                    Its important to keep in mind that no design process is truly linear, and at any point I may need to jump
-                                    from one place to another or even skip steps as required. That being said, I believe all good things start
-                                    with a big picture idea so, like any good process, mine starts with an initial goal:<br>
-                                    <ul style="padding-left: 2%">
-                                        <li>What do you want to accomplish?</li>
-                                        <li>What cool idea do you want to bring to life?</li>
-                                        <li>What revolutionary gadget do you want to showcase and sell to the world?</li>
-                                    </ul>
-                                </p>
-                            </div>
+            <div class="container-fluid section" data-anchor="overview">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6 align-self-center">
+                        <div class="text-center">
+                            <h1>WORK SMARTER, NOT HARDER</h1>
+                            <p>- A lil elbow grease never hurts though-<p>
                         </div>
-                    </div>
-                    <div class="row big">
-                        <div class="col-6 align-self-center text-center">
-                            <svg width="50%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
-                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
-                                    .st2{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,2;}
-                                </style>
-                                <g>
-                                    <ellipse class="st0" cx="18" cy="17.9" rx="16.5" ry="16.5"/>
-                                    <path class="st1" d="M30.3,36.6l6.3-6.3c0.4-0.4,1-0.4,1.4,0l7.8,7.8c2.1,2.1,2.1,5.6,0,7.8l0,0c-2.1,2.1-5.6,2.1-7.8,0l-7.8-7.8
-                                        C29.9,37.6,29.9,36.9,30.3,36.6z"/>
-                                    <line class="st0" x1="35" y1="31.8" x2="30.9" y2="27.7"/>
-                                    <line class="st0" x1="31.9" y1="34.9" x2="27.8" y2="30.8"/>
-                                    <line class="st2" x1="37.4" y1="37.3" x2="42" y2="41.9"/>
-                                    <circle class="st0" cx="18" cy="11.9" r="4.5"/>
-                                    <path class="st0" d="M29.5,29.6V25c0-3-2.2-5.6-5.1-6.5l-0.8-0.2L17.9,24l-5.7-5.7l-0.7,0.2c-2.9,0.9-5,3.5-5,6.5v4.6"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="col-6 align-self-center">
-                            <h2>Phase I: Research</h2>
-                            <p>
-                                / rɪ'sɜ:tʃ /<br>
-                                <i>verb</i>
+                        <div style="margin-top: 5%">
+                            <p> I put 100% into any project I'm a part of: if my name is attached to it, I want it 
+                                to be great! I believe that with ample planning, clear vision, and an open mind you 
+                                can succeed at any creative endeavor; I strive to bring these ideals into every project I work on.<br>
                             </p>
-                            <div style="margin-top: 3%">
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Define your users: who are you doing this for?<br>
-                                            <i>What does your target audience need, and how can we give it to them?</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Understand the product/service<br>
-                                            <i>Why is your ____ awesome? How can you convince your users?</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Seek out existing trends and patterns in the market<br>
-                                        <i>What does your target audience respond to? How can you do that, but better?</i>
-                                        </p>
-                                    </li>
-                                </ol>
-                                <strong>Synonyms: "Figure out how to get the people to want what you've got"</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row big">
-                        <div class="col-1"></div>
-                        <div class="col-6 align-self-center">
-                            <h2>Phase II: Ideate</h2>
                             <p>
-                                / aɪˈdiːeɪt /<br>
-                                <i>verb</i>
+                                Its important to keep in mind that no design process is truly linear, and at any point I may need to jump
+                                from one place to another or even skip steps as required. That being said, I believe all good things start
+                                with a big picture idea so, like any good process, mine starts with an initial goal:<br>
+                                <ul style="padding-left: 2%">
+                                    <li>What do you want to accomplish?</li>
+                                    <li>What cool idea do you want to bring to life?</li>
+                                    <li>What revolutionary gadget do you want to showcase and sell to the world?</li>
+                                </ul>
                             </p>
-                            <div style="margin-top: 3%">
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Find inspiration: what do you like that you can potentially use?<br>
-                                            <i>What do you you want to emulate/incorporate? What do you want to avoid?</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Brainstorm ideas: lay out all your options<br>
-                                            <i>What are your potential solutions to the problem?</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Consider your options and decide on a course of action<br>
-                                            <i>
-                                                Does your solution address your needs/wants?<br>
-                                                What ideas are doable with the time/resources/expertise at your disposal?
-                                            </i>
-                                        </p>
-                                    </li>
-                                </ol>
-                                <strong>Synonyms: "Narrow down the possibilities and chose a direction" </strong>
-                            </div>
-                        </div>
-                        <div class="col-5 align-self-center">
-                            <svg width="60%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
-                                </style>
-                                <g>
-                                    <line class="st0" x1="25" y1="5.5" x2="25" y2="1.5"/>
-                                    <line class="st0" x1="16" y1="7.9" x2="14" y2="4.4"/>
-                                    <line class="st0" x1="9.4" y1="14.5" x2="5.9" y2="12.5"/>
-                                    <line class="st0" x1="7" y1="23.5" x2="3" y2="23.5"/>
-                                    <line class="st0" x1="9.4" y1="32.5" x2="5.9" y2="34.5"/>
-                                    <line class="st0" x1="40.6" y1="32.5" x2="44.1" y2="34.5"/>
-                                    <line class="st0" x1="43" y1="23.5" x2="47" y2="23.5"/>
-                                    <line class="st0" x1="40.6" y1="14.5" x2="44.1" y2="12.5"/>
-                                    <line class="st0" x1="34" y1="7.9" x2="36" y2="4.4"/>
-                                    <path class="st0" d="M39,22.5c0-8.3-7.2-14.9-15.6-13.9C17,9.3,11.8,14.4,11.1,20.8c-0.4,3.4,0.4,6.6,2.1,9.2
-                                        c3.3,5.2,4.8,11.3,4.8,17.4v1.1h9h5V47c0-6.2,1.9-12.1,5.1-17.4C38.3,27.5,39,25.1,39,22.5z"/>
-                                    <line class="st0" x1="14" y1="44.5" x2="36" y2="44.5"/>
-                                    <line class="st0" x1="13" y1="40.5" x2="37" y2="40.5"/>
-                                </g>
-                           </svg>
-                        </div>
-                    </div>
-                    <div class="row big">
-                        <div class="col-6 align-self-center text-center">
-                            <svg width="50%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 50 50.3" style="enable-background:new 0 0 50 50.3;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
-                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
-                                    .st2{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;stroke-dasharray:2,3;}
-                                </style>
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path class="st0" d="M47.9,3.7c0.2,0,0.2,0.3,0,0.4c-1.2,0.6-4.4,2.5-5,7.1c0,0-0.7,5.5-5.3,6.2c-2.3,0.3-4.4-1.1-5.2-3.2v-0.1
-                                                c-0.7-1.7-0.3-3.7,0.7-5.3C35,5.8,39.3,1.5,47.9,3.7z"/>
-                                            <path class="st0" d="M26.9,29.8c-8.6,8.6-22.5,19-24.6,16.8c-2.1-2.1,8.3-16,16.8-24.6s12.1-8.6,14.2-6.5S35.5,21.2,26.9,29.8z"
-                                                />
-                                        </g>
-                                        <line class="st0" x1="24.7" y1="17" x2="31.8" y2="24.2"/>
-                                    </g>
-                                    <line class="st0" x1="20.6" y1="20.6" x2="8.6" y2="8.6"/>
-                                    <line class="st0" x1="32.9" y1="32.9" x2="28.3" y2="28.3"/>
-                                    <polygon class="st1" points="8.6,4.8 8.6,8.6 4.8,8.6 2,3.9 3.9,2 	"/>
-                                    <line class="st2" x1="37" y1="37" x2="42" y2="42"/>
-                                    <path class="st0" d="M46.1,46.1L46.1,46.1c-2.6,2.6-6.8,2.6-9.4,0l-8.4-8.4l9.4-9.4l8.4,8.4C48.6,39.3,48.6,43.5,46.1,46.1z"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="col-6 align-self-center">
-                            <h2>Phase III: Test</h2>
-                            <p>
-                                / 'test /<br>
-                                <i>verb</i>
-                            </p>
-                            <div style="margin-top: 3%">
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Make sketches, layouts, mockups, and prototypes<br>
-                                            <i>Give form to your fledgling ideas</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            User Test<br>
-                                            <i>Get your creation in front of people</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Make changes as necessary<br>
-                                            <i>Filter out what doesnt work, and keep what does</i>
-                                        </p>
-                                    </li>
-                                </ol>
-                                <strong>Synonyms: "Refine your idea"</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row big">
-                        <div class="col-1"></div>
-                        <div class="col-6 align-self-center">
-                            <h2>Phase IV: Develop</h2>
-                            <p>
-                                / dɪ'veləp /<br>
-                                <i>verb</i>
-                            </p>
-                            <div style="margin-top: 3%">
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Finish your product<br>
-                                            <i>Put in some solid hours designing and coding</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Check for errors and mistakes<br>
-                                            <i>Quality Assurance</i>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Deliver your creation<br>
-                                            <i>Enjoy the fruits of your labor</i>
-                                        </p>
-                                    </li>
-                                </ol>
-                                <strong>Synonyms: "Build the final product and get it out in the world" </strong>
-                            </div>
-                        </div>
-                        <div class="col-5 align-self-center">
-                                <svg width="60%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
-                           <style type="text/css">
-                               .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
-                           </style>
-                           <g>
-                               <rect x="2" y="4" class="st0" width="46" height="35"/>
-                               <line class="st0" x1="17" y1="39" x2="17" y2="46"/>
-                               <line class="st0" x1="33" y1="39" x2="33" y2="46"/>
-                               <line class="st0" x1="12" y1="46" x2="38" y2="46"/>
-                               <line class="st0" x1="48" y1="33" x2="2" y2="33"/>
-                               <line class="st0" x1="44" y1="8" x2="31" y2="8"/>
-                               <line class="st0" x1="29" y1="8" x2="24" y2="8"/>
-                               <line class="st0" x1="22" y1="8" x2="20" y2="8"/>
-                               <line class="st0" x1="18" y1="8" x2="16" y2="8"/>
-                               <line class="st0" x1="44" y1="23" x2="32" y2="23"/>
-                               <line class="st0" x1="30" y1="23" x2="28" y2="23"/>
-                               <line class="st0" x1="26" y1="23" x2="24" y2="23"/>
-                               <line class="st0" x1="44" y1="18" x2="34" y2="18"/>
-                               <line class="st0" x1="32" y1="18" x2="20" y2="18"/>
-                               <line class="st0" x1="27" y1="13" x2="23" y2="13"/>
-                               <line class="st0" x1="44" y1="13" x2="29" y2="13"/>
-                               <line class="st0" x1="21" y1="13" x2="6" y2="13"/>
-                               <line class="st0" x1="25" y1="28" x2="44" y2="28"/>
-                               <g>
-                                   <polyline class="st0" points="17.5,21.5 21,25 17.5,28.5 		"/>
-                                   <polyline class="st0" points="9.5,21.5 6,25 9.5,28.5 		"/>
-                                   <line class="st0" x1="11.5" y1="30" x2="15.5" y2="20"/>
-                               </g>
-                           </g>
-                           </svg>
                         </div>
                     </div>
                 </div>
-                    
-                <div id="Contact" class="container">
-                    <div id="plaxC" class="row" style="height: 100vh">
-                        <img data-depth="0.05" src="images/background007-1.jpg" width="100%" height="auto" style="opacity: 0.2">
-                        <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:15%" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim">
-                            <h1>CONTACT</h1>
-                            <p>- Step 1: Get in Touch -</p>
-                        </div>
-                        <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:25%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
-                                <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
-                                <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
-                                <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
-                            </div>
+            </div>
+            <div class="container-fluid section" data-anchor="step1">
+                <div id="phase1" class="row">
+                    <div class="col-6 align-self-center text-center">
+                        <svg width="50%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
+                                .st1{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st2{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,2;}
+                            </style>
+                            <g>
+                                <ellipse class="st0" cx="18" cy="17.9" rx="16.5" ry="16.5"/>
+                                <path class="st1" d="M30.3,36.6l6.3-6.3c0.4-0.4,1-0.4,1.4,0l7.8,7.8c2.1,2.1,2.1,5.6,0,7.8l0,0c-2.1,2.1-5.6,2.1-7.8,0l-7.8-7.8
+                                    C29.9,37.6,29.9,36.9,30.3,36.6z"/>
+                                <line class="st0" x1="35" y1="31.8" x2="30.9" y2="27.7"/>
+                                <line class="st0" x1="31.9" y1="34.9" x2="27.8" y2="30.8"/>
+                                <line class="st2" x1="37.4" y1="37.3" x2="42" y2="41.9"/>
+                                <circle class="st0" cx="18" cy="11.9" r="4.5"/>
+                                <path class="st0" d="M29.5,29.6V25c0-3-2.2-5.6-5.1-6.5l-0.8-0.2L17.9,24l-5.7-5.7l-0.7,0.2c-2.9,0.9-5,3.5-5,6.5v4.6"/>
+                            </g>
+                        </svg>
                     </div>
-                </div>   
-            </div>  
+                    <div class="col-6 align-self-center">
+                        <h2>Phase I: Research</h2>
+                        <p>
+                            / rɪ'sɜ:tʃ /<br>
+                            <i>verb</i>
+                        </p>
+                        <div style="margin-top: 3%">
+                            <ol>
+                                <li>
+                                    <p>
+                                        Define your users: who are you doing this for?<br>
+                                        <i>What does your target audience need, and how can we give it to them?</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Understand the product/service<br>
+                                        <i>Why is your ____ awesome? How can you convince your users?</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Seek out existing trends and patterns in the market<br>
+                                    <i>What does your target audience respond to? How can you do that, but better?</i>
+                                    </p>
+                                </li>
+                            </ol>
+                            <strong>Synonyms: "Figure out how to get the people to want what you've got"</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section" data-anchor="step2">
+                <div id="phase2" class="row">
+                    <div class="col-1"></div>
+                    <div class="col-6 align-self-center">
+                        <h2>Phase II: Ideate</h2>
+                        <p>
+                            / aɪˈdiːeɪt /<br>
+                            <i>verb</i>
+                        </p>
+                        <div style="margin-top: 3%">
+                            <ol>
+                                <li>
+                                    <p>
+                                        Find inspiration: what do you like that you can potentially use?<br>
+                                        <i>What do you you want to emulate/incorporate? What do you want to avoid?</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Brainstorm ideas: lay out all your options<br>
+                                        <i>What are your potential solutions to the problem?</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Consider your options and decide on a course of action<br>
+                                        <i>
+                                            Does your solution address your needs/wants?<br>
+                                            What ideas are doable with the time/resources/expertise at your disposal?
+                                        </i>
+                                    </p>
+                                </li>
+                            </ol>
+                            <strong>Synonyms: "Narrow down the possibilities and chose a direction" </strong>
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <svg width="60%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
+                            </style>
+                            <g>
+                                <line class="st0" x1="25" y1="5.5" x2="25" y2="1.5"/>
+                                <line class="st0" x1="16" y1="7.9" x2="14" y2="4.4"/>
+                                <line class="st0" x1="9.4" y1="14.5" x2="5.9" y2="12.5"/>
+                                <line class="st0" x1="7" y1="23.5" x2="3" y2="23.5"/>
+                                <line class="st0" x1="9.4" y1="32.5" x2="5.9" y2="34.5"/>
+                                <line class="st0" x1="40.6" y1="32.5" x2="44.1" y2="34.5"/>
+                                <line class="st0" x1="43" y1="23.5" x2="47" y2="23.5"/>
+                                <line class="st0" x1="40.6" y1="14.5" x2="44.1" y2="12.5"/>
+                                <line class="st0" x1="34" y1="7.9" x2="36" y2="4.4"/>
+                                <path class="st0" d="M39,22.5c0-8.3-7.2-14.9-15.6-13.9C17,9.3,11.8,14.4,11.1,20.8c-0.4,3.4,0.4,6.6,2.1,9.2
+                                    c3.3,5.2,4.8,11.3,4.8,17.4v1.1h9h5V47c0-6.2,1.9-12.1,5.1-17.4C38.3,27.5,39,25.1,39,22.5z"/>
+                                <line class="st0" x1="14" y1="44.5" x2="36" y2="44.5"/>
+                                <line class="st0" x1="13" y1="40.5" x2="37" y2="40.5"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section" data-anchor="step3">
+                <div id="phase3" class="row">
+                    <div class="col-6 align-self-center text-center">
+                        <svg width="50%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 50 50.3" style="enable-background:new 0 0 50 50.3;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
+                                .st1{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st2{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;stroke-dasharray:2,3;}
+                            </style>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path class="st0" d="M47.9,3.7c0.2,0,0.2,0.3,0,0.4c-1.2,0.6-4.4,2.5-5,7.1c0,0-0.7,5.5-5.3,6.2c-2.3,0.3-4.4-1.1-5.2-3.2v-0.1
+                                            c-0.7-1.7-0.3-3.7,0.7-5.3C35,5.8,39.3,1.5,47.9,3.7z"/>
+                                        <path class="st0" d="M26.9,29.8c-8.6,8.6-22.5,19-24.6,16.8c-2.1-2.1,8.3-16,16.8-24.6s12.1-8.6,14.2-6.5S35.5,21.2,26.9,29.8z"
+                                            />
+                                    </g>
+                                    <line class="st0" x1="24.7" y1="17" x2="31.8" y2="24.2"/>
+                                </g>
+                                <line class="st0" x1="20.6" y1="20.6" x2="8.6" y2="8.6"/>
+                                <line class="st0" x1="32.9" y1="32.9" x2="28.3" y2="28.3"/>
+                                <polygon class="st1" points="8.6,4.8 8.6,8.6 4.8,8.6 2,3.9 3.9,2 	"/>
+                                <line class="st2" x1="37" y1="37" x2="42" y2="42"/>
+                                <path class="st0" d="M46.1,46.1L46.1,46.1c-2.6,2.6-6.8,2.6-9.4,0l-8.4-8.4l9.4-9.4l8.4,8.4C48.6,39.3,48.6,43.5,46.1,46.1z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col-6 align-self-center">
+                        <h2>Phase III: Test</h2>
+                        <p>
+                            / 'test /<br>
+                            <i>verb</i>
+                        </p>
+                        <div style="margin-top: 3%">
+                            <ol>
+                                <li>
+                                    <p>
+                                        Make sketches, layouts, mockups, and prototypes<br>
+                                        <i>Give form to your fledgling ideas</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        User Test<br>
+                                        <i>Get your creation in front of people</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Make changes as necessary<br>
+                                        <i>Filter out what doesnt work, and keep what does</i>
+                                    </p>
+                                </li>
+                            </ol>
+                            <strong>Synonyms: "Refine your idea"</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section" data-anchor="step4">
+                <div id="phase4" class="row">
+                    <div class="col-1"></div>
+                    <div class="col-6 align-self-center">
+                        <h2>Phase IV: Develop</h2>
+                        <p>
+                            / dɪ'veləp /<br>
+                            <i>verb</i>
+                        </p>
+                        <div style="margin-top: 3%">
+                            <ol>
+                                <li>
+                                    <p>
+                                        Finish your product<br>
+                                        <i>Put in some solid hours designing and coding</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Check for errors and mistakes<br>
+                                        <i>Quality Assurance</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Deliver your creation<br>
+                                        <i>Enjoy the fruits of your labor</i>
+                                    </p>
+                                </li>
+                            </ol>
+                            <strong>Synonyms: "Build the final product and get it out in the world" </strong>
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-center">
+                            <svg width="60%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
+                        </style>
+                        <g>
+                            <rect x="2" y="4" class="st0" width="46" height="35"/>
+                            <line class="st0" x1="17" y1="39" x2="17" y2="46"/>
+                            <line class="st0" x1="33" y1="39" x2="33" y2="46"/>
+                            <line class="st0" x1="12" y1="46" x2="38" y2="46"/>
+                            <line class="st0" x1="48" y1="33" x2="2" y2="33"/>
+                            <line class="st0" x1="44" y1="8" x2="31" y2="8"/>
+                            <line class="st0" x1="29" y1="8" x2="24" y2="8"/>
+                            <line class="st0" x1="22" y1="8" x2="20" y2="8"/>
+                            <line class="st0" x1="18" y1="8" x2="16" y2="8"/>
+                            <line class="st0" x1="44" y1="23" x2="32" y2="23"/>
+                            <line class="st0" x1="30" y1="23" x2="28" y2="23"/>
+                            <line class="st0" x1="26" y1="23" x2="24" y2="23"/>
+                            <line class="st0" x1="44" y1="18" x2="34" y2="18"/>
+                            <line class="st0" x1="32" y1="18" x2="20" y2="18"/>
+                            <line class="st0" x1="27" y1="13" x2="23" y2="13"/>
+                            <line class="st0" x1="44" y1="13" x2="29" y2="13"/>
+                            <line class="st0" x1="21" y1="13" x2="6" y2="13"/>
+                            <line class="st0" x1="25" y1="28" x2="44" y2="28"/>
+                            <g>
+                                <polyline class="st0" points="17.5,21.5 21,25 17.5,28.5 		"/>
+                                <polyline class="st0" points="9.5,21.5 6,25 9.5,28.5 		"/>
+                                <line class="st0" x1="11.5" y1="30" x2="15.5" y2="20"/>
+                            </g>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+                
+            <div id="contactParallax" class="container-fluid section" data-anchor="contact">
+                <div id="plaxC" class="row">
+                    <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
+                    <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:15%" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim">
+                        <h1>CONTACT</h1>
+                        <p>- Step 1: Get in Touch -</p>
+                    </div>
+                    <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:25%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
+                        <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
+                        <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
+                        <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
+                    </div>
+                </div>
+            </div>   
+              
         </div>
 
         
@@ -332,121 +342,204 @@
         <script src="js/parallax.min.js"></script>
         <script src="js/particles.min.js"></script>
         <script src="js/particleSettings.js"></script>
-        <script src="js/anijs-min.js"></script>
+        <!-- <script src="js/anijs-min.js"></script>
         <script src="js/anijs-helper-dom-min.js"></script>
-        <script src="js/anijs-helper-scrollreveal-min.js"></script>
+        <script src="js/anijs-helper-scrollreveal-min.js"></script> -->
+        <script src="js/fullpage.js" type="text/javascript"></script>
         <script src="js/vivus.js"></script>
-        <script src="js/barba.min.js" type="text/javascript"></script>
-        <script src="js/customScripts.js"></script>
         <script>
             $(document).ready(function() {
+            
+            // animate.css helper function
+                $.fn.extend({
+                    animateCss: function(animationName, callback) {
+                        var animationEnd = (function(el) {
+                        var animations = {
+                            animation: 'animationend',
+                            OAnimation: 'oAnimationEnd',
+                            MozAnimation: 'mozAnimationEnd',
+                            WebkitAnimation: 'webkitAnimationEnd',
+                        };
 
-                    particlesJS("particles-js", {
-                        "particles":{
-                            "number":{
-                                "value":80,
-                                "density":{"enable":true,"value_area":800
-                                }
-                            },
-                            "color":{"value":"#5F94B4"},
-                            "shape":{
-                                "type":"circle",
-                                "stroke":{"width":0,"color":"#000000"},
-                                "polygon":{"nb_sides":5},
-                                "image":{"src":"","width":100,"height":100}
-                            },
-                            "opacity":{
-                                "value":0.5,
-                                "random":false,
-                                "anim":{
-                                    "enable":false,
-                                    "speed":1,
-                                    "opacity_min":0.1,
-                                    "sync":false
-                                }
-                            },
-                            "size":{
-                                "value":3,
-                                "random":true,
-                                "anim":{
-                                    "enable":false,
-                                    "speed":40,
-                                    "size_min":0.1,
-                                    "sync":false
-                                }
-                            },
-                            "line_linked":{
-                                "enable":true,
-                                "distance":150,
-                                "color":"#5f8fbb",
-                                "opacity":0.3,
-                                "width":1
-                            },
-                            "move":{
-                                "enable":true,
-                                "speed":6,
-                                "direction":"none",
-                                "random":false,
-                                "straight":false,
-                                "out_mode":"out",
-                                "bounce":false,
-                                "attract":{
-                                    "enable":false,
-                                    "rotateX":600,
-                                    "rotateY":1200
-                                }
+                        for (var t in animations) {
+                            if (el.style[t] !== undefined) {
+                            return animations[t];
+                            }
+                        }
+                        })(document.createElement('div'));
+
+                        this.addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+
+                        if (typeof callback === 'function') callback();
+                        });
+
+                        return this;
+                    },
+                });
+            // particles.js
+                particlesJS("particles-js", {
+                    "particles":{
+                        "number":{
+                            "value":80,
+                            "density":{"enable":true,"value_area":800
                             }
                         },
-                        "interactivity":{
-                            "detect_on":"canvas",
-                            "events":{
-                                "onhover":{
-                                    "enable":true,
-                                    "mode":"grab"
-                                },
-                                "onclick":{
-                                    "enable":true,
-                                    "mode":"repulse"
-                                },
-                                "resize":true
-                            },
-                            "modes":{
-                                "grab":{"distance":400,"line_linked":{"opacity":1}},
-                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
-                                "repulse":{"distance":200,"duration":0.4},
-                                "push":{"particles_nb":4},
-                                "remove":{"particles_nb":2}}
+                        "color":{"value":"#5F94B4"},
+                        "shape":{
+                            "type":"circle",
+                            "stroke":{"width":0,"color":"#000000"},
+                            "polygon":{"nb_sides":5},
+                            "image":{"src":"","width":100,"height":100}
                         },
-                        "retina_detect":true}
-                    );
+                        "opacity":{
+                            "value":0.5,
+                            "random":false,
+                            "anim":{
+                                "enable":false,
+                                "speed":1,
+                                "opacity_min":0.1,
+                                "sync":false
+                            }
+                        },
+                        "size":{
+                            "value":3,
+                            "random":true,
+                            "anim":{
+                                "enable":false,
+                                "speed":40,
+                                "size_min":0.1,
+                                "sync":false
+                            }
+                        },
+                        "line_linked":{
+                            "enable":true,
+                            "distance":150,
+                            "color":"#5f8fbb",
+                            "opacity":0.3,
+                            "width":1
+                        },
+                        "move":{
+                            "enable":true,
+                            "speed":6,
+                            "direction":"none",
+                            "random":false,
+                            "straight":false,
+                            "out_mode":"out",
+                            "bounce":false,
+                            "attract":{
+                                "enable":false,
+                                "rotateX":600,
+                                "rotateY":1200
+                            }
+                        }
+                    },
+                    "interactivity":{
+                        "detect_on":"canvas",
+                        "events":{
+                            "onhover":{
+                                "enable":true,
+                                "mode":"grab"
+                            },
+                            "onclick":{
+                                "enable":true,
+                                "mode":"repulse"
+                            },
+                            "resize":true
+                        },
+                        "modes":{
+                            "grab":{"distance":400,"line_linked":{"opacity":1}},
+                            "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
+                            "repulse":{"distance":200,"duration":0.4},
+                            "push":{"particles_nb":4},
+                            "remove":{"particles_nb":2}}
+                    },
+                    "retina_detect":true}
+                );
                     
-                    $('#menuToggle').click(function(){
+            // menutoggle
+                $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
                         $('#menu').toggleClass( 'show', 600, 'swing' );
                     });    
 
-                    AniJS.run();
+            // anijs
+                // AniJS.run();
 
-                    var vivResearch = new Vivus('researchImage', {type: 'delayed', duration: 120}, myCallback);
-                    var vivResearch = new Vivus('ideateImage', {type: 'delayed', duration: 120}, myCallback);
-                    var vivResearch = new Vivus('testImage', {type: 'delayed', duration: 120}, myCallback);
-                    var vivResearch = new Vivus('developImage', {type: 'delayed', duration: 120}, myCallback);
-                    function myCallback(){
-                        vivResearch
-                            // .stop()
-                            // .reset()
-                    }
-
-                    
-                    var scene1 = $('#plaxC').get(0);
-                    var parallaxInstance = new Parallax(scene1, {
-                        relativeInput: true,
-                        pointerEvents: true,
-                        hoverOnly: true,
-                    });
+            // vivus
+                var vivResearch = new Vivus('researchImage', {start:'manual', type: 'delayed', duration: 120});
+                var vivIdeate = new Vivus('ideateImage', {type: 'delayed', duration: 120} );
+                var vivTest = new Vivus('testImage', {type: 'delayed', duration: 120} );
+                var vivDevelop = new Vivus('developImage', {type: 'delayed', duration: 120} );
+                
+            // parallax
+                var scene1 = $('#plaxC').get(0);
+                var parallaxInstance = new Parallax(scene1, {
+                    relativeInput: true,
+                    pointerEvents: true,
+                    hoverOnly: true,
                 });
-               
 
+            // fullpage.js
+                // if ($('html').hasClass( 'fp-enabled' )){
+                //     fullpage_api.destroy('all');
+                // }
+                $('#fullpage').fullpage({
+                //options
+                    navigation: true,
+                    navigationPosition: 'left',
+                    navigationTooltips: ['My Process', 'Overview', 'Research', 'Ideate', 'Test', 'Develop', 'Contact'],
+                    showActiveTooltip: true,
+                    anchors:['process', 'overview', 'step1', 'step2', 'step3', 'step4', 'contact'],
+                    loopBottom: true,
+                    loopTop: true,
+
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    
+                // callbacks
+                    afterLoad: function(origin, destination, direction){
+                        var leavingSection = this;
+                        if( destination.index == 0){
+                            $('#intro').animateCss('fadeIntro');
+                        }
+                        else if( destination.index == 2){
+                            // $('#phase1').animateCss('fadeIn');------need to adjust delay and timing
+                            vivResearch.play();
+                        }
+                        else if( destination.index == 3){
+                            vivIdeate.play();
+                        }
+                        else if( destination.index == 4){
+                            vivTest.play();
+                        }
+                        else if( destination.index == 5){
+                            vivDevelop.play();
+                        }
+                    },
+                    onLeave: function(origin, destination, direction){
+                        var leavingSection = this;
+                        if( origin.index == 2){
+                            $('#phase1').animateCss('fadeOut');
+                            vivResearch.stop().reset();
+                        }
+                        else if( origin.index == 3){
+                            $('#phase2').animateCss('fadeOut');
+                            vivIdeate.stop().reset();
+                        }
+                        else if( origin.index == 4){
+                            $('#phase3').animateCss('fadeOut');
+                            vivTest.stop().reset();
+                        }
+                        else if( origin.index == 5){
+                            $('#phase4').animateCss('fadeOut');
+                            vivDevelop.stop().reset();
+                        }
+                    }
+                });
+                
+            
+            });
+               
         </script>
     </body>
 </html>
