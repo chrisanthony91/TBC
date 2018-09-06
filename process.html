@@ -340,7 +340,7 @@
         <script src="js/customScripts.js"></script>
         <script>
             $(document).ready(function() {
-                Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
+
                     particlesJS("particles-js", {
                         "particles":{
                             "number":{
@@ -445,27 +445,8 @@
                         hoverOnly: true,
                     });
                 });
-                var transEffect = Barba.BaseTransition.extend({
-                    start: function(){
-                        this.newContainerLoading.then(val => this.fadeInNewContent($(this.newContainer)));
-                    },
-                    fadeInNewContent: function(nc){
-                        nc.hide();
-                        var _this = this;
-                        $(this.oldContainer).fadeOut(1000).promise().done(() => {
-                            nc.css('visibility', 'visible');
-                            scroll(0,0);
-                            nc.fadeIn(1000, function(){
-                                _this.done();
-                            })
-                        });
-                    }
-                });
-                Barba.Pjax.getTransition = function(){
-                    return transEffect;
-                }
-                Barba.Pjax.start();
-            });
+               
+
         </script>
     </body>
 </html>

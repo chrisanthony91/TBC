@@ -23,7 +23,7 @@
         <div id="swup">
             <div class="a-fade">
                 <!-- menu -->
-                <a href="#home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
+                <a href="#intro"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
                 <ul id="menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="test.html#top">Process</a></li>
@@ -38,7 +38,7 @@
                 </button>
 
                 <div id="fullpage">
-                    <div class="section active">
+                    <div class="section active" data-anchor="home">
                         <div id="intro">
                             <h1>Christopher Smith</h1>
                             <h3>Digital Designer</h3>
@@ -118,7 +118,7 @@
 
         <script>
             $(document).ready(function() {
-                document.addEventListener('swup:contentReplaced', function(){
+                // document.addEventListener('swup:contentReplaced', function(){
                     // fullpage.js
                     if ($('html').hasClass( 'fp-enabled' )){
                         fullpage_api.destroy('all');
@@ -294,7 +294,7 @@
                     debugMode: true,
                 };
                 var swup = new Swup(options);
-            });
+            // });
         </script>
     </body>
 </html>
