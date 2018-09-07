@@ -108,6 +108,17 @@ ul#menu li{
   background-color: white;
 }
 
+.big{
+  /* height: 75vh; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.full{
+  /* height: 100vh; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 /* about section animation in */
 .portraitAnimation{
   animation-duration: 1.5s;
@@ -159,7 +170,6 @@ ul#menu li{
 }
 
 #logo{
-  /* display: none; */
   position: fixed;
   top: 3%;
   left: 1%;
@@ -171,14 +181,15 @@ ul#menu li{
   filter: invert(100%);
   transform: scale(1.1);
 }
-
-#intro{
-  text-align: center;
-  transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
+.invisible{
+  opacity: 0.01;
+  /* display: none; */
+}
+#titleCharacter{
+  height: 90vh;
   position: absolute;
-  top: 52%;
-  left: 50%;
+  bottom: 0;
+  right:0;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   animation-delay: 1s;
@@ -186,63 +197,55 @@ ul#menu li{
   animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
 }
-@-webkit-keyframes fadeIntro {
+#titleText{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+}
+@-webkit-keyframes fadeIntro1 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, 100%, 0);
-    transform: translate3d(-50%, 100%, 0);
+    /* -webkit-transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 100%, 0); */
+    -webkit-transform: translate(100%, 0);
+    /* transform: translate3d(0, 100%, 0); */
   }
-
   to {
     opacity: 1;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
+    /* -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); */
+    -webkit-transform: translate(0, 0);
+    /* transform: translate3d(0, 0, 0); */
   }
 }
-@keyframes fadeIntro {
+@keyframes fadeIntro1 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, 100%, 0);
-    transform: translate3d(-50%, 100%, 0);
+    /* -webkit-transform: translate3d(-50%, 100%, 0); */
+    /* transform: translate3d(-50%, 100%, 0); */
+    transform: translate(100%, 0);
   }
-
   to {
     opacity: 1;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
+    /* -webkit-transform: translate3d(-50%, 0, 0); */
+    /* transform: translate3d(-50%, 0, 0); */
+    transform: translate3d(0, 0);
   }
 }
-.fadeIntro {
-  -webkit-animation-name: fadeIntro;
-  animation-name: fadeIntro;
-}
-
-@-webkit-keyframes logoFadeOut {
-  from { opacity: 1; }
-  to { opacity: 0.01; }
-}
-@keyframes logoFadeOut {
-  from { opacity: 1; }
-  to { opacity: 0.01; }
-}
-.logoFadeOut {
-  -webkit-animation-name: logoFadeOut;
-  animation-name: logoFadeOut;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
-.invisible{
-  opacity: 0.01;
-  /* display: none; */
+.fadeIntro1 {
+  -webkit-animation-name: fadeIntro1;
+  animation-name: fadeIntro1;
 }
 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
   width: 100%; 
-  background-image: url("../images/tbcLogo5.png"); 
+  /* height: 110vh; */
+  /* background-image: url("../images/TBC-logo2.png"); 
   background-repeat: no-repeat; 
-  background-size: 30%; 
-  background-position: 48% 25%;
+  background-size: 25%; 
+  background-position: 50% 30%; */
 }
 
 
@@ -323,11 +326,4 @@ button.contactButton::before, button.contactButton::after {
 .center:hover::before, .center:hover::after {
   transform: scale3d(1, 1, 1);
   transition: transform 0.5s;
-}
-
-
-
-#fullpage{
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
 }

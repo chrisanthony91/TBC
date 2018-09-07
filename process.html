@@ -16,7 +16,7 @@
         <!--Animate css-->
         <link href="css/animate.css" type="text/css" rel="stylesheet">
         <!--custom css-->
-        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/style-process.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
@@ -36,11 +36,12 @@
         </button>
 
 
-        <div id="fullpage">
+        <div id="fullpage" class="invisible">
             <div class="section active" data-anchor="process">
-                <div id="intro">
-                    <h1>MY PROCESS</h1>
-                </div>
+                
+                    <img id="titleCharacter" src="images/charicature.png" alt="TBC logo character">
+                    <h1 id="titleText">MY PROCESS</h1>
+               
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
             </div>
@@ -75,7 +76,7 @@
             <div class="container-fluid section" data-anchor="step1">
                 <div id="phase1" class="row">
                     <div class="col-6 align-self-center text-center">
-                        <svg width="50%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg width="60%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -163,7 +164,7 @@
                         </div>
                     </div>
                     <div class="col-5 align-self-center">
-                        <svg width="60%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg width="70%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -190,7 +191,7 @@
             <div class="container-fluid section" data-anchor="step3">
                 <div id="phase3" class="row">
                     <div class="col-6 align-self-center text-center">
-                        <svg width="50%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg width="60%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 50.3" style="enable-background:new 0 0 50 50.3;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -281,7 +282,7 @@
                         </div>
                     </div>
                     <div class="col-5 align-self-center">
-                            <svg width="60%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg width="70%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
                         <style type="text/css">
                             .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -323,7 +324,7 @@
                         <h1>CONTACT</h1>
                         <p>- Step 1: Get in Touch -</p>
                     </div>
-                    <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:25%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
+                    <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:22.5%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
                         <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
                         <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
                         <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
@@ -377,6 +378,13 @@
                         return this;
                     },
                 });
+                
+                // faux fade in on page load
+                $('#fullpage').removeClass('invisible');
+                $('#fullpage').animateCss('fadeIn');
+
+
+                $('#titleCharacter').animateCss('fadeIntro1');
             // particles.js
                 particlesJS("particles-js", {
                     "particles":{
@@ -498,11 +506,11 @@
                     
                 // callbacks
                     afterLoad: function(origin, destination, direction){
-                        var leavingSection = this;
-                        if( destination.index == 0){
-                            $('#intro').animateCss('fadeIntro');
-                        }
-                        else if( destination.index == 2){
+                        var loadedSection = this;
+                        // if( origin.index == 0){
+                        //     // $('#intro').animateCss('fadeOut');
+                        // }
+                        if( destination.index == 2){
                             // $('#phase1').animateCss('fadeIn');------need to adjust delay and timing
                             vivResearch.play();
                         }
@@ -518,7 +526,10 @@
                     },
                     onLeave: function(origin, destination, direction){
                         var leavingSection = this;
-                        if( origin.index == 2){
+                        if( destination.index == 0){
+                            $('#intro').animateCss('fadeIntro');
+                        }
+                        else if( origin.index == 2){
                             $('#phase1').animateCss('fadeOut');
                             vivResearch.stop().reset();
                         }
