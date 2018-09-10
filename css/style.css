@@ -1,3 +1,12 @@
+#bground{
+  position: fixed;
+  /* top: 30%; */
+  top: 5%;
+  left: 0;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
 html, body{
   margin:0; 
   color: white;
@@ -172,6 +181,25 @@ ul#menu li{
   transform: scale(1.1);
 }
 
+#titleCharacter{
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  right:0;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+#titleText{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+}
+
 #intro{
   text-align: center;
   transform: translate(-50%, 0);
@@ -225,6 +253,32 @@ ul#menu li{
   from { opacity: 1; }
   to { opacity: 0.01; }
 }
+
+@-webkit-keyframes fadeIntroProc {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+}
+@keyframes fadeIntroProc {
+  from {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.fadeIntroProc {
+  -webkit-animation-name: fadeIntroProc;
+  animation-name: fadeIntroProc;
+}
+
 .logoFadeOut {
   -webkit-animation-name: logoFadeOut;
   animation-name: logoFadeOut;
@@ -325,9 +379,15 @@ button.contactButton::before, button.contactButton::after {
   transition: transform 0.5s;
 }
 
-
-
 #fullpage{
   animation-duration: 3s;
   -webkit-animation-duration: 3s;
+}
+#bground{
+  position: fixed;
+  /* top: 30%; */
+  top: 5%;
+  left: 0;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }

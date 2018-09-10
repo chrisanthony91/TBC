@@ -20,6 +20,9 @@
     </head>
 
     <body>
+        <img id="bground" class="invisible" src="images/bg6.png" alt="particle background" width="100%">
+        <!-- <img id="bground" class="invisible" src="images/bg3.png" alt="particle background" width="100%"> use for mobile-->
+
         <!-- menu -->
         <a href="index.html#Home"><img id="logo" src="images/TBC-logo2.png" width="10%"></a>
         <ul id="menu">
@@ -38,24 +41,23 @@
 
         <div id="fullpage" class="invisible">
             <div class="section active" data-anchor="process">
+                <img id="titleCharacter" src="images/charicature.png" alt="TBC logo character">
+                <h1 id="titleText">MY PROCESS</h1>
                 
-                    <img id="titleCharacter" src="images/charicature.png" alt="TBC logo character">
-                    <h1 id="titleText">MY PROCESS</h1>
-               
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
             </div>
                         
             <div class="container-fluid section" data-anchor="overview">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6 align-self-center">
-                        <div class="text-center">
+                <div class="row full">
+                    <div id="overviewParallax" class="col-12">
+                        <div id="overviewHeaderIn" class="text-center" data-depth="0.1" style="margin-top: 10%">
                             <h1>WORK SMARTER, NOT HARDER</h1>
                             <p>- A lil elbow grease never hurts though-<p>
                         </div>
-                        <div style="margin-top: 5%">
-                            <p> I put 100% into any project I'm a part of: if my name is attached to it, I want it 
+                        <div id="overviewTextIn" data-depth="0.15" style="margin-top: 18.5%; padding: 0 22.5%">
+                            <p> 
+                                I put 100% into any project I'm a part of: if my name is attached to it, I want it 
                                 to be great! I believe that with ample planning, clear vision, and an open mind you 
                                 can succeed at any creative endeavor; I strive to bring these ideals into every project I work on.<br>
                             </p>
@@ -74,10 +76,11 @@
                 </div>
             </div>
             <div class="container-fluid section" data-anchor="step1">
-                <div id="phase1" class="row">
-                    <div class="col-6 align-self-center text-center">
-                        <svg width="60%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
+                <div id="phase1" class="row full">
+                    <div class="col-1"></div>
+                    <div id="step1Parallax1" class="col-4 align-self-center">
+                        <svg data-depth="0.2" width="100%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
                                 .st1{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -95,13 +98,15 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="col-6 align-self-center">
-                        <h2>Phase I: Research</h2>
-                        <p>
-                            / rɪ'sɜ:tʃ /<br>
-                            <i>verb</i>
-                        </p>
-                        <div style="margin-top: 3%">
+                    <div id="step1Parallax2" class="col-7">
+                        <div class="step1HeaderIn" data-depth="0.1" style="padding-left: 15%; margin-top: 20%">
+                            <h2>Phase I: Research</h2>
+                            <p>
+                                / rɪ'sɜ:tʃ /<br>
+                                <i>verb</i>
+                            </p>
+                        </div>
+                        <div class="step1TextIn" data-depth="0.15" style="padding-left: 15%; margin-top: 32.5%">
                             <ol>
                                 <li>
                                     <p>
@@ -128,15 +133,17 @@
                 </div>
             </div>
             <div class="container-fluid section" data-anchor="step2">
-                <div id="phase2" class="row">
+                <div id="phase2" class="row full">
                     <div class="col-1"></div>
-                    <div class="col-6 align-self-center">
-                        <h2>Phase II: Ideate</h2>
-                        <p>
-                            / aɪˈdiːeɪt /<br>
-                            <i>verb</i>
-                        </p>
-                        <div style="margin-top: 3%">
+                    <div id="step2Parallax1" class="col-6">
+                        <div class="step2HeaderIn" data-depth="0.1" style="padding-left: 5%; margin-top: 22.5%">
+                            <h2>Phase II: Ideate</h2>
+                            <p>
+                                / aɪˈdiːeɪt /<br>
+                                <i>verb</i>
+                            </p>
+                        </div>
+                        <div class="step2TextIn" data-depth="0.15" style="padding-left: 5%; margin-top: 37.5%">
                             <ol>
                                 <li>
                                     <p>
@@ -163,8 +170,8 @@
                             <strong>Synonyms: "Narrow down the possibilities and chose a direction" </strong>
                         </div>
                     </div>
-                    <div class="col-5 align-self-center">
-                        <svg width="70%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <div id="step2Parallax2" class="col-4 align-self-center">
+                        <svg data-depth="0.2" width="100%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -189,9 +196,10 @@
                 </div>
             </div>
             <div class="container-fluid section" data-anchor="step3">
-                <div id="phase3" class="row">
-                    <div class="col-6 align-self-center text-center">
-                        <svg width="60%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <div id="phase3" class="row full">
+                    <div class="col-1"></div>
+                    <div id="step3Parallax1" class="col-4 align-self-center">
+                        <svg data-depth="0.2" width="90%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 50.3" style="enable-background:new 0 0 50 50.3;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -216,13 +224,15 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="col-6 align-self-center">
-                        <h2>Phase III: Test</h2>
-                        <p>
-                            / 'test /<br>
-                            <i>verb</i>
-                        </p>
-                        <div style="margin-top: 3%">
+                    <div id="step3Parallax2" class="col-7">
+                        <div class="step3HeaderIn" data-depth="0.1" style="padding-left: 15%; margin-top: 20%">
+                            <h2>Phase III: Test</h2>
+                            <p>
+                                / 'test /<br>
+                                <i>verb</i>
+                            </p>
+                        </div>
+                        <div class="step3TextIn" data-depth="0.15" style="padding-left: 15%; margin-top: 32.5%">
                             <ol>
                                 <li>
                                     <p>
@@ -249,15 +259,17 @@
                 </div>
             </div>
             <div class="container-fluid section" data-anchor="step4">
-                <div id="phase4" class="row">
+                <div id="phase4" class="row full">
                     <div class="col-1"></div>
-                    <div class="col-6 align-self-center">
-                        <h2>Phase IV: Develop</h2>
-                        <p>
-                            / dɪ'veləp /<br>
-                            <i>verb</i>
-                        </p>
-                        <div style="margin-top: 3%">
+                    <div id="step4Parallax1" class="col-6">
+                        <div class="step4HeaderIn" data-depth="0.1" style="padding-left: 5%; margin-top: 22.5%">
+                            <h2>Phase IV: Develop</h2>
+                            <p>
+                                / dɪ'veləp /<br>
+                                <i>verb</i>
+                            </p>
+                        </div>
+                        <div class="step4TextIn" data-depth="0.15" style="padding-left: 5%; margin-top: 37.5%">
                             <ol>
                                 <li>
                                     <p>
@@ -281,8 +293,8 @@
                             <strong>Synonyms: "Build the final product and get it out in the world" </strong>
                         </div>
                     </div>
-                    <div class="col-5 align-self-center">
-                            <svg width="70%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <div id="step4Parallax2" class="col-4 align-self-center">
+                        <svg data-depth="0.2" width="100%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
                         <style type="text/css">
                             .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -316,9 +328,8 @@
                     </div>
                 </div>
             </div>
-                
-            <div id="contactParallax" class="container-fluid section" data-anchor="contact">
-                <div id="plaxC" class="row">
+            <div class="container-fluid section" data-anchor="contact">
+                <div id="contactParallax" class="row">
                     <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
                     <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:15%" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim">
                         <h1>CONTACT</h1>
@@ -343,9 +354,6 @@
         <script src="js/parallax.min.js"></script>
         <script src="js/particles.min.js"></script>
         <script src="js/particleSettings.js"></script>
-        <!-- <script src="js/anijs-min.js"></script>
-        <script src="js/anijs-helper-dom-min.js"></script>
-        <script src="js/anijs-helper-scrollreveal-min.js"></script> -->
         <script src="js/fullpage.js" type="text/javascript"></script>
         <script src="js/vivus.js"></script>
         <script>
@@ -384,7 +392,8 @@
                 $('#fullpage').animateCss('fadeIn');
 
 
-                $('#titleCharacter').animateCss('fadeIntro1');
+                $('#titleCharacter').animateCss('fadeInRight');
+                $('#titleText').animateCss('fadeInRight');
             // particles.js
                 particlesJS("particles-js", {
                     "particles":{
@@ -467,9 +476,9 @@
                     
             // menutoggle
                 $('#menuToggle').click(function(){
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#menu').toggleClass( 'show', 600, 'swing' );
-                    });    
+                    $('#menuToggle').toggleClass('is-active');
+                    $('#menu').toggleClass( 'show', 600, 'swing' );
+                });    
 
             // anijs
                 // AniJS.run();
@@ -481,8 +490,62 @@
                 var vivDevelop = new Vivus('developImage', {type: 'delayed', duration: 120} );
                 
             // parallax
-                var scene1 = $('#plaxC').get(0);
+                var scene1 = $('#overviewParallax').get(0);
                 var parallaxInstance = new Parallax(scene1, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene2 = $('#step1Parallax1').get(0);
+                var parallaxInstance = new Parallax(scene2, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene3 = $('#step1Parallax2').get(0);
+                var parallaxInstance = new Parallax(scene3, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene4 = $('#step2Parallax1').get(0);
+                var parallaxInstance = new Parallax(scene4, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene5 = $('#step2Parallax2').get(0);
+                var parallaxInstance = new Parallax(scene5, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene6 = $('#step3Parallax1').get(0);
+                var parallaxInstance = new Parallax(scene6, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene7 = $('#step3Parallax2').get(0);
+                var parallaxInstance = new Parallax(scene7, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene8 = $('#step4Parallax1').get(0);
+                var parallaxInstance = new Parallax(scene8, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene9 = $('#step4Parallax2').get(0);
+                var parallaxInstance = new Parallax(scene9, {
+                    relativeInput: true,
+                    // pointerEvents: true,
+                    hoverOnly: true,
+                });
+                var scene10 = $('#contactParallax').get(0);
+                var parallaxInstance = new Parallax(scene10, {
                     relativeInput: true,
                     pointerEvents: true,
                     hoverOnly: true,
@@ -501,17 +564,13 @@
                     anchors:['process', 'overview', 'step1', 'step2', 'step3', 'step4', 'contact'],
                     loopBottom: true,
                     loopTop: true,
-
+                    scrollBar: false,
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     
                 // callbacks
                     afterLoad: function(origin, destination, direction){
                         var loadedSection = this;
-                        // if( origin.index == 0){
-                        //     // $('#intro').animateCss('fadeOut');
-                        // }
                         if( destination.index == 2){
-                            // $('#phase1').animateCss('fadeIn');------need to adjust delay and timing
                             vivResearch.play();
                         }
                         else if( destination.index == 3){
@@ -526,8 +585,43 @@
                     },
                     onLeave: function(origin, destination, direction){
                         var leavingSection = this;
-                        if( destination.index == 0){
-                            $('#intro').animateCss('fadeIntro');
+                        if( destination.index == 0 ){
+                            $('#titleText').animateCss('fadeInRight');
+                            $('#titleCharacter').animateCss('fadeInRight');
+                            $('#bground').animateCss('logoFadeOut');
+                            $('#bground').addClass('invisible');
+                        }
+                        else if( destination.index == 1 ){
+                            $('#overviewHeaderIn').animateCss('fadeIn');
+                            $('#overviewTextIn').animateCss('fadeIn');
+                        }
+                        else if( destination.index == 2 ){
+                            $('.step1HeaderIn').animateCss('fadeIn');
+                            $('.step1TextIn').animateCss('fadeIn');
+                        }
+                        else if( destination.index == 3 ){
+                            $('.step2HeaderIn').animateCss('fadeIn');
+                            $('.step2TextIn').animateCss('fadeIn');
+                        }
+                        else if( destination.index == 4 ){
+                            $('.step3HeaderIn').animateCss('fadeIn');
+                            $('.step3TextIn').animateCss('fadeIn');
+                        }
+                        else if( destination.index == 5 ){
+                            $('.step4HeaderIn').animateCss('fadeIn');
+                            $('.step4TextIn').animateCss('fadeIn');
+                        }
+                        else if( destination.index == 6 ){
+                            $('#bground').animateCss('logoFadeOut');
+                            $('#bground').addClass('invisible');
+                        }
+                        if( origin.index == 0 && destination.index != 6 ){
+                            $('#bground').removeClass('invisible');
+                            $('#bground').animateCss('fadeIn');
+                        }
+                        else if( origin.index == 6 && destination.index != 0 ){
+                            $('#bground').removeClass('invisible');
+                            $('#bground').animateCss('fadeIn');
                         }
                         else if( origin.index == 2){
                             $('#phase1').animateCss('fadeOut');
@@ -547,8 +641,6 @@
                         }
                     }
                 });
-                
-            
             });
                
         </script>
