@@ -1,0 +1,404 @@
+/* elements */
+html, body{
+  margin:0; 
+  color: white;
+  background-color: black;
+  font-family: 'Exo 2', sans-serif;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color: #26A5E8;
+}
+i{
+  color: lightgrey;
+}
+button#menuToggle:focus {
+  outline:0;
+}
+h1, h2{
+  font-family: 'Audiowide', cursive;
+  color: #26A5E8;
+}
+h5{
+  margin:0;
+}
+ol{
+  padding-left: 1em;
+}
+ul{
+  padding: 0;
+}
+ul#menu li a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  -webkit-transition: color 0.7s, border 0.5s;
+  -moz-transition: color 0.7s, border 0.5s;
+  -o-transition: color 0.7s, border 0.5s;
+  transition: color 0.7s, border 0.5s;
+}
+ul#menu li a:hover{
+  color: #26A5E8;
+  text-decoration: inherit;
+  border-bottom: 2px solid #26A5E8;
+}
+ul#menu{
+  white-space: nowrap;
+}
+ul#menu li{
+  display: inline-block;
+  color: white;
+  padding: 0 7%;
+}
+
+
+/* classes */
+.invisible{
+  opacity: 0.01;
+}
+.rotate{ 
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -o-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after{
+  background-color: #26A5E8;
+}
+#menuToggle.is-active .hamburger-inner,
+#menuToggle.is-active .hamburger-inner::before,
+#menuToggle.is-active .hamburger-inner::after{
+  background-color: white;
+}
+#menuToggle:hover .hamburger-inner,
+#menuToggle:hover .hamburger-inner::before, 
+#menuToggle:hover .hamburger-inner::after{
+  background-color: white;
+}
+.portraitAnimation{
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+.headerIn{
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+.text1In{
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+.text2In{
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+.contactText1In{
+  animation-duration: 1.4s;
+  -webkit-animation-duration: 1.4s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+.contactText2In{
+  animation-duration: 1.4s;
+  -webkit-animation-duration: 1.4s;
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+
+/* ids */
+#logo{
+  position: fixed;
+  top: 3%;
+  left: 1%;
+  width: 10%;
+  z-index: 5;
+  transition: all 0.5s ease;
+}
+#logo:hover{
+  filter: invert(100%);
+  transform: scale(1.1);
+}
+#fullpage{
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+}
+#intro{
+  text-align: center;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  position: absolute;
+  /* top: 52%; */
+  left: 50%;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+#menu{
+  position: fixed;
+  top:6%;
+  right: 8%;
+  display: block;  
+  overflow: hidden;
+  /* width must be smaller than width for menu.show */
+  width: 30%;
+  opacity: 0;
+  z-index: 10;
+}
+#menu.show{
+  opacity: 1;
+  /* must be large enough to fit menu items */
+  width: 40%;
+}
+#menuToggle{
+  z-index: 10;
+  position: fixed;
+  top:5%;
+  right: 3%;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+#menuToggle:hover{
+  transform: scale(1.2, 1.2);
+}
+
+
+/* animations */
+.fadeIntro {
+  -webkit-animation-name: fadeIntro;
+  animation-name: fadeIntro;
+}
+@-webkit-keyframes fadeIntro {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes fadeIntro {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.logoFadeOut {
+  -webkit-animation-name: logoFadeOut;
+  animation-name: logoFadeOut;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes logoFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0.01; }
+}
+@keyframes logoFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0.01; }
+}
+
+
+/* button outline effects */
+button.contactButton {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px transparent;
+  color: white;
+  position: relative;
+}
+button.contactButton::before, button.contactButton::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.25s;
+}
+.center:hover {
+  color: #26A5E8;
+}
+.center::before, .center::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+}
+.center::before {
+  border-top: 2px solid #26A5E8;
+  border-bottom: 2px solid #26A5E8;
+  transform: scale3d(0, 1, 1);
+}
+.center::after {
+  border-right: 2px solid #26A5E8;
+  border-left: 2px solid #26A5E8;
+  transform: scale3d(1, 0, 1);
+}
+.center:hover::before, .center:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s;
+}
+
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+  width: 100%; 
+  background-image: url("../images/tbcLogo5.png"); 
+  background-repeat: no-repeat; 
+  /* background-size: 30%; 
+  background-position: 48% 25%; */
+}
+
+@media only screen and (max-width: 575px){ /* for small mobile*/
+  h1{ font-size: 2.3em; }
+  h2{ font-size: 2em; }
+  h3{ font-size: 1.7em; }
+  h4{ font-size: 1.4em; }
+  h5{ font-size: 1em; }
+  p{
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  #particles-js{ 
+    background-size: 50%; 
+    background-position: 48% 40%;
+  }
+  #intro{ top: 63%; }
+  #contactHeader{ margin-top: 40%; }
+  #contactLinks{ margin-top: 60%; }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
+  h1{ font-size: 2.5em; }
+  h2{ font-size: 2.1em; }
+  h3{ font-size: 1.8em; }
+  h4{ font-size: 1.4em; }
+  h5{ font-size: 1em; }
+  p{
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  #particles-js{ 
+    background-size: 50%; 
+    background-position: 48% 40%;
+  }
+  #intro{ top: 63%; }
+  #contactHeader{ margin-top: 30%; }
+  #contactLinks{ margin-top: 45%; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
+  h1{ font-size: 2.8em; }
+  h2{ font-size: 2.4em; }
+  h3{ font-size: 2.1em; }
+  h4{ font-size: 1.6em; }
+  h5{ font-size: 1.1em; }
+  p{
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  #particles-js{ 
+    background-size: 45%; 
+    background-position: 48% 35%;
+  }
+  #intro{ top: 65%; }
+  #contactHeader{ margin-top: 22.5%; }
+  #contactLinks{ margin-top: 35%; }
+}
+
+@media only screen and (min-width: 992px){ /*desktop*/
+  h1{ font-size: 3em; }
+  h2{ font-size: 2.5em; }
+  h3{ font-size: 2.1em; }
+  h4{ font-size: 1.6em; }
+  h5{ font-size: 1.1em; }
+  p{
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  #particles-js{ 
+    background-size: 30%; 
+    background-position: 48% 25%;
+  }
+  #intro{ top: 52%; }
+  #contactHeader{ margin-top:15%; }
+  #contactLinks{ margin-top:22.5%; }
+}

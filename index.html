@@ -16,16 +16,16 @@
         <!-- Animate css -->
         <link href="css/animate.css" type="text/css" rel="stylesheet">
         <!--custom css-->
-        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/style-home.css" type="text/css" rel="stylesheet">
     </head>
 
     <body>
         <!-- menu -->
-        <a href="#Home"><img id="logo" class="invisible" src="images/TBC-logo2.png" width="10%"></a>
+        <a href="#Home"><img id="logo" class="invisible" src="images/TBC-logo2.png"></a>
         <ul id="menu">
             <li><a href="#About">About</a></li>
             <li><a href="process.html">Process</a></li>
-            <li><a href="#">Work</a></li>
+            <li><a href="work.html">Work</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
         <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
@@ -39,7 +39,7 @@
             <div class="section active" data-anchor="Home">
                 <div id="intro">
                     <h1>The Black Chris</h1>
-                    <h3>"Your Next Designer"</h3>
+                    <h4>"Your Next Designer"</h4>
                 </div>
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
@@ -52,13 +52,13 @@
                         <img data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
                     <div id="about2Parallax" class="col-lg-7 align-self-center">
-                        <div data-depth="0.1">
+                        <div data-depth="0.1" style="padding: 0 5%">
                             <div class="headerIn" style="margin-top: 4%">
                                 <h1>ABOUT ME</h1>
                                 <p>- Everything you want to know, plus a lil extra -<p>
                             </div>
                             <div class="text1In" style="margin-top: 6%">
-                                <h5>Chris·to·pher Smith</h5>
+                                <h4 style="color: #26A5E8">Christopher Smith</h4>
                                 <p>
                                     /ˈkrɪstəfɚ/ /ˈsmɪθ/<br>
                                     <i>noun</i>
@@ -89,13 +89,14 @@
             <div class="container-fluid section" data-anchor="Contact">
                 <div id="contactParallax" class="row">
                     <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
-                    <div data-depth="0.2" class="col-12 align-self-center text-center contactText1In" style="margin-top:15%">
+                    <div id="contactHeader" data-depth="0.2" class="col-12 align-self-center text-center contactText1In">
                         <h1>CONTACT</h1>
                         <p>- Talk to the Man Himself -</p>
                     </div>
-                    <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:22.5%">
+                    <div id="contactLinks" data-depth="0.3" class="col-12 text-center contactText2In">
                         <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
                         <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
+                        <button class="contactButton center" href="https://www.behance.net/chrisantho9783"><h5>Behance</h5></button><br>
                         <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
                     </div>
                 </div>
@@ -148,9 +149,9 @@
                 
 
             // fullpage.js
-                // if ($('html').hasClass( 'fp-enabled' )){
-                //     fullpage_api.destroy('all');
-                // }
+                if ($('html').hasClass( 'fp-enabled' )){
+                    fullpage_api.destroy('all');
+                }
                 $('#fullpage').fullpage({
                 //options here
                     navigation: true,
@@ -160,6 +161,7 @@
                     anchors:['Home', 'About', 'Contact'],
                     loopBottom: true,
                     loopTop: true,
+                    responsiveWidth: 767,
 
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     

@@ -28,7 +28,7 @@
         <ul id="menu">
             <li><a href="index.html#About">About</a></li>
             <li><a href="process.html">Process</a></li>
-            <li><a href="#">Work</a></li>
+            <li><a href="work.html">Work</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
         <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
@@ -338,6 +338,7 @@
                     <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:22.5%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
                         <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
                         <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
+                        <button class="contactButton center" href="https://www.behance.net/chrisantho9783"><h5>Behance</h5></button><br>
                         <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
                     </div>
                 </div>
@@ -484,7 +485,7 @@
                 // AniJS.run();
 
             // vivus
-                var vivResearch = new Vivus('researchImage', {start:'manual', type: 'delayed', duration: 120});
+                var vivResearch = new Vivus('researchImage', {type: 'delayed', duration: 120});
                 var vivIdeate = new Vivus('ideateImage', {type: 'delayed', duration: 120} );
                 var vivTest = new Vivus('testImage', {type: 'delayed', duration: 120} );
                 var vivDevelop = new Vivus('developImage', {type: 'delayed', duration: 120} );
@@ -552,9 +553,9 @@
                 });
 
             // fullpage.js
-                // if ($('html').hasClass( 'fp-enabled' )){
-                //     fullpage_api.destroy('all');
-                // }
+                if ($('html').hasClass( 'fp-enabled' )){
+                    fullpage_api.destroy('all');
+                }
                 $('#fullpage').fullpage({
                 //options
                     navigation: true,

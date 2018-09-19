@@ -1,19 +1,18 @@
-#bground{
+#bgroundContainer{
   position: fixed;
-  /* top: 30%; */
-  top: 5%;
-  left: 0;
+  bottom: 0;
+  left: -10%;
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
 
+
 html, body{
   margin:0; 
   color: white;
   background-color: black;
-  /* background-image: */
   font-family: 'Exo 2', sans-serif;
   font-size: 1em;
   overflow-x: hidden;
@@ -91,17 +90,14 @@ ul#menu li{
   top:5%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 #menuToggle:hover{
+  -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
 .rotate{ 
   -webkit-transform:rotate(-180deg);
-  -moz-transform:rotate(-180deg);
-  -o-transform:rotate(-180deg);
   transform:rotate(-180deg);
 }
 .hamburger-inner,
@@ -174,6 +170,7 @@ ul#menu li{
 #logo:hover{
   filter: invert(100%);
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 #titleCharacter{
@@ -215,6 +212,220 @@ ul#menu li{
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
+
+@-webkit-keyframes rotateLeft {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-30deg); }
+}
+@keyframes rotateLeft {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-30deg); }
+}
+@-webkit-keyframes rotateRight {
+  from { -webkit-transform: rotate(-30deg); }
+  to { -webkit-transform: rotate(0deg); }
+}
+@keyframes rotateRight {
+  from { transform: rotate(-30deg); }
+  to { transform: rotate(0deg); }
+}
+.rotateLeft {
+  -webkit-animation-name: rotateLeft;
+  animation-name: rotateLeft;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.rotateRight {
+  -webkit-animation-name: rotateRight;
+  animation-name: rotateRight;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@-webkit-keyframes adjustLeft {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-15deg); }
+}
+@keyframes adjustLeft {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-15deg); }
+}
+.adjustLeft{
+  -webkit-animation-name: adjustLeft;
+  animation-name: adjustLeft;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  /* animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s; */
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes projectFadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-100%, -25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+}
+@keyframes projectFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate(-100%, -25%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.projectFadeInLeft {
+  -webkit-animation-name: projectFadeInLeft;
+  animation-name: projectFadeInLeft;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes projectFadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, -25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+}
+@keyframes projectFadeInRight {
+  from {
+    opacity: 0;
+    transform: translate(100%, -25%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.projectFadeInRight {
+  -webkit-animation-name: projectFadeInRightt;
+  animation-name: projectFadeInRight;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+/* ------------------------------------------------------------ */
+@-webkit-keyframes projectFadeOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(100%, 25%);
+  }
+}
+@keyframes projectFadeOutRight {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(100%, 25%);
+  }
+}
+.projectFadeOutRight {
+  -webkit-animation-name: projectFadeOutRight;
+  animation-name: projectFadeOutRight;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+/* ------------------------------------------------ */
+@-webkit-keyframes projectFadeOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(-100%, 25%);
+  }
+}
+@keyframes projectFadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-100%, 25%);
+  }
+}
+.projectFadeOutLeft {
+  -webkit-animation-name: projectFadeOutLeft;
+  animation-name: projectFadeOutLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+#insightsImage, 
+#profadeImage, 
+#bbctImage, 
+#odaImage, 
+#dtfImage, 
+#graphicsImage, 
+#portfolioImage{
+  padding-top: 8%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+#insightsImage:hover,
+#bbctImage:hover,
+#dtfImage:hover{
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.1) rotate(-15deg);
+  transform: scale(1.1) rotate(-15deg);
+} 
+#profadeImage:hover, 
+#odaImage:hover, 
+#graphicsImage:hover{
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.1) rotate(15deg);
+  transform: scale(1.1) rotate(15deg);
+} 
+
 .invisible{
   opacity: 0.01;
   /* display: none; */
