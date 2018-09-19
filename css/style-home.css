@@ -374,11 +374,11 @@ button.contactButton::before, button.contactButton::after {
   #contactLinks{ margin-top: 45%; }
   #menu{
     /* width must be smaller than width for menu.show */
-    width: 40%;
+    width: 50%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -403,11 +403,11 @@ button.contactButton::before, button.contactButton::after {
   #contactLinks{ margin-top: 35%; }
   #menu{
     /* width must be smaller than width for menu.show */
-    width: 40%;
+    width: 50%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
-    width: 50%;
+    width: 60%;
   }
 }
 
