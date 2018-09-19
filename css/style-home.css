@@ -316,7 +316,8 @@ button.contactButton::before, button.contactButton::after {
 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
-  width: 100%; 
+  width: 100%;
+  height: 100vh;
   background-image: url("../images/tbcLogo5.png"); 
   background-repeat: no-repeat; 
   /* background-size: 30%; 
@@ -358,7 +359,7 @@ button.contactButton::before, button.contactButton::after {
     background-size: 50%; 
     background-position: 48% 40%;
   }
-  #intro{ top: 63%; }
+  #intro{ top: 52%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
 }
@@ -378,7 +379,7 @@ button.contactButton::before, button.contactButton::after {
     background-size: 45%; 
     background-position: 48% 35%;
   }
-  #intro{ top: 65%; }
+  #intro{ top: 52%; }
   #contactHeader{ margin-top: 22.5%; }
   #contactLinks{ margin-top: 35%; }
 }
