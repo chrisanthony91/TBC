@@ -336,11 +336,8 @@ button.contactButton::before, button.contactButton::after {
   }
   li a{ font-size: 1.1em; }
 
-  #particles-js{ 
-    background-size: 50%; 
-    background-position: 48% 40%;
-  }
-  #intro{ top: 63%; }
+  #particles-js{ display: none; }
+  #intro{ top: 60%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{
@@ -372,11 +369,8 @@ button.contactButton::before, button.contactButton::after {
   }
   li a{ font-size: 1.1em; }
 
-  #particles-js{ 
-    background-size: 60%; 
-    background-position: 48% 45%;
-  }
-  #intro{ top: 55%; }
+  #particles-js{ display: none; }
+  #intro{ top: 52%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
   #menu{
@@ -397,13 +391,13 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
-  h1{ font-size: 3em; }
-  h2{ font-size: 2.5em; }
-  h3{ font-size: 2.1em; }
-  h4{ font-size: 1.6em; }
-  h5{ font-size: 1.1em; }
+  h1{ font-size: 3.2em; }
+  h2{ font-size: 2.7em; }
+  h3{ font-size: 2.3em; }
+  h4{ font-size: 1.8em; }
+  h5{ font-size: 1.3em; }
   p{
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5;
   }
   li a{ font-size: 1.2em; }
@@ -412,7 +406,7 @@ button.contactButton::before, button.contactButton::after {
     background-size: 60%; 
     background-position: 48% 30%;
   }
-  #intro{ top: 52%; }
+  #intro{ top: 51%; }
   #contactHeader{ margin-top: 22.5%; }
   #contactLinks{ margin-top: 35%; }
   #menu{
@@ -424,6 +418,7 @@ button.contactButton::before, button.contactButton::after {
     width: 60%;
   }
   #portrait{ width: 80%; }
+  #introLogo{ display: none; }
 }
 
 @media only screen and (min-width: 992px){ /*desktop*/
@@ -441,8 +436,9 @@ button.contactButton::before, button.contactButton::after {
     background-size: 30%; 
     background-position: 48% 25%;
   }
-  #intro{ top: 52%; }
+  #intro{ top: 53%; }
   #contactHeader{ margin-top:15%; }
   #contactLinks{ margin-top:22.5%; }
   #portrait{ width: 100%; }
+  #introLogo{ display: none; }
 }
