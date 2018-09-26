@@ -37,19 +37,19 @@
 
         <div id="fullpage" class="invisible">
             <div class="section active" data-anchor="Home">
-                <img id="introLogo" src="images/tbcLogo5.png" alt="TBC logo">
+                <img id="introLogo" class="d-md-none" src="images/tbcLogo5.png" alt="TBC logo">
                 <div id="intro">
                     <h1>The Black Chris</h1>
                     <h4>"Your Next Designer"</h4>
                 </div>
                 <!-- particles.js container --> 
-                <div id="particles-js"></div>
+                <div id="particles-js" class="d-none d-md-block"></div>
             </div>
             
                     
             <div class="container-fluid section fp-auto-height-responsive" data-anchor="About">
                 <div class="row">
-                    <div id="portraitParallax" class="col-lg-5 align-self-end text-center portraitAnimation">
+                    <div id="portraitParallax" class="col-lg-5 align-self-end portraitAnimation">
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
                     <div id="about2Parallax" class="col-lg-7 align-self-center">
@@ -193,17 +193,13 @@
                         }
                     }
                 });
-                
-            // particles
-                var size = $( window ).width();
-                if( size < 767 ){
-                    particlesJS("particles-js", {
+    
+                // particle.js
+                particlesJS("particles-js", {
                     "particles":{
                         "number":{
-                            "value":0,
-                            "density":{
-                                "enable":false,
-                                "value_area":800
+                            "value":80,
+                            "density":{"enable":true,"value_area":800
                             }
                         },
                         "color":{"value":"#5F94B4"},
@@ -241,7 +237,7 @@
                             "width":1
                         },
                         "move":{
-                            "enable":false,
+                            "enable":true,
                             "speed":6,
                             "direction":"none",
                             "random":false,
@@ -259,14 +255,14 @@
                         "detect_on":"canvas",
                         "events":{
                             "onhover":{
-                                "enable":false,
+                                "enable":true,
                                 "mode":"grab"
                             },
                             "onclick":{
-                                "enable":false,
+                                "enable":true,
                                 "mode":"repulse"
                             },
-                            "resize":false
+                            "resize":true
                         },
                         "modes":{
                             "grab":{"distance":400,"line_linked":{"opacity":1}},
@@ -276,89 +272,7 @@
                             "remove":{"particles_nb":2}}
                     },
                     "retina_detect":true}
-                    );
-                }
-                else if( size >= 768 ){
-                    particlesJS("particles-js", {
-                        "particles":{
-                            "number":{
-                                "value":80,
-                                "density":{"enable":true,"value_area":800
-                                }
-                            },
-                            "color":{"value":"#5F94B4"},
-                            "shape":{
-                                "type":"circle",
-                                "stroke":{"width":0,"color":"#000000"},
-                                "polygon":{"nb_sides":5},
-                                "image":{"src":"","width":100,"height":100}
-                            },
-                            "opacity":{
-                                "value":0.5,
-                                "random":false,
-                                "anim":{
-                                    "enable":false,
-                                    "speed":1,
-                                    "opacity_min":0.1,
-                                    "sync":false
-                                }
-                            },
-                            "size":{
-                                "value":3,
-                                "random":true,
-                                "anim":{
-                                    "enable":false,
-                                    "speed":40,
-                                    "size_min":0.1,
-                                    "sync":false
-                                }
-                            },
-                            "line_linked":{
-                                "enable":true,
-                                "distance":150,
-                                "color":"#5f8fbb",
-                                "opacity":0.3,
-                                "width":1
-                            },
-                            "move":{
-                                "enable":true,
-                                "speed":6,
-                                "direction":"none",
-                                "random":false,
-                                "straight":false,
-                                "out_mode":"out",
-                                "bounce":false,
-                                "attract":{
-                                    "enable":false,
-                                    "rotateX":600,
-                                    "rotateY":1200
-                                }
-                            }
-                        },
-                        "interactivity":{
-                            "detect_on":"canvas",
-                            "events":{
-                                "onhover":{
-                                    "enable":true,
-                                    "mode":"grab"
-                                },
-                                "onclick":{
-                                    "enable":true,
-                                    "mode":"repulse"
-                                },
-                                "resize":true
-                            },
-                            "modes":{
-                                "grab":{"distance":400,"line_linked":{"opacity":1}},
-                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
-                                "repulse":{"distance":200,"duration":0.4},
-                                "push":{"particles_nb":4},
-                                "remove":{"particles_nb":2}}
-                        },
-                        "retina_detect":true}
-                    );
-                }
-                
+                );
 
                 // parallax.js
                 // parallax scenes
