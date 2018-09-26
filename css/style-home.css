@@ -348,7 +348,10 @@ button.contactButton::before, button.contactButton::after {
     /* must be large enough to fit menu items */
     width: 50%;
   }
-  #portrait{ width: 70%; }
+  #portrait{ 
+    width: 60%;
+    margin: 0 auto;
+  }
   #introLogo{
     width: 50%;
     position: absolute;
@@ -381,7 +384,10 @@ button.contactButton::before, button.contactButton::after {
     /* must be large enough to fit menu items */
     width: 60%;
   }
-  #portrait{ width: 70%; }
+  #portrait{ 
+    width: 60%;
+    margin: 0 auto;
+  }
   #introLogo{
     width: 50%;
     position: absolute;
