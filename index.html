@@ -52,7 +52,7 @@
                     <div id="portraitParallax" class="col-lg-5 align-self-end text-center portraitAnimation">
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
-                    <div id="about2Parallax" class="col-lg-7 align-self-center">
+                    <div id="aboutParallax" class="col-lg-7 align-self-center">
                         <div data-depth="0.1" style="padding: 0 5%">
                             <div class="headerIn" style="margin-top: 4%">
                                 <h1>ABOUT ME</h1>
@@ -116,6 +116,7 @@
 
         <script>
             $(document).ready(function() {
+                   
             // animate.css helper function
                 $.fn.extend({
                     animateCss: function(animationName, callback) {
@@ -144,56 +145,17 @@
                     },
                 });
 
-                // faux fade in effect on page load
+            // faux fade in effect on page load
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
                 
+            // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                //     // some code..
+                // }
+                // else{}
+            
 
-            // fullpage.js
-                if ($('html').hasClass( 'fp-enabled' )){
-                    fullpage_api.destroy('all');
-                }
-                $('#fullpage').fullpage({
-                //options here
-                    navigation: true,
-                    navigationPosition: 'left',
-                    navigationTooltips: ['Home', 'About', 'Contact'],
-                    showActiveTooltip: true,
-                    anchors:['Home', 'About', 'Contact'],
-                    loopBottom: true,
-                    loopTop: true,
-                    responsiveWidth: 767,
-
-                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                    
-                    // callbacks
-                    afterLoad: function(origin, destination, direction){
-                        var loadedSection = this;
-                        $('#intro').animateCss('fadeIntro');
-                    },
-                    onLeave: function(origin, destination, direction){
-                        var leavingSection = this;
-                        if( origin.index == 0 ){
-                            $('#logo').removeClass('invisible');
-                        }
-                        if( destination.index == 0 ){
-                            $('#intro').animateCss('fadeIntro');
-                            $('#logo').animateCss('logoFadeOut');
-                            $('#logo').addClass('invisible');
-                        }
-                        if( destination.index == 1 ){
-                            $('.portraitAnimation').animateCss('fadeInUp');
-                            $('.headerIn').animateCss('fadeIn');
-                            $('.text1In').animateCss('fadeIn');
-                            $('.text2In').animateCss('fadeIn');
-                        }
-                        if( destination.index == 2 ){
-                            $('.contactText1In').animateCss('fadeIn');
-                            $('.contactText2In').animateCss('fadeIn');
-                        }
-                    }
-                });
-                
+            
             // particles
                 var size = $( window ).width();
                 if( size < 767 ){
@@ -224,8 +186,8 @@
                             }
                         },
                         "size":{
-                            "value":3,
-                            "random":true,
+                            "value":1,
+                            "random":false,
                             "anim":{
                                 "enable":false,
                                 "speed":40,
@@ -234,7 +196,7 @@
                             }
                         },
                         "line_linked":{
-                            "enable":true,
+                            "enable":false,
                             "distance":150,
                             "color":"#5f8fbb",
                             "opacity":0.3,
@@ -277,6 +239,46 @@
                     },
                     "retina_detect":true}
                     );
+
+                     // fullpage.js
+                     if ($('html').hasClass( 'fp-enabled' )){
+                        fullpage_api.destroy('all');
+                    }
+                    $('#fullpage').fullpage({
+                    //options here
+                        navigation: false,
+                        anchors:['Home', 'About', 'Contact'],
+                        loopBottom: false,
+                        loopTop: false,
+                        responsiveWidth: 767,
+                        // normalScrollElements: '#portraitParallax, #aboutParallax',
+
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                        
+                        // callbacks
+                        afterLoad: function(origin, destination, direction){
+                            var loadedSection = this;
+                            $('#intro').animateCss('fadeIntro');
+                        },
+                        onLeave: function(origin, destination, direction){
+                            var leavingSection = this;
+                            if( origin.index == 0 ){
+                                $('#logo').removeClass('invisible');
+                            }
+                            if( destination.index == 0 ){
+                                $('#intro').animateCss('fadeIntro');
+                                $('#logo').animateCss('logoFadeOut');
+                                $('#logo').addClass('invisible');
+                            }
+                        }
+                    });
+                    
+                    var scene3 = $('#contactParallax').get(0);
+                    var parallaxInstance = new Parallax(scene3, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    }); 
                 }
                 else if( size >= 768 ){
                     particlesJS("particles-js", {
@@ -357,29 +359,76 @@
                         },
                         "retina_detect":true}
                     );
+
+                    // fullpage.js
+                    if ($('html').hasClass( 'fp-enabled' )){
+                        fullpage_api.destroy('all');
+                    }
+                    $('#fullpage').fullpage({
+                    //options here
+                        navigation: true,
+                        navigationPosition: 'left',
+                        navigationTooltips: ['Home', 'About', 'Contact'],
+                        showActiveTooltip: true,
+                        anchors:['Home', 'About', 'Contact'],
+                        loopBottom: true,
+                        loopTop: true,
+                        responsiveWidth: 767,
+                        normalScrollElements: '#portraitParallax, #aboutParallax',
+
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                        
+                        // callbacks
+                        afterLoad: function(origin, destination, direction){
+                            var loadedSection = this;
+                            $('#intro').animateCss('fadeIntro');
+                        },
+                        onLeave: function(origin, destination, direction){
+                            var leavingSection = this;
+                            if( origin.index == 0 ){
+                                $('#logo').removeClass('invisible');
+                            }
+                            if( destination.index == 0 ){
+                                $('#intro').animateCss('fadeIntro');
+                                $('#logo').animateCss('logoFadeOut');
+                                $('#logo').addClass('invisible');
+                            }
+                            if( destination.index == 1 ){
+                                $('.portraitAnimation').animateCss('fadeInUp');
+                                $('.headerIn').animateCss('fadeIn');
+                                $('.text1In').animateCss('fadeIn');
+                                $('.text2In').animateCss('fadeIn');
+                            }
+                            if( destination.index == 2 ){
+                                $('.contactText1In').animateCss('fadeIn');
+                                $('.contactText2In').animateCss('fadeIn');
+                            }
+                        }
+                    });
+                    
+
+                    // parallax.js
+                    // parallax scenes
+                    var scene1 = $('#portraitParallax').get(0);
+                    var parallaxInstance = new Parallax(scene1, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    });
+                    var scene2 = $('#aboutParallax').get(0);
+                    var parallaxInstance = new Parallax(scene2, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    });
+                    var scene3 = $('#contactParallax').get(0);
+                    var parallaxInstance = new Parallax(scene3, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    }); 
                 }
                 
-
-                // parallax.js
-                // parallax scenes
-                var scene1 = $('#portraitParallax').get(0);
-                var parallaxInstance = new Parallax(scene1, {
-                    relativeInput: true,
-                    pointerEvents: true,
-                    hoverOnly: true,
-                });
-                var scene2 = $('#about2Parallax').get(0);
-                var parallaxInstance = new Parallax(scene2, {
-                    relativeInput: true,
-                    pointerEvents: true,
-                    hoverOnly: true,
-                });
-                var scene3 = $('#contactParallax').get(0);
-                var parallaxInstance = new Parallax(scene3, {
-                    relativeInput: true,
-                    pointerEvents: true,
-                    hoverOnly: true,
-                });
 
                 // menu toggle
                 $('#menuToggle').click(function(){
