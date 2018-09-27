@@ -149,101 +149,92 @@
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
                 
-            // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                //     // some code..
-                // }
-                // else{}
-            
-
-            
-            // particles
-                var size = $( window ).width();
-                alert(size);
-                if( size < 400 ){
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    // particles
                     particlesJS("particles-js", {
-                    "particles":{
-                        "number":{
-                            "value":0,
-                            "density":{
-                                "enable":false,
-                                "value_area":800
-                            }
-                        },
-                        "color":{"value":"#5F94B4"},
-                        "shape":{
-                            "type":"circle",
-                            "stroke":{"width":0,"color":"#000000"},
-                            "polygon":{"nb_sides":5},
-                            "image":{"src":"","width":100,"height":100}
-                        },
-                        "opacity":{
-                            "value":0.5,
-                            "random":false,
-                            "anim":{
-                                "enable":false,
-                                "speed":1,
-                                "opacity_min":0.1,
-                                "sync":false
-                            }
-                        },
-                        "size":{
-                            "value":1,
-                            "random":false,
-                            "anim":{
-                                "enable":false,
-                                "speed":40,
-                                "size_min":0.1,
-                                "sync":false
-                            }
-                        },
-                        "line_linked":{
-                            "enable":false,
-                            "distance":150,
-                            "color":"#5f8fbb",
-                            "opacity":0.3,
-                            "width":1
-                        },
-                        "move":{
-                            "enable":false,
-                            "speed":6,
-                            "direction":"none",
-                            "random":false,
-                            "straight":false,
-                            "out_mode":"out",
-                            "bounce":false,
-                            "attract":{
-                                "enable":false,
-                                "rotateX":600,
-                                "rotateY":1200
-                            }
-                        }
-                    },
-                    "interactivity":{
-                        "detect_on":"canvas",
-                        "events":{
-                            "onhover":{
-                                "enable":false,
-                                "mode":"grab"
+                        "particles":{
+                            "number":{
+                                "value":0,
+                                "density":{
+                                    "enable":false,
+                                    "value_area":800
+                                }
                             },
-                            "onclick":{
-                                "enable":false,
-                                "mode":"repulse"
+                            "color":{"value":"#5F94B4"},
+                            "shape":{
+                                "type":"circle",
+                                "stroke":{"width":0,"color":"#000000"},
+                                "polygon":{"nb_sides":5},
+                                "image":{"src":"","width":100,"height":100}
                             },
-                            "resize":false
+                            "opacity":{
+                                "value":0.5,
+                                "random":false,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":1,
+                                    "opacity_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "size":{
+                                "value":1,
+                                "random":false,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":40,
+                                    "size_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "line_linked":{
+                                "enable":false,
+                                "distance":150,
+                                "color":"#5f8fbb",
+                                "opacity":0.3,
+                                "width":1
+                            },
+                            "move":{
+                                "enable":false,
+                                "speed":6,
+                                "direction":"none",
+                                "random":false,
+                                "straight":false,
+                                "out_mode":"out",
+                                "bounce":false,
+                                "attract":{
+                                    "enable":false,
+                                    "rotateX":600,
+                                    "rotateY":1200
+                                }
+                            }
                         },
-                        "modes":{
-                            "grab":{"distance":400,"line_linked":{"opacity":1}},
-                            "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
-                            "repulse":{"distance":200,"duration":0.4},
-                            "push":{"particles_nb":4},
-                            "remove":{"particles_nb":2}}
-                    },
-                    "retina_detect":true}
-                    );
+                        "interactivity":{
+                            "detect_on":"canvas",
+                            "events":{
+                                "onhover":{
+                                    "enable":false,
+                                    "mode":"grab"
+                                },
+                                "onclick":{
+                                    "enable":false,
+                                    "mode":"repulse"
+                                },
+                                "resize":false
+                            },
+                            "modes":{
+                                "grab":{"distance":400,"line_linked":{"opacity":1}},
+                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
+                                "repulse":{"distance":200,"duration":0.4},
+                                "push":{"particles_nb":4},
+                                "remove":{"particles_nb":2}}
+                        },
+                        "retina_detect":true}
+                        );
 
-                     // fullpage.js
-                     if ($('html').hasClass( 'fp-enabled' )){
-                        fullpage_api.destroy('all');
+                    // fullpage.js
+                    if ($('html').hasClass( 'fp-enabled' )){
+                    fullpage_api.destroy('all');
                     }
                     $('#fullpage').fullpage({
                     //options here
@@ -279,9 +270,10 @@
                         relativeInput: true,
                         pointerEvents: true,
                         hoverOnly: true,
-                    }); 
+                    });     
                 }
-                else if( size >= 400 ){
+                else{
+                    // particles
                     particlesJS("particles-js", {
                         "particles":{
                             "number":{
@@ -428,7 +420,20 @@
                         pointerEvents: true,
                         hoverOnly: true,
                     }); 
+                
                 }
+            
+
+            
+            
+                // var size = $( window ).width();
+                // alert(size);
+                // if( size < 400 ){
+                    
+                // }
+                // else if( size >= 400 ){
+                    
+                // }
                 
 
                 // menu toggle
