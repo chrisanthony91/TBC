@@ -325,13 +325,13 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (max-width: 575px){ /* for small mobile*/
-  h1{ font-size: 2.3em; }
-  h2{ font-size: 2em; }
-  h3{ font-size: 1.7em; }
-  h4{ font-size: 1.4em; }
-  h5{ font-size: 1em; }
+  h1{ font-size: 2.4em; }
+  h2{ font-size: 2.1em; }
+  h3{ font-size: 1.8em; }
+  h4{ font-size: 1.5em; }
+  h5{ font-size: 1.1em; }
   p{
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.4;
   }
   li a{ font-size: 1.1em; }
@@ -361,13 +361,13 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
-  h1{ font-size: 2.5em; }
+  h1{ font-size: 2.4em; }
   h2{ font-size: 2.1em; }
   h3{ font-size: 1.8em; }
-  h4{ font-size: 1.4em; }
-  h5{ font-size: 1em; }
+  h4{ font-size: 1.5em; }
+  h5{ font-size: 1.1em; }
   p{
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.4;
   }
   li a{ font-size: 1.1em; }
@@ -403,10 +403,10 @@ button.contactButton::before, button.contactButton::after {
   h4{ font-size: 1.8em; }
   h5{ font-size: 1.3em; }
   p{
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.5;
   }
-  li a{ font-size: 1.2em; }
+  li a{ font-size: 1.3em; }
 
   #particles-js{ 
     background-size: 60%; 
@@ -428,13 +428,13 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (min-width: 992px){ /*desktop*/
-  h1{ font-size: 3em; }
-  h2{ font-size: 2.5em; }
-  h3{ font-size: 2.1em; }
-  h4{ font-size: 1.6em; }
-  h5{ font-size: 1.1em; }
+  h1{ font-size: 3.2em; }
+  h2{ font-size: 2.7em; }
+  h3{ font-size: 2.3em; }
+  h4{ font-size: 1.8em; }
+  h5{ font-size: 1.3em; }
   p{
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5;
   }
 
