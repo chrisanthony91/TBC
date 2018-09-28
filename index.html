@@ -263,6 +263,16 @@
                                 $('#logo').animateCss('logoFadeOut');
                                 $('#logo').addClass('invisible');
                             }
+                            if( destination.index == 1 ){
+                                $('.portraitAnimation').animateCss('fadeInUp');
+                                $('.headerIn').animateCss('fadeIn');
+                                $('.text1In').animateCss('fadeIn');
+                                $('.text2In').animateCss('fadeIn');
+                            }
+                            if( destination.index == 2 ){
+                                $('.contactText1In').animateCss('fadeIn');
+                                $('.contactText2In').animateCss('fadeIn');
+                            }
                         }
                     });
                     
