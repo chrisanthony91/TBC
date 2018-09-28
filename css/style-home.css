@@ -338,7 +338,7 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 60%; }
+  #intro{ top: 55%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{
@@ -355,9 +355,9 @@ button.contactButton::before, button.contactButton::after {
     margin: 0 auto;
   }
   #introLogo{
-    width: 60%;
+    width: 70%;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -377,7 +377,7 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1.1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 52%; }
+  #intro{ top: 55%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
   #menu{
@@ -394,9 +394,9 @@ button.contactButton::before, button.contactButton::after {
     margin: 0 auto;
   }
   #introLogo{
-    width: 50%;
+    width: 70%;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
