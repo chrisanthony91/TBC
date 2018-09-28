@@ -332,13 +332,13 @@ button.contactButton::before, button.contactButton::after {
   h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 0.9em;
+    line-height: 1.3;
   }
   li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 55%; }
+  #intro{ top: 56%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{
@@ -357,7 +357,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 70%;
     position: absolute;
-    top: 30%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -371,13 +371,13 @@ button.contactButton::before, button.contactButton::after {
   h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 0.9em;
+    line-height: 1.3;
   }
   li a{ font-size: 1.1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 55%; }
+  #intro{ top: 56%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
   #menu{
@@ -396,7 +396,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 70%;
     position: absolute;
-    top: 30%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
