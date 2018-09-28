@@ -325,16 +325,16 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (max-width: 575px){ /* for small mobile*/
-  h1{ font-size: 2.4em; }
-  h2{ font-size: 2.1em; }
-  h3{ font-size: 1.8em; }
-  h4{ font-size: 1.5em; }
+  h1{ font-size: 2.2em; }
+  h2{ font-size: 1.9em; }
+  h3{ font-size: 1.6em; }
+  h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
     font-size: 1em;
     line-height: 1.4;
   }
-  li a{ font-size: 1.1em; }
+  li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
   #intro{ top: 60%; }
@@ -355,16 +355,16 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 50%;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 40%;
+    left: 25%;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
-  h1{ font-size: 2.4em; }
-  h2{ font-size: 2.1em; }
-  h3{ font-size: 1.8em; }
-  h4{ font-size: 1.5em; }
+  h1{ font-size: 2.2em; }
+  h2{ font-size: 1.9em; }
+  h3{ font-size: 1.5em; }
+  h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
     font-size: 1em;
