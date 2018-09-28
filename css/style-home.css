@@ -169,7 +169,7 @@ ul#menu li{
 }
 #menu{
   position: fixed;
-  top:6%;
+  /* top:6%; */
   right: 8%;
   display: block;  
   overflow: hidden;
@@ -186,7 +186,7 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  top:5%;
+  /* top:5%; */
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -338,17 +338,19 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 56%; }
+  #intro{ top: 55%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{
     /* width must be smaller than width for menu.show */
-    width: 40%;
+    width: 50%;
+    top:5%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
-    width: 50%;
+    width: 60%;
   }
+  #menuToggle{ top:4%; }
   #logo{ width: 20%; }
   #portrait{ 
     width: 70%;
@@ -378,17 +380,19 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1.1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 56%; }
+  #intro{ top: 55%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
   #menu{
     /* width must be smaller than width for menu.show */
     width: 50%;
+    top:5%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
     width: 60%;
   }
+  #menuToggle{ top:4%; }
   #logo{ width: 20%; }
   #portrait{ 
     width: 70%;
