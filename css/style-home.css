@@ -339,8 +339,8 @@ button.contactButton::before, button.contactButton::after {
 
   #particles-js{ display: none; }
   #intro{ top: 55%; }
-  #contactHeader{ margin-top: 40%; }
-  #contactLinks{ margin-top: 60%; }
+  #contactHeader{ margin-top: 50%; }
+  #contactLinks{ margin-top: 70%; }
   #menu{
     /* width must be smaller than width for menu.show */
     width: 50%;
@@ -359,7 +359,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 70%;
     position: absolute;
-    top: 27%;
+    top: 26%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -401,7 +401,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 70%;
     position: absolute;
-    top: 27%;
+    top: 26%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
