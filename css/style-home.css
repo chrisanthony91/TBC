@@ -339,8 +339,8 @@ button.contactButton::before, button.contactButton::after {
 
   #particles-js{ display: none; }
   #intro{ top: 55%; }
-  #contactHeader{ margin-top: 50%; }
-  #contactLinks{ margin-top: 70%; }
+  #contactHeader{ margin-top: 65%; }
+  #contactLinks{ margin-top: 85%; }
   #menu{
     /* width must be smaller than width for menu.show */
     width: 50%;
@@ -381,8 +381,8 @@ button.contactButton::before, button.contactButton::after {
 
   #particles-js{ display: none; }
   #intro{ top: 55%; }
-  #contactHeader{ margin-top: 30%; }
-  #contactLinks{ margin-top: 45%; }
+  #contactHeader{ margin-top: 65%; }
+  #contactLinks{ margin-top: 85%; }
   #menu{
     /* width must be smaller than width for menu.show */
     width: 50%;
