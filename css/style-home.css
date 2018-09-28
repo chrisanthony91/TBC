@@ -153,6 +153,7 @@ ul#menu li{
   -webkit-animation-duration: 3s;
 }
 #intro{
+  width: 100%;
   text-align: center;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -350,14 +351,16 @@ button.contactButton::before, button.contactButton::after {
   }
   #logo{ width: 20%; }
   #portrait{ 
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
   #introLogo{
     width: 60%;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
   }
 }
 
@@ -387,7 +390,7 @@ button.contactButton::before, button.contactButton::after {
   }
   #logo{ width: 20%; }
   #portrait{ 
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
   #introLogo{
@@ -395,6 +398,8 @@ button.contactButton::before, button.contactButton::after {
     position: absolute;
     top: 42%;
     left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
   }
 }
 
