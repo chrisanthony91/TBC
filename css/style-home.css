@@ -355,7 +355,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 50%;
     position: absolute;
-    top: 42%;
+    top: 60%;
     left: 50%;
   }
 }
@@ -391,7 +391,7 @@ button.contactButton::before, button.contactButton::after {
   #introLogo{
     width: 50%;
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
   }
 }
