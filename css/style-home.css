@@ -338,7 +338,7 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 57%; }
+  #intro{ top: 56%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{
@@ -362,6 +362,7 @@ button.contactButton::before, button.contactButton::after {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
+  #aboutParallax{ padding: 0 2%; }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
@@ -377,7 +378,7 @@ button.contactButton::before, button.contactButton::after {
   li a{ font-size: 1.1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 57%; }
+  #intro{ top: 56%; }
   #contactHeader{ margin-top: 30%; }
   #contactLinks{ margin-top: 45%; }
   #menu{
@@ -401,6 +402,7 @@ button.contactButton::before, button.contactButton::after {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
+  #aboutParallax{ padding: 0 2%; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
@@ -436,6 +438,7 @@ button.contactButton::before, button.contactButton::after {
     margin: 0 auto;
   }
   #introLogo{ display: none; }
+  #aboutParallax{ padding: 0 5%; }
 }
 
 @media only screen and (min-width: 992px){ /*desktop*/
@@ -463,4 +466,5 @@ button.contactButton::before, button.contactButton::after {
     margin: 0 auto;
   }
   #introLogo{ display: none; }
+  #aboutParallax{ padding: 0 5%; }
 }
