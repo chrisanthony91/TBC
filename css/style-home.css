@@ -365,7 +365,7 @@ button.contactButton::before, button.contactButton::after {
     -webkit-transform: translate(-50%, 0);
   }
   #aboutParallax{ padding: 0 2%; }
-  #contactMobile{ height: 80vh !important; }
+  #contactMobile{ height: 60vh !important; }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
@@ -408,7 +408,7 @@ button.contactButton::before, button.contactButton::after {
     -webkit-transform: translate(-50%, 0);
   }
   #aboutParallax{ padding: 0 2%; }
-  #contactMobile{ height: 80vh !important; }
+  #contactMobile{ height: 60vh !important; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
