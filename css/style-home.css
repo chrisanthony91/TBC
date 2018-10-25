@@ -169,7 +169,7 @@ ul#menu li{
 }
 #menu{
   position: fixed;
-  /* top:6%; */
+  top:6%;
   right: 8%;
   display: block;  
   overflow: hidden;
@@ -186,7 +186,7 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  /* top:5%; */
+  top:5%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -332,40 +332,36 @@ button.contactButton::before, button.contactButton::after {
   h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
-    font-size: 0.9em;
-    line-height: 1.3;
+    font-size: 1em;
+    line-height: 1.4;
   }
   li a{ font-size: 1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 56%; }
-  #contactHeader{ margin-top: 65%; }
-  #contactLinks{ margin-top: 85%; }
+  #intro{ top: 60%; }
+  #contactHeader{ margin-top: 40%; }
+  #contactLinks{ margin-top: 60%; }
   #menu{
     /* width must be smaller than width for menu.show */
-    width: 50%;
-    top:5%;
+    width: 40%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
-    width: 60%;
+    width: 50%;
   }
-  #menuToggle{ top:4%; }
   #logo{ width: 20%; }
   #portrait{ 
     width: 70%;
     margin: 0 auto;
   }
   #introLogo{
-    width: 70%;
+    width: 60%;
     position: absolute;
-    top: 26%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
-  #aboutParallax{ padding: 0 2%; }
-  #contactMobile{ height: 60vh !important; }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
@@ -375,40 +371,36 @@ button.contactButton::before, button.contactButton::after {
   h4{ font-size: 1.3em; }
   h5{ font-size: 1.1em; }
   p{
-    font-size: 0.9em;
-    line-height: 1.3;
+    font-size: 1em;
+    line-height: 1.4;
   }
   li a{ font-size: 1.1em; }
 
   #particles-js{ display: none; }
-  #intro{ top: 56%; }
-  #contactHeader{ margin-top: 65%; }
-  #contactLinks{ margin-top: 85%; }
+  #intro{ top: 52%; }
+  #contactHeader{ margin-top: 30%; }
+  #contactLinks{ margin-top: 45%; }
   #menu{
     /* width must be smaller than width for menu.show */
     width: 50%;
-    top:5%;
   }
   #menu.show{
     /* must be large enough to fit menu items */
     width: 60%;
   }
-  #menuToggle{ top:4%; }
   #logo{ width: 20%; }
   #portrait{ 
     width: 70%;
     margin: 0 auto;
   }
   #introLogo{
-    width: 70%;
+    width: 50%;
     position: absolute;
-    top: 26%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
-  #aboutParallax{ padding: 0 2%; }
-  #contactMobile{ height: 60vh !important; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
@@ -439,25 +431,20 @@ button.contactButton::before, button.contactButton::after {
     width: 60%;
   }
   #logo{ width: 15%; }
-  #portrait{ 
-    width: 80%;
-    margin: 0 auto;
-  }
+  #portrait{ width: 80%; }
   #introLogo{ display: none; }
-  #aboutParallax{ padding: 0 5%; }
 }
 
 @media only screen and (min-width: 992px){ /*desktop*/
-  h1{ font-size: 3em; }
-  h2{ font-size: 2.5em; }
-  h3{ font-size: 2em; }
-  h4{ font-size: 1.6em; }
-  h5{ font-size: 1.2em; }
+  h1{ font-size: 3.2em; }
+  h2{ font-size: 2.7em; }
+  h3{ font-size: 2.3em; }
+  h4{ font-size: 1.8em; }
+  h5{ font-size: 1.3em; }
   p{
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5;
   }
-  li a{ font-size: 1.1em; }
 
   #particles-js{ 
     background-size: 30%; 
@@ -467,10 +454,6 @@ button.contactButton::before, button.contactButton::after {
   #intro{ top: 53%; }
   #contactHeader{ margin-top:15%; }
   #contactLinks{ margin-top:22.5%; }
-  #portrait{
-    width: 80%;
-    margin: 0 auto;
-  }
+  #portrait{ width: 100%; }
   #introLogo{ display: none; }
-  #aboutParallax{ padding: 0 5%; }
 }
