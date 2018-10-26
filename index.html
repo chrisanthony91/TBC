@@ -7,7 +7,7 @@
         <!-- Normalize -->
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <!-- Fonts & Icons-->
-        <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2:300,400" rel="stylesheet">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- fullpage.js -->
@@ -54,25 +54,25 @@
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
                     <div id="aboutParallax" class="col-md-12 col-lg-7 align-self-center">
-                        <div data-depth="0.1" style="padding: 0 5%">
+                        <!-- <div data-depth="0.1"> -->
                             <div class="headerIn" style="margin-top: 4%">
-                                <h1>ABOUT ME</h1>
-                                <p>- Everything you want to know, plus a lil extra -<p>
+                                <h2>ABOUT ME</h2>
+                                <p>Everything you want to know, plus a lil extra<p>
                             </div>
                             <div class="text1In" style="margin-top: 6%">
                                 <h4 style="color: #26A5E8">Christopher Smith</h4>
-                                <p>
+                                <p style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
                                     /ˈkrɪstəfɚ/ /ˈsmɪθ/<br>
                                     <i>noun</i>
                                 </p>
                             </div>
                             <div class="text2In" style="margin-top: 3%">
-                                <p> 1.	A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
+                                <!-- <p> 1.	A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
                                     tech problems.<br>
                                     <i>By paying close attention to how small details affect the bigger picture, Chris’s goal is 
                                     to always to strive for effective, feasible solutions that can be applied to current and future 
                                     systems.</i><br><br>
-                                    2.	A digital designer with a multidisciplinary background in computer science, cognitive science, 
+                                    2.	A jack of-all-trades with a multidisciplinary background in computer science, cognitive science, 
                                     graphic design, and user experience design.<br>
                                     <i>A varied background has taught Chris to consider problems from different angles, and to be able 
                                     to communicate effectively across departments throughout the creative process.</i><br><br>
@@ -81,10 +81,32 @@
                                     the random talent of vocal mimicry and making funny voices; Chris hopes to one day become a voice 
                                     actor.</i><br><br>
                                     Synonyms: “The Black Chris”, “Your Next Designer”
+                                </p> -->
+                                <div style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
+                                    <p style="margin-left: 17px; text-indent: -17px;">
+                                        1. A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
+                                        tech problems.
+                                    </p>
+                                    <p style="margin-left: 17px; text-indent: -17px;">
+                                        2. A jack of-all-trades with a multidisciplinary background in computer science, cognitive science, 
+                                        graphic design, and user experience design.
+                                    </p>
+                                    <p style="margin-left: 17px; text-indent: -17px;">
+                                        3. An all-around amiable fellow.
+                                    </p><br>
+                                </div>
+                                <p>
+                                    By paying close attention to how small details affect the bigger picture, My goal is 
+                                    to always strive for effective, feasible solutions that can be applied to current and future 
+                                    systems. A varied background has taught me to consider problems from different angles, and 
+                                    to be able to communicate effectively across departments throughout the creative process. Some 
+                                    of my interests include snowboarding, video games, weight lifting, adn tattoos. I also have a 
+                                    passion for cartoons and hope to one day become a voice actor for animated media. <br><br>
                                 </p>
+                                <i>Synonyms: “The Black Chris”, “Your Next Designer”</i>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
                 
@@ -244,7 +266,6 @@
                         loopBottom: false,
                         loopTop: false,
                         responsiveWidth: 767,
-                        // normalScrollElements: '#portraitParallax, #aboutParallax',
 
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
@@ -368,7 +389,6 @@
                         loopBottom: true,
                         loopTop: true,
                         responsiveWidth: 767,
-                        normalScrollElements: '#portraitParallax, #aboutParallax',
 
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
@@ -409,12 +429,12 @@
                         pointerEvents: true,
                         hoverOnly: true,
                     });
-                    var scene2 = $('#aboutParallax').get(0);
-                    var parallaxInstance = new Parallax(scene2, {
-                        relativeInput: true,
-                        pointerEvents: true,
-                        hoverOnly: true,
-                    });
+                    // var scene2 = $('#aboutParallax').get(0);
+                    // var parallaxInstance = new Parallax(scene2, {
+                    //     relativeInput: true,
+                    //     pointerEvents: true,
+                    //     hoverOnly: true,
+                    // });
                     var scene3 = $('#contactParallax').get(0);
                     var parallaxInstance = new Parallax(scene3, {
                         relativeInput: true,
@@ -425,16 +445,6 @@
                 }
             
 
-            
-            
-                // var size = $( window ).width();
-                // alert(size);
-                // if( size < 400 ){
-                    
-                // }
-                // else if( size >= 400 ){
-                    
-                // }
                 
 
                 // menu toggle
