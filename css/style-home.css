@@ -357,7 +357,7 @@ button.contactButton::before, button.contactButton::after {
     width: 300px;
     height: auto;
     position: absolute;
-    top: 38%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -395,7 +395,7 @@ button.contactButton::before, button.contactButton::after {
     width: 400px;
     height: auto;
     position: absolute;
-    top: 20%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
