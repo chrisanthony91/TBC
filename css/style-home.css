@@ -324,7 +324,7 @@ button.contactButton::before, button.contactButton::after {
   background-repeat: no-repeat; 
 }
 
-@media only screen and (max-width: 575px){ /* for small mobile*/
+/* @media only screen and (max-width: 575px){ 
   h1{ font-size: 2.2em; }
   h2{ font-size: 1.7em; }
   h3{ font-size: 1.5em; }
@@ -340,14 +340,8 @@ button.contactButton::before, button.contactButton::after {
   #intro{ top: 60%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
-  #menu{
-    /* width must be smaller than width for menu.show */
-    width: 40%;
-  }
-  #menu.show{
-    /* must be large enough to fit menu items */
-    width: 50%;
-  }
+  #menu{ width: 40%; }
+  #menu.show{ width: 50%; }
   #logo{ width: 20%; }
   #portrait{ 
     width: 70%;
@@ -362,9 +356,9 @@ button.contactButton::before, button.contactButton::after {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
-}
+} */
 
-@media only screen and (min-width: 576px) and (max-width: 767px){ /* for mobile*/
+@media only screen and (max-width: 767px){ /* for mobile*/
   h1{ font-size: 2.8em; }
   h2{ font-size: 1.9em; }
   h3{ font-size: 1.5em; }
@@ -397,7 +391,7 @@ button.contactButton::before, button.contactButton::after {
     width: 400px;
     height: auto;
     position: absolute;
-    top: 38%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
