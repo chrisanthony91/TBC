@@ -324,7 +324,7 @@ button.contactButton::before, button.contactButton::after {
   background-repeat: no-repeat; 
 }
 
-@media only screen and (max-width: 767px){ /* for small mobile*/
+@media only screen and (max-width: 767px){ /* for mobile*/
   h1{ font-size: 2.2em; }
   h2{ font-size: 1.7em; }
   h3{ font-size: 1.5em; }
@@ -354,7 +354,8 @@ button.contactButton::before, button.contactButton::after {
     margin: 0 auto;
   }
   #introLogo{
-    width: 300px;
+    width: 250px;
+    /* width: 80%; */
     height: auto;
     position: absolute;
     top: 18%;
