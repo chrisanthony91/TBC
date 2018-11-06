@@ -186,21 +186,11 @@ ul#menu li{
 #menuToggle:hover{
   transform: scale(1.2, 1.2);
 }
-  /* #mobileMenu{
-    position: fixed;
-    overflow: hidden;
-    width must be smaller than width for menu.show
-    width: 30%;
-    opacity: 0;
-    z-index: 9;
-    text-align: center;
-    background-color: #000;
-  } */
   #mobileMenu{ /*test*/
     position: fixed;
     display: none;  
     overflow: hidden;
-    padding-top: 33%;
+    padding-top: 30%;
     width: 100%;
     height: 100vh;
     opacity: 0.9;
@@ -478,7 +468,7 @@ div.arrows span{
   }
 
   .aniWrap {
-    bottom: 20%;
+    bottom: 22.5%;
   }
 
 }
