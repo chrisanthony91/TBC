@@ -159,7 +159,6 @@ ul#menu li{
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   position: absolute;
-  /* top: 52%; */
   left: 50%;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
@@ -433,6 +432,92 @@ button.contactButton::before, button.contactButton::after {
   #logo{ width: 15%; }
   #portrait{ width: 80%; }
   #introLogo{ display: none; }
+
+  .aniWrap {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    display: block;
+    width: 30px;
+  }
+  .mouse {
+    width: 30px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 14px;
+  }
+  .scroller {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #26A5E8;
+    position: relative;
+    top: 10px;
+    left: 11px;
+    -webkit-animation: scrolls 1.8s ease-out infinite;
+    animation: scrolls 1.8s ease-out infinite;
+  }
+  div.arrows span{
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 3px solid #26A5E8;
+    border-bottom: 3px solid #26A5E8;
+    border-radius: 3px;
+  }
+  .top,.middle,.bottom {
+    -webkit-animation: chevron 2.5s infinite;
+    animation: chevron 2.5s infinite;
+  }
+  .top {
+    margin-top: 36px;
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  .middle {
+    margin-top: 56px;
+    animation-delay: .5s;
+    animation-direction: alternate;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-direction: alternate;
+  }
+  .bottom {
+    margin-top: 76px;
+    animation-delay: .9s;
+    animation-direction: alternate;
+    -webkit-animation-delay: .9s;
+    -webkit-animation-direction: alternate;
+  }
+  @-webkit-keyframes scrolls {
+      0%   {top: 5px; opacity: 0.5; height: 4px}
+      80% {top: 20px; opacity: 1; height: 8px}
+      /* 95% {top: 20px; opacity: 0; height: 8px} */
+      100% {top: 5px; opacity: 0S; height: 4px}
+  } 
+  @keyframes scrolls {
+    0%   {top: 5px; opacity: 0.5; height: 4px}
+    80% {top: 20px; opacity: 1; height: 8px}
+    /* 95% {top: 20px; opacity: 0; height: 8px} */
+    100% {top: 5px; opacity: 0; height: 4px}
+  }
+  @-webkit-keyframes chevron {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes chevron {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 }
 
 @media only screen and (min-width: 992px){ /*desktop and higher*/
@@ -459,4 +544,90 @@ button.contactButton::before, button.contactButton::after {
   #contactLinks{ margin-top:22.5%; }
   #portrait{ width: 100%; }
   #introLogo{ display: none; }
+
+  .aniWrap {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    display: block;
+    width: 30px;
+  }
+  .mouse {
+    width: 30px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 14px;
+  }
+  .scroller {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #26A5E8;
+    position: relative;
+    top: 10px;
+    left: 11px;
+    -webkit-animation: scrolls 1.8s ease-out infinite;
+    animation: scrolls 1.8s ease-out infinite;
+  }
+  div.arrows span{
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 3px solid #26A5E8;
+    border-bottom: 3px solid #26A5E8;
+    border-radius: 3px;
+  }
+  .top,.middle,.bottom {
+    -webkit-animation: chevron 2.5s infinite;
+    animation: chevron 2.5s infinite;
+  }
+  .top {
+    margin-top: 36px;
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+  }
+  .middle {
+    margin-top: 56px;
+    animation-delay: .5s;
+    animation-direction: alternate;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-direction: alternate;
+  }
+  .bottom {
+    margin-top: 76px;
+    animation-delay: .9s;
+    animation-direction: alternate;
+    -webkit-animation-delay: .9s;
+    -webkit-animation-direction: alternate;
+  }
+  @-webkit-keyframes scrolls {
+      0%   {top: 5px; opacity: 0.5; height: 4px}
+      80% {top: 20px; opacity: 1; height: 8px}
+      /* 95% {top: 20px; opacity: 0; height: 8px} */
+      100% {top: 5px; opacity: 0S; height: 4px}
+  } 
+  @keyframes scrolls {
+    0%   {top: 5px; opacity: 0.5; height: 4px}
+    80% {top: 20px; opacity: 1; height: 8px}
+    /* 95% {top: 20px; opacity: 0; height: 8px} */
+    100% {top: 5px; opacity: 0; height: 4px}
+  }
+  @-webkit-keyframes chevron {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes chevron {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 }
