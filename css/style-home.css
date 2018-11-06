@@ -344,7 +344,7 @@ button.contactButton::before, button.contactButton::after {
 
 .aniWrap {
   position: absolute;
-  bottom: 10%;
+  /* bottom: 10%; */
   left: 50%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
