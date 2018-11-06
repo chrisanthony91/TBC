@@ -479,7 +479,6 @@ div.arrows span{
   }
 
   .aniWrap {
-    position: absolute;
     bottom: 20%;
   }
 
@@ -526,6 +525,10 @@ div.arrows span{
   #menuToggle:hover .hamburger-inner::after{
     background-color: white;
   }
+  .aniWrap {
+    bottom: 20%;
+  }
+
 }
 
 @media only screen and (min-width: 992px){ /*desktop and higher*/
@@ -563,4 +566,8 @@ div.arrows span{
   #menuToggle:hover .hamburger-inner::after{
     background-color: white;
   }
+  .aniWrap {
+    bottom: 15%;
+  }
+
 }
