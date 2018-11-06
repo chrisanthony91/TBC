@@ -200,7 +200,7 @@ ul#menu li{
     position: fixed;
     display: none;  
     overflow: hidden;
-    padding-top: 20%;
+    padding-top: 33%;
     width: 100%;
     height: 100vh;
     opacity: 0.9;
@@ -449,7 +449,7 @@ div.arrows span{
   li a{ font-size: 1em; }
 
   #particles-js{ background-image: none; }
-  #intro{ top: 55%; }
+  #intro{ top: 50%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{ width: 40%; }
