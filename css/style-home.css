@@ -76,16 +76,7 @@ ul#menu li{
 .hamburger-inner::after{
   background-color: #26A5E8;
 }
-#menuToggle.is-active .hamburger-inner,
-#menuToggle.is-active .hamburger-inner::before,
-#menuToggle.is-active .hamburger-inner::after{
-  background-color: red;
-}
-#menuToggle:hover .hamburger-inner,
-#menuToggle:hover .hamburger-inner::before, 
-#menuToggle:hover .hamburger-inner::after{
-  background-color: white;
-}
+
 .portraitAnimation{
   animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
@@ -362,6 +353,12 @@ button.contactButton::before, button.contactButton::after {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
   }
+
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: #26A5E8;
+  }
 }
 
 /* @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -402,7 +399,7 @@ button.contactButton::before, button.contactButton::after {
   }
 } */
 
-@media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet portrait*/
+@media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
   h1{ font-size: 3em; }
   h2{ font-size: 2.6em; }
   h3{ font-size: 2.2em; }
@@ -432,6 +429,17 @@ button.contactButton::before, button.contactButton::after {
   #logo{ width: 15%; }
   #portrait{ width: 80%; }
   #introLogo{ display: none; }
+
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: white;
+  }
+  #menuToggle:hover .hamburger-inner,
+  #menuToggle:hover .hamburger-inner::before, 
+  #menuToggle:hover .hamburger-inner::after{
+    background-color: white;
+  }
 
   .aniWrap {
     position: absolute;
@@ -544,6 +552,17 @@ button.contactButton::before, button.contactButton::after {
   #contactLinks{ margin-top:22.5%; }
   #portrait{ width: 100%; }
   #introLogo{ display: none; }
+  
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: white;
+  }
+  #menuToggle:hover .hamburger-inner,
+  #menuToggle:hover .hamburger-inner::before, 
+  #menuToggle:hover .hamburger-inner::after{
+    background-color: white;
+  }
 
   .aniWrap {
     position: absolute;
