@@ -69,7 +69,7 @@
                     
             <div class="container-fluid section fp-auto-height-responsive" data-anchor="About">
                 <div class="row">
-                    <div id="portraitParallax" class="d-sm-none d-md-none col-lg-5 align-self-end text-center portraitAnimation">
+                    <div id="portraitParallax" class="col-lg-5 align-self-end text-center portraitAnimation">
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
                     <div id="aboutParallax" class="col-md-12 col-lg-7 align-self-center">
@@ -130,17 +130,30 @@
             </div>
                 
             <div class="container-fluid section" data-anchor="Contact">
-                <div id="contactParallax" class="row">
-                    <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
-                    <div id="contactHeader" data-depth="0.2" class="col-12 align-self-center text-center contactText1In">
-                        <h1>CONTACT</h1>
-                        <p>- Talk to the Man Himself -</p>
+                <div class="row">
+                    <div id="contactParallax" class="col-12 d-none d-md-block">
+                        <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
+                        <div id="contactHeader" data-depth="0.2" class="col-12 align-self-center text-center contactText1In">
+                            <h1>CONTACT</h1>
+                            <p>- Talk to the Man Himself -</p>
+                        </div>
+                        <div id="contactLinks" data-depth="0.3" class="col-12 text-center contactText2In">
+                            <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
+                            <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
+                            <button class="contactButton center" href="https://www.behance.net/chrisantho9783"><h5>Behance</h5></button><br>
+                            <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
+                        </div>
                     </div>
-                    <div id="contactLinks" data-depth="0.3" class="col-12 text-center contactText2In">
-                        <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h5>Email</h5></button><br>
-                        <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h5>LinkedIn</h5></button><br>
-                        <button class="contactButton center" href="https://www.behance.net/chrisantho9783"><h5>Behance</h5></button><br>
-                        <button class="contactButton center" href="https://github.com/chrisanthony91"><h5>GitHub</h5></button>
+                    <div id="mobileContact" class="col-12 d-md-none">
+                        <img src="images/background007-1.jpg" height="80%" width="auto" style="opacity: 0.2; z-index: -100;">
+                        <div id="mcText" class="align-self-center text-center contactText1In">
+                            <h1>CONTACT</h1>
+                            <p style="margin-bottom:20px">- Talk to the Man Himself -</p>
+                            <button class="contactButton center" href="mailto:chrisanthonsmith91@gmail.com"><h4>Email</h4></button><br>
+                            <button class="contactButton center" href="https://www.linkedin.com/in/christopher-smith-3aa477a1/"><h4>LinkedIn</h4></button><br>
+                            <button class="contactButton center" href="https://www.behance.net/chrisantho9783"><h4>Behance</h4></button><br>
+                            <button class="contactButton center" href="https://github.com/chrisanthony91"><h4>GitHub</h4></button>
+                        </div>
                     </div>
                 </div>
             </div> 
