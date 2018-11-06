@@ -212,6 +212,7 @@ ul#menu li{
     border-bottom: 1px solid white;
   }
   #mobileMenu ul li a{
+    display: block;
     text-decoration: none;
     color: #26A5E8;
   }
@@ -468,7 +469,7 @@ div.arrows span{
   }
 
   .aniWrap {
-    bottom: 22.5%;
+    bottom: 25%;
   }
 
 }
