@@ -449,8 +449,7 @@ div.arrows span{
   li a{ font-size: 1em; }
 
   #particles-js{ background-image: none; }
-  /* #intro{ top: 55%; } */
-  #intro{ top: 30%; }
+  #intro{ top: 55%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
   #menu{ width: 40%; }
