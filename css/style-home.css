@@ -79,7 +79,7 @@ ul#menu li{
 #menuToggle.is-active .hamburger-inner,
 #menuToggle.is-active .hamburger-inner::before,
 #menuToggle.is-active .hamburger-inner::after{
-  background-color: white;
+  background-color: red;
 }
 #menuToggle:hover .hamburger-inner,
 #menuToggle:hover .hamburger-inner::before, 
