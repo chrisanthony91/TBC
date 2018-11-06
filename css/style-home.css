@@ -216,6 +216,11 @@ ul#menu li{
     text-decoration: none;
     color: #26A5E8;
   }
+  /* #mobileContact{
+    background-image: url('../images/background007-1.jpg');
+    background-size: cover;
+    background-repeat: none;
+  } */
 
 /* animations */
 .fadeIntro {
@@ -264,6 +269,7 @@ button.contactButton {
   border: 0;
   box-sizing: border-box;
   padding: 1em 2em;
+  margin: 8px 0;
   box-shadow: inset 0 0 0 2px transparent;
   color: white;
   position: relative;
@@ -462,6 +468,14 @@ div.arrows span{
     -webkit-transform: translate(-50%, 0);
   }
 
+  #mcText{
+    position:absolute;
+    top:15%; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+  }
+
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
@@ -541,8 +555,12 @@ div.arrows span{
   }
   #logo{ width: 10%; }
   #intro{ top: 52%; }
-  #contactHeader{ margin-top:15%; }
-  #contactLinks{ margin-top:22.5%; }
+  #contactHeader{ 
+    margin-top:15%; 
+  }
+  #contactLinks{ 
+    margin-top:22.5%;
+  }
   #portrait{ width: 100%; }
   #introLogo{ display: none; }
   
