@@ -305,12 +305,12 @@
                         }
                     });
                     
-                    var scene3 = $('#contactParallax').get(0);
-                    var parallaxInstance = new Parallax(scene3, {
-                        relativeInput: true,
-                        pointerEvents: true,
-                        hoverOnly: true,
-                    });  
+                    // var scene3 = $('#contactParallax').get(0);
+                    // var parallaxInstance = new Parallax(scene3, {
+                    //     relativeInput: true,
+                    //     pointerEvents: true,
+                    //     hoverOnly: true,
+                    // });  
                 
                     // menu toggles
                     var size = $(window).width();
@@ -319,9 +319,11 @@
                         $('#mobileMenu').toggle('fade');
                     });
                     $('#abo').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
                     });
                     $('#con').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
                     });
                 }
