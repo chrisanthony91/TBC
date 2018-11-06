@@ -32,10 +32,10 @@
         <!-- mobile menu -->
         <div id="mobileMenu">
             <ul>
-                <li id="abo"><h2>About</h2></li>
-                <li id="pro"><h2>Process</h2></li>
-                <li id="wor"><h2>Work</h2></li>
-                <li id="con"><h2>Contact</h2></li>
+                <li id="abo"><h2><a href="#About">About</a></h2></li>
+                <li><h2><a href="process.html">Process</a></h2></li>
+                <li><h2><a href="work.html">Work</a></h2></li>
+                <li id="con"><h2><a href="#Contact">Contact</a></h2></li>
             </ul>
         </div>
         <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
@@ -312,10 +312,16 @@
                         hoverOnly: true,
                     });  
                 
-                    // menu toggle
+                    // menu toggles
                     var size = $(window).width();
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });
+                    $('#abo').click(function(){
+                        $('#mobileMenu').toggle('fade');
+                    });
+                    $('#con').click(function(){
                         $('#mobileMenu').toggle('fade');
                     });
                 }
