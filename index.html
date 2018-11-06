@@ -29,6 +29,15 @@
             <li><a href="work.html">Work</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
+        <!-- mobile menu -->
+        <div id="mobileMenu">
+            <ul>
+                <li id="abo"><h2>About</h2></li>
+                <li id="pro"><h2>Process</h2></li>
+                <li id="wor"><h2>Work</h2></li>
+                <li id="con"><h2>Contact</h2></li>
+            </ul>
+        </div>
         <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
         <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
             <span class="hamburger-box">
@@ -182,7 +191,7 @@
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
                 
-            if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
                     // particles
                     particlesJS("particles-js", {
                         "particles":{
@@ -302,9 +311,20 @@
                         relativeInput: true,
                         pointerEvents: true,
                         hoverOnly: true,
-                    });     
+                    });  
+
+                    // menu toggles
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        // $('#mobileMenu').toggleClass( 'show', 600, 'swing' ); //(class,time,easing)
+                        $('#mobileMenu').css('background-color', 'green');
+                    });
+                    // $('#abo').click(function(){
+                    //     // $('#mobileMenu').hide('fade');
+                    //     $('#mobileMenu').css('background-color', 'green');
+                    // });
                 }
-                else{
+                 else{ //if not mobile
                     // particles
                     particlesJS("particles-js", {
                         "particles":{
@@ -430,7 +450,6 @@
                         }
                     });
                     
-
                     // parallax.js
                     // parallax scenes
                     var scene1 = $('#portraitParallax').get(0);
@@ -452,16 +471,12 @@
                         hoverOnly: true,
                     }); 
                 
+                    // menu toggle
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#menu').toggleClass( 'show', 600, 'swing' );
+                    });
                 }
-            
-
-                
-
-                // menu toggle
-                $('#menuToggle').click(function(){
-                    $('#menuToggle').toggleClass('is-active');
-                    $('#menu').toggleClass( 'show', 600, 'swing' );
-                });
             });
 
         </script>
