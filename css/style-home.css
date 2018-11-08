@@ -129,7 +129,6 @@ ul#menu li{
 /* ids */
 #logo{
   position: fixed;
-  top: 3%;
   left: 1%;
   /* width: 10%; */
   z-index: 5;
@@ -159,7 +158,7 @@ ul#menu li{
 }
 #menu{
   position: fixed;
-  top:6%;
+  top:5%;
   right: 8%;
   display: block;  
   overflow: hidden;
@@ -176,7 +175,7 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  top:5%;
+  top:4%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -216,11 +215,9 @@ ul#menu li{
     text-decoration: none;
     color: #26A5E8;
   }
-  /* #mobileContact{
-    background-image: url('../images/background007-1.jpg');
-    background-size: cover;
-    background-repeat: none;
-  } */
+  #mobileContact{
+    margin-top: 40px;
+  }
 
 /* animations */
 .fadeIntro {
@@ -449,10 +446,16 @@ div.arrows span{
   #intro{ top: 50%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
-  #menu{ width: 40%; }
-  #menu.show{ width: 50%; }
 
-  #logo{ width: 20%; }
+  /* #menu{ 
+    width: 40%; 
+  }
+  #menu.show{ width: 50%; } */
+
+  #logo{
+    top: 4%; 
+    width: 20%;
+  }
   #portrait{ 
     width: 70%;
     margin: 0 auto;
@@ -515,7 +518,10 @@ div.arrows span{
     /* must be large enough to fit menu items */
     width: 60%;
   }
-  #logo{ width: 15%; }
+  #logo{
+    top: 3%;
+    width: 15%;
+  }
   #portrait{ width: 80%; }
   #introLogo{ display: none; }
 
@@ -553,7 +559,10 @@ div.arrows span{
     background-size: 450px auto; 
     background-position: 48% 25%;
   }
-  #logo{ width: 10%; }
+  #logo{
+    top: 3%;
+    width: 10%;
+  }
   #intro{ top: 52%; }
   #contactHeader{ 
     margin-top:15%; 
