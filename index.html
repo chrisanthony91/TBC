@@ -205,7 +205,10 @@
                 $('#fullpage').animateCss('fadeIn');
                 
                 
-                if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                // if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                var screensize = $(window).width();
+                if ( screensize < 768 ){ //if mobile
+                    alert("mobile size");
                 // particles
                     particlesJS("particles-js", {
                         "particles":{
@@ -286,9 +289,9 @@
                         "retina_detect":true}
                     );
                 // fullpage.js
-                    // if ($('html').hasClass( 'fp-enabled' )){
-                    //     fullpage_api.destroy('all');
-                    // }
+                    if ($('html').hasClass( 'fp-enabled' )){
+                        fullpage_api.destroy('all');
+                    }
                     $('#fullpage').fullpage({
                     //options here
                         navigation: false,
@@ -304,7 +307,6 @@
                         afterLoad: function(origin, destination, direction){
                             var loadedSection = this;
                             $('#intro').animateCss('fadeIntro');
-                            alert('mobile');
                         },
                         onLeave: function(origin, destination, direction){
                             var leavingSection = this;
