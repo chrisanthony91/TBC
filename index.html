@@ -286,9 +286,9 @@
                         "retina_detect":true}
                     );
                 // fullpage.js
-                    if ($('html').hasClass( 'fp-enabled' )){
-                        fullpage_api.destroy('all');
-                    }
+                    // if ($('html').hasClass( 'fp-enabled' )){
+                    //     fullpage_api.destroy('all');
+                    // }
                     $('#fullpage').fullpage({
                     //options here
                         navigation: false,
@@ -442,7 +442,6 @@
                         afterLoad: function(origin, destination, direction){
                             var loadedSection = this;
                             $('#intro').animateCss('fadeIntro');
-                            alert("not mobile");
                         },
                         onLeave: function(origin, destination, direction){
                             var leavingSection = this;
