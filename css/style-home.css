@@ -138,7 +138,7 @@ ul#menu li{
   transform: scale(1.1);
 }
 #fullpage{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
@@ -217,7 +217,9 @@ ul#menu li{
 }
 #mobileContact{
   margin-top: 40px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  background-image: url("../images/mobileContact_bg.jpg");
+  background-size: cover;
 }
 
 /* animations */
@@ -314,6 +316,7 @@ button.contactButton::before, button.contactButton::after {
 }
 .center:hover {
   color: #26A5E8;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .center::before, .center::after {
   top: 0;
@@ -472,13 +475,13 @@ div.arrows span{
     -webkit-transform: translate(-50%, 0);
   }
 
-  #mcText{
+  /* #mcText{
     position:absolute;
     top:15%; 
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
-  }
+  } */
 
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
