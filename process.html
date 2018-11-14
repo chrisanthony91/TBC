@@ -31,6 +31,16 @@
             <li><a href="work.html">Work</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
+        <!-- mobile menu -->
+        <div id="mobileMenu">
+            <ul>
+                <li id="abo"><h2><a href="#About">About</a></h2></li>
+                <li><h2><a href="process.html">Process</a></h2></li>
+                <li><h2><a href="work.html">Work</a></h2></li>
+                <li id="con"><h2><a href="#Contact">Contact</a></h2></li>
+            </ul>
+        </div>
+
         <!-- <button type="button" id="menuToggle" class="btn btn-outline-light" style="float: right">+</button>  -->
         <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
             <span class="hamburger-box">
@@ -43,6 +53,17 @@
             <div class="section active" data-anchor="process">
                 <img id="titleCharacter" src="images/charicature.png" alt="TBC logo character">
                 <h1 id="titleText">MY PROCESS</h1>
+
+                <div class="aniWrap">
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                    <div class="arrows">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                </div>
                 
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
@@ -53,7 +74,7 @@
                     <div id="overviewParallax" class="col-12">
                         <div id="overviewHeaderIn" class="text-center" data-depth="0.1" style="margin-top: 10%">
                             <h1>WORK SMARTER, NOT HARDER</h1>
-                            <p>- A lil elbow grease never hurts though-<p>
+                            <p>- A lil elbow grease never hurts though -<p>
                         </div>
                         <div id="overviewTextIn" data-depth="0.15" style="margin-top: 18.5%; padding: 0 22.5%">
                             <p> 
@@ -388,13 +409,12 @@
                     },
                 });
                 
-                // faux fade in on page load
+            // faux fade in on page load
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
-
-
                 $('#titleCharacter').animateCss('fadeInRight');
                 $('#titleText').animateCss('fadeInRight');
+
             // particles.js
                 particlesJS("particles-js", {
                     "particles":{
@@ -481,9 +501,6 @@
                     $('#menu').toggleClass( 'show', 600, 'swing' );
                 });    
 
-            // anijs
-                // AniJS.run();
-
             // vivus
                 var vivResearch = new Vivus('researchImage', {type: 'delayed', duration: 120});
                 var vivIdeate = new Vivus('ideateImage', {type: 'delayed', duration: 120} );
@@ -565,7 +582,7 @@
                     anchors:['Process', 'Overview', 'Step1', 'Step2', 'Step3', 'Step4', 'Contact'],
                     loopBottom: true,
                     loopTop: true,
-                    scrollBar: false,
+                    // scrollBar: false,
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     
                 // callbacks
@@ -642,8 +659,102 @@
                         }
                     }
                 });
+
+
+                if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                    if ($('html').hasClass( 'fp-enabled' )){
+                    fullpage_api.destroy('all');
+                    }
+                    $('#fullpage').fullpage({
+                    //options
+                        navigation: false,
+                        anchors:['Contact'],
+                        loopBottom: false,
+                        loopTop: false,
+                        // scrollBar: false,
+                        responsiveWidth: 768,
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                        
+                    // callbacks
+                        afterLoad: function(origin, destination, direction){
+                            var loadedSection = this;
+                            if( destination.index == 2){
+                                vivResearch.play();
+                            }
+                            else if( destination.index == 3){
+                                vivIdeate.play();
+                            }
+                            else if( destination.index == 4){
+                                vivTest.play();
+                            }
+                            else if( destination.index == 5){
+                                vivDevelop.play();
+                            }
+                        },
+                        onLeave: function(origin, destination, direction){
+                            var leavingSection = this;
+                            if( destination.index == 0 ){
+                                $('#titleText').animateCss('fadeInRight');
+                                $('#titleCharacter').animateCss('fadeInRight');
+                                $('#bground').animateCss('logoFadeOut');
+                                $('#bground').addClass('invisible');
+                            }
+                            // else if( destination.index == 1 ){
+                            //     $('#overviewHeaderIn').animateCss('fadeIn');
+                            //     $('#overviewTextIn').animateCss('fadeIn');
+                            // }
+                            // else if( destination.index == 2 ){
+                            //     $('.step1HeaderIn').animateCss('fadeIn');
+                            //     $('.step1TextIn').animateCss('fadeIn');
+                            // }
+                            // else if( destination.index == 3 ){
+                            //     $('.step2HeaderIn').animateCss('fadeIn');
+                            //     $('.step2TextIn').animateCss('fadeIn');
+                            // }
+                            // else if( destination.index == 4 ){
+                            //     $('.step3HeaderIn').animateCss('fadeIn');
+                            //     $('.step3TextIn').animateCss('fadeIn');
+                            // }
+                            // else if( destination.index == 5 ){
+                            //     $('.step4HeaderIn').animateCss('fadeIn');
+                            //     $('.step4TextIn').animateCss('fadeIn');
+                            // }
+                            else if( destination.index == 6 ){
+                                $('#bground').animateCss('logoFadeOut');
+                                $('#bground').addClass('invisible');
+                            }
+                            if( origin.index == 0 && destination.index != 6 ){
+                                $('#bground').removeClass('invisible');
+                                $('#bground').animateCss('fadeIn');
+                            }
+                            else if( origin.index == 6 && destination.index != 0 ){
+                                $('#bground').removeClass('invisible');
+                                $('#bground').animateCss('fadeIn');
+                            }
+                            // else if( origin.index == 2){
+                            //     $('#phase1').animateCss('fadeOut');
+                            //     vivResearch.stop().reset();
+                            // }
+                            // else if( origin.index == 3){
+                            //     $('#phase2').animateCss('fadeOut');
+                            //     vivIdeate.stop().reset();
+                            // }
+                            // else if( origin.index == 4){
+                            //     $('#phase3').animateCss('fadeOut');
+                            //     vivTest.stop().reset();
+                            // }
+                            // else if( origin.index == 5){
+                            //     $('#phase4').animateCss('fadeOut');
+                            //     vivDevelop.stop().reset();
+                            // }
+                        }
+                    });
+                }
+                else{
+
+                }
+
             });
-               
         </script>
     </body>
 </html>
