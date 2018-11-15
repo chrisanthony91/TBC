@@ -187,7 +187,7 @@ ul#menu li{
 #titleCharacter{
   /* height: 80vh; */
   position: absolute;
-  bottom: 0;
+  /* bottom: 25%; */
   right:0;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
@@ -450,7 +450,7 @@ button.contactButton::before, button.contactButton::after {
     line-height: 1.4;
   }
   li a{ font-size: 1em; }
-
+  #titleCharacter{ bottom: 25%; }
   #titleText{
     left: 15%;
   }
@@ -468,15 +468,9 @@ button.contactButton::before, button.contactButton::after {
     background-color: #26A5E8;
   }
 
-  .aniWrap {
-    bottom: 25%;
-  }
-  #titleCharacter{
-    height: 60vh;
-  }
-  #overviewHeaderIn{
-    margin-top: 30%;
-  }
+  .aniWrap{ bottom: 25%; }
+  #titleCharacter{ height: 60vh; }
+  #overviewHeaderIn{ margin-top: 30%; }
   #overviewTextIn{
     margin-top: 40px;
     padding: 0 5%;
@@ -485,9 +479,8 @@ button.contactButton::before, button.contactButton::after {
     /* margin-bottom: 5px; */
     text-align: justify;
   }
-  #overviewTextIn ul{
-    padding: 0 5% 0 12%;
-  }
+  #overviewTextIn ul{ padding: 0 5% 0 12%; }
+  #ov,#p1,#p2,#p3,#p4{ padding: 40px 0; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
@@ -501,7 +494,7 @@ button.contactButton::before, button.contactButton::after {
     line-height: 1.5;
   }
   li a{ font-size: 1.3em; }
-
+  #titleCharacter{ bottom: 0; }
   #titleText{
     left: 27.5%;
   }
@@ -556,7 +549,7 @@ button.contactButton::before, button.contactButton::after {
     line-height: 1.6;
     letter-spacing: 1.1px;
   }
-
+  #titleCharacter{ bottom: 0; }
   #logo{
     top: 3%;
     width: 10%;

@@ -202,7 +202,23 @@ ul#menu li{
   width: 100%;
   height: 50vh;
 }
-#mobileMenu ul{
+#mobileMenu a{
+  display: block;
+  text-decoration: none;
+}
+#mobileMenu a div{
+  font-family: 'Audiowide', cursive;
+  font-size: 1.7em;
+  color: #26A5E8;
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+#mobileMenu a div:hover{
+  background-color: #26A5E8;
+  color: #000;
+}
+/* #mobileMenu ul{
   list-style-type: none;
 }
 #mobileMenu ul li{
@@ -215,9 +231,16 @@ ul#menu li{
   text-decoration: none;
   color: #26A5E8;
 }
+#mobileMenu ul li a h2:hover{
+  background-color: #26A5E8;
+  color: #000;
+} */
+/*#mobileMenu ul li a:active{
+  color: #000;
+  background-color: #26A5E8
+} */
 #mobileContact{
   margin-top: 40px;
-  /* overflow: hidden; */
   background-image: url("../images/mobileContact_bg.jpg");
   background-size: cover;
 }
@@ -446,15 +469,11 @@ div.arrows span{
   }
   li a{ font-size: 1em; }
 
+  #mobileMenu a div{ font-size: 1.7em; }
   #particles-js{ background-image: none; }
   #intro{ top: 50%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
-
-  /* #menu{ 
-    width: 40%; 
-  }
-  #menu.show{ width: 50%; } */
 
   #logo{
     top: 4%; 
@@ -475,18 +494,11 @@ div.arrows span{
     -webkit-transform: translate(-50%, 0);
   }
 
-  /* #mcText{
-    position:absolute;
-    top:15%; 
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-  } */
-
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
-    background-color: #26A5E8;
+    /* background-color: #26A5E8; */
+    background-color: #fff;
   }
 
   .aniWrap {
@@ -514,14 +526,7 @@ div.arrows span{
   #intro{ top: 52%; }
   #contactHeader{ margin-top: 22.5%; }
   #contactLinks{ margin-top: 35%; }
-  #menu{
-    /* width must be smaller than width for menu.show */
-    width: 50%;
-  }
-  #menu.show{
-    /* must be large enough to fit menu items */
-    width: 60%;
-  }
+  #mobileMenu a div{ font-size: 2.6em; }
   #logo{
     top: 3%;
     width: 15%;
