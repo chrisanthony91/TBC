@@ -451,9 +451,7 @@ button.contactButton::before, button.contactButton::after {
   }
   li a{ font-size: 1em; }
   #titleCharacter{ bottom: 25%; }
-  #titleText{
-    left: 15%;
-  }
+  #titleText{ left: 21%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
 
@@ -495,9 +493,7 @@ button.contactButton::before, button.contactButton::after {
   }
   li a{ font-size: 1.3em; }
   #titleCharacter{ bottom: 0; }
-  #titleText{
-    left: 27.5%;
-  }
+  #titleText{ left: 36%; }
   #contactHeader{ margin-top: 22.5%; }
   #contactLinks{ margin-top: 35%; }
   #menu{
@@ -554,7 +550,7 @@ button.contactButton::before, button.contactButton::after {
     top: 3%;
     width: 10%;
   }
-  #titleText{ left: 37.5%; }
+  #titleText{ left: 40%; }
   #contactHeader{ margin-top:15%; }
   #contactLinks{ margin-top:22.5%; }
   
