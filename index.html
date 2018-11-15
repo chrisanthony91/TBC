@@ -72,7 +72,7 @@
                     <div id="portraitParallax" class="col-lg-5 align-self-end text-center portraitAnimation">
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
-                    <div id="aboutParallax" class="col-md-12 col-lg-7 align-self-center">
+                    <div id="aboutSection" class="col-md-12 col-lg-7 align-self-center">
                         <!-- <div data-depth="0.1"> -->
                             <div class="headerIn" style="margin-top: 4%">
                                 <h2>ABOUT ME</h2>
@@ -205,10 +205,20 @@
                 $('#fullpage').animateCss('fadeIn');
                 
                 
-                if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
-                // var screensize = $(window).width();
-                // if ( screensize < 768 ){ //if mobile
-
+                if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                // menu toggles
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });
+                    $('#abo').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });
+                    $('#con').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });    
                 // particles
                     particlesJS("particles-js", {
                         "particles":{
@@ -300,7 +310,7 @@
                         loopBottom: false,
                         loopTop: false,
                         // autoScroll: false,
-                        responsiveWidth: 768,
+                        responsiveWidth: 991,
 
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
@@ -321,23 +331,13 @@
                             }
                         }
                     });
-                
-                    // menu toggles
-                    var size = $(window).width();
-                    $('#menuToggle').click(function(){
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#mobileMenu').toggle('fade');
-                    });
-                    $('#abo').click(function(){
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#mobileMenu').toggle('fade');
-                    });
-                    $('#con').click(function(){
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#mobileMenu').toggle('fade');
-                    });
                 }
                 else{ //if not mobile
+                // menu toggle
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#menu').toggleClass( 'show', 600, 'swing' );
+                    });
                 // particles
                     particlesJS("particles-js", {
                         "particles":{
@@ -430,7 +430,7 @@
                         anchors:['Home', 'About', 'Contact'],
                         loopBottom: true,
                         loopTop: true,
-                        // responsiveWidth: 767,
+                        responsiveWidth: 991,
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
                         // callbacks
@@ -469,27 +469,14 @@
                         pointerEvents: true,
                         hoverOnly: true,
                     });
-                    // var scene2 = $('#aboutParallax').get(0);
-                    // var parallaxInstance = new Parallax(scene2, {
-                    //     relativeInput: true,
-                    //     pointerEvents: true,
-                    //     hoverOnly: true,
-                    // });
                     var scene3 = $('#contactParallax').get(0);
                     var parallaxInstance = new Parallax(scene3, {
                         relativeInput: true,
                         pointerEvents: true,
                         hoverOnly: true,
                     }); 
-                
-                    // menu toggle
-                    $('#menuToggle').click(function(){
-                        $('#menuToggle').toggleClass('is-active');
-                        $('#menu').toggleClass( 'show', 600, 'swing' );
-                    });
                 }
             });
-
         </script>
     </body>
 </html>
