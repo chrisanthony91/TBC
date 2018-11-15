@@ -79,7 +79,7 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  top:5%;
+  top:4%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -110,7 +110,7 @@ ul#menu li{
 #menuToggle:hover .hamburger-inner::after{
   background-color: white;
 }
-#mobileMenu{ /*test*/
+#mobileMenu{
   position: fixed;
   display: none;  
   overflow: hidden;
@@ -147,9 +147,17 @@ ul#menu li{
   background-size: cover;
 }
 
+#step1Text,
+#step2Text,
+#step3Text,
+#step4Text{
+  padding: 0 5%;
+}
+
 /* ---- particles.js container ---- */ 
 #particles-js{ 
-  width: 100%; 
+  width: 100%;
+  height: 100vh;
 }
 
 #bground{
@@ -177,7 +185,7 @@ ul#menu li{
 }
 
 #titleCharacter{
-  height: 80vh;
+  /* height: 80vh; */
   position: absolute;
   bottom: 0;
   right:0;
@@ -289,7 +297,7 @@ div.arrows span{
 
 /* section animations in */
 #overviewHeaderIn,
-.step1HeaderIn,
+/* .step1HeaderIn, */
 .step2HeaderIn,
 .step3HeaderIn,
 .step4HeaderIn{
@@ -301,7 +309,7 @@ div.arrows span{
   -webkit-animation-timing-function: ease;
 }
 #overviewTextIn,
-.step1TextIn,
+/* .step1TextIn, */
 .step2TextIn,
 .step3TextIn,
 .step4TextIn{
@@ -463,6 +471,23 @@ button.contactButton::before, button.contactButton::after {
   .aniWrap {
     bottom: 25%;
   }
+  #titleCharacter{
+    height: 60vh;
+  }
+  #overviewHeaderIn{
+    margin-top: 30%;
+  }
+  #overviewTextIn{
+    margin-top: 40px;
+    padding: 0 5%;
+  }
+  #overviewTextIn p{
+    /* margin-bottom: 5px; */
+    text-align: justify;
+  }
+  #overviewTextIn ul{
+    padding: 0 5% 0 12%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
@@ -504,6 +529,20 @@ button.contactButton::before, button.contactButton::after {
   .aniWrap {
     bottom: 20%;
   }
+  #titleCharacter{
+    height: 70vh;
+  }
+  #overviewHeaderIn{
+    margin: 20% auto 50px;
+  }
+  #overviewTextIn{
+    /* margin-top: 10%; */
+    padding: 0 10%;
+  }
+  #overviewTextIn ul{
+    padding: 0 10%;
+    letter-spacing: 1.1px;
+  }
 }
 
 @media only screen and (min-width: 992px){ /*desktop and higher*/
@@ -522,15 +561,9 @@ button.contactButton::before, button.contactButton::after {
     top: 3%;
     width: 10%;
   }
-  #titleText{
-    left: 37.5%;
-  }
-  #contactHeader{ 
-    margin-top:15%; 
-  }
-  #contactLinks{ 
-    margin-top:22.5%;
-  }
+  #titleText{ left: 37.5%; }
+  #contactHeader{ margin-top:15%; }
+  #contactLinks{ margin-top:22.5%; }
   
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
@@ -542,7 +575,15 @@ button.contactButton::before, button.contactButton::after {
   #menuToggle:hover .hamburger-inner::after{
     background-color: white;
   }
-  .aniWrap {
-    bottom: 15%;
+  .aniWrap { bottom: 15%; }
+  #titleCharacter{ height: 80vh; }
+  #overviewHeaderIn{ margin-top: 10%; }
+  #overviewTextIn{
+    margin-top: 18.5%;
+    padding: 0 22.5%;
+  }
+  #overviewTextIn ul{
+    padding: 0 6%;
+    letter-spacing: 1.1px;
   }
 }

@@ -185,7 +185,7 @@ ul#menu li{
 #menuToggle:hover{
   transform: scale(1.2, 1.2);
 }
-#mobileMenu{ /*test*/
+#mobileMenu{
   position: fixed;
   display: none;  
   overflow: hidden;
@@ -552,7 +552,7 @@ div.arrows span{
     line-height: 1.6;
     letter-spacing: 1.1px;
   }
-  #aboutParallax{
+  #aboutSection{
     padding: 0 8.5%;
   }
   #particles-js{ 
