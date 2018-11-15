@@ -70,7 +70,7 @@
                 <div id="particles-js"></div>
             </div>
                         
-            <div class="container-fluid section" data-anchor="Overview">
+            <div id="ov" class="container-fluid section" data-anchor="Overview">
                 <div class="row full">
                     <div id="overviewParallax" class="col-12">
                         <div id="overviewHeaderIn" class="text-center" data-depth="0.1">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Step1">
+            <div id="p1" class="container-fluid section" data-anchor="Step1">
                 <div id="phase1" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step1Parallax1" class="col-md-12 col-lg-4 align-self-center">
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Step2">
+            <div id="p2" class="container-fluid section" data-anchor="Step2">
                 <div id="phase2" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step2Parallax2" class="col-md-12 col-lg-4 align-self-center">
@@ -215,7 +215,7 @@
                     
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Step3">
+            <div id="p3" class="container-fluid section" data-anchor="Step3">
                 <div id="phase3" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step3Parallax1" class="col-md-12 col-lg-4 align-self-center">
@@ -278,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Step4">
+            <div id="p4" class="container-fluid section" data-anchor="Step4">
                 <div id="phase4" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step4Parallax2" class="col-md-12 col-lg-4 align-self-center">
@@ -345,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Contact">
+            <div class="container-fluid section fp-auto-height-responsive" data-anchor="Contact">
                 <div class="row">
                     <div id="contactParallax" class="col-12 d-none d-md-block">
                         <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
@@ -439,6 +439,13 @@
                         $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
                     });
+
+                // // section sizing
+                //     $('#ov').addClass('fp-auto-height-responsive');
+                //     $('#p1').addClass('fp-auto-height-responsive');
+                //     $('#p2').addClass('fp-auto-height-responsive');
+                //     $('#p3').addClass('fp-auto-height-responsive');
+                //     $('#p4').addClass('fp-auto-height-responsive');
 
                 // particles.js
                     particlesJS("particles-js", {
