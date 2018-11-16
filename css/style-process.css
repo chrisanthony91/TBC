@@ -160,17 +160,6 @@ ul#menu li{
   height: 100vh;
 }
 
-#bground{
-  position: fixed;
-  /* top: 30%; */
-  top: 5%;
-  left: 0;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-}
-
 #logo{
   /* display: none; */
   position: fixed;
@@ -296,11 +285,7 @@ div.arrows span{
 }
 
 /* section animations in */
-#overviewHeaderIn,
-/* .step1HeaderIn, */
-.step2HeaderIn,
-.step3HeaderIn,
-.step4HeaderIn{
+#overviewHeaderIn{
   animation-duration: 1.4s;
   -webkit-animation-duration: 1.4s;
   animation-delay: 1s;
@@ -309,10 +294,8 @@ div.arrows span{
   -webkit-animation-timing-function: ease;
 }
 #overviewTextIn,
-/* .step1TextIn, */
-.step2TextIn,
-.step3TextIn,
-.step4TextIn{
+.step1Text, .step2Text,
+.step3Text, .step4Text{
   animation-duration: 1.4s;
   -webkit-animation-duration: 1.4s;
   animation-delay: 1.4s;
@@ -440,6 +423,7 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (max-width: 767px){ /* for mobile*/
+  html{ overflow-x: hidden; }
   h1{ font-size: 2.2em; }
   h2{ font-size: 1.7em; }
   h3{ font-size: 1.5em; }
@@ -466,12 +450,21 @@ button.contactButton::before, button.contactButton::after {
     background-color: #26A5E8;
   }
 
+  #bground{
+    position: fixed;
+    top: 35%;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+  }
+
   .aniWrap{ bottom: 25%; }
   #titleCharacter{ height: 60vh; }
   #overviewHeaderIn{ margin-top: 30%; }
   #overviewTextIn{
     margin-top: 40px;
-    padding: 0 5%;
+    /* padding: 0 5%; */
   }
   #overviewTextIn p{
     /* margin-bottom: 5px; */
@@ -550,6 +543,17 @@ button.contactButton::before, button.contactButton::after {
     top: 3%;
     width: 10%;
   }
+
+  #bground{
+    position: fixed;
+    top: 5%;
+    left: 0;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+  }
+
   #titleText{ left: 40%; }
   #contactHeader{ margin-top:15%; }
   #contactLinks{ margin-top:22.5%; }
