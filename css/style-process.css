@@ -1,11 +1,13 @@
 html, body{
   margin:0; 
-  color: white;
-  background-color: red;
+  color: #fff;
+  /* background-color: #000; */
   font-family: 'Exo 2', sans-serif;
   /* font-size: 1em;
   overflow-x: hidden; */
 }
+html{ background-color: #fff;}
+body{ background-color: #000; }
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -423,7 +425,7 @@ button.contactButton::before, button.contactButton::after {
 }
 
 @media only screen and (max-width: 767px){ /* for mobile*/
-  html{ overflow-x: hidden !important; }
+  /* html{ overflow-x: hidden !important; } */
   h1{ font-size: 2.2em; }
   h2{ font-size: 1.7em; }
   h3{ font-size: 1.5em; }
