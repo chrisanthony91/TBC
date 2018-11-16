@@ -51,7 +51,7 @@
 
 
         <div id="fullpage" class="invisible">
-            <div class="section active" data-anchor="process">
+            <div class="section active fp-auto-height-responsive" data-anchor="process">
                 <img id="titleCharacter" src="images/charicature.png" alt="TBC logo character">
                 <h1 id="titleText">MY<br>PROCESS</h1>
 
@@ -70,9 +70,9 @@
                 <div id="particles-js"></div>
             </div>
                         
-            <div id="ov" class="container-fluid section" data-anchor="Overview">
-                <div class="row full">
-                    <div id="overviewParallax" class="col-12">
+            <div id="ov" class="container-fluid section fp-auto-height-responsive " data-anchor="Overview">
+                <div class="row">
+                    <div id="overviewParallax" class="col-12 full">
                         <div id="overviewHeaderIn" class="text-center" data-depth="0.1">
                             <h2>WORK SMARTER, NOT HARDER</h2>
                             <p>- A lil elbow grease never hurts though -<p>
@@ -98,11 +98,11 @@
                     </div>
                 </div>
             </div>
-            <div id="p1" class="container-fluid section" data-anchor="Step1">
+            <div id="p1" class="container-fluid section fp-auto-height-responsive" data-anchor="Step1">
                 <div id="phase1" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step1Parallax1" class="col-md-12 col-lg-4 align-self-center">
-                        <svg data-depth="0.2" width="100%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg data-depth="0.2" width="90%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -155,11 +155,11 @@
                     </div>
                 </div>
             </div>
-            <div id="p2" class="container-fluid section" data-anchor="Step2">
+            <div id="p2" class="container-fluid section fp-auto-height-responsive" data-anchor="Step2">
                 <div id="phase2" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step2Parallax2" class="col-md-12 col-lg-4 align-self-center">
-                            <svg data-depth="0.2" width="100%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg data-depth="0.2" width="90%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
                                 <style type="text/css">
                                     .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -215,7 +215,7 @@
                     
                 </div>
             </div>
-            <div id="p3" class="container-fluid section" data-anchor="Step3">
+            <div id="p3" class="container-fluid section fp-auto-height-responsive" data-anchor="Step3">
                 <div id="phase3" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step3Parallax1" class="col-md-12 col-lg-4 align-self-center">
@@ -278,11 +278,11 @@
                     </div>
                 </div>
             </div>
-            <div id="p4" class="container-fluid section" data-anchor="Step4">
+            <div id="p4" class="container-fluid section fp-auto-height-responsive" data-anchor="Step4">
                 <div id="phase4" class="row full">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step4Parallax2" class="col-md-12 col-lg-4 align-self-center">
-                            <svg data-depth="0.2" width="100%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg data-depth="0.2" width="90%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -756,21 +756,21 @@
                                 $('#overviewHeaderIn').animateCss('fadeIn');
                                 $('#overviewTextIn').animateCss('fadeIn');
                             }
-                            // else if( destination.index == 2 ){
-                            //     $('.step1HeaderIn').animateCss('fadeIn');
-                            //     $('.step1TextIn').animateCss('fadeIn');
-                            // }
+                            else if( destination.index == 2 ){
+                                // $('.step1HeaderIn').animateCss('fadeIn');
+                                $('.step1Text').animateCss('fadeIn');
+                            }
                             else if( destination.index == 3 ){
-                                $('.step2HeaderIn').animateCss('fadeIn');
-                                $('.step2TextIn').animateCss('fadeIn');
+                                // $('.step2HeaderIn').animateCss('fadeIn');
+                                $('.step2Text').animateCss('fadeIn');
                             }
                             else if( destination.index == 4 ){
-                                $('.step3HeaderIn').animateCss('fadeIn');
-                                $('.step3TextIn').animateCss('fadeIn');
+                                // $('.step3HeaderIn').animateCss('fadeIn');
+                                $('.step3Text').animateCss('fadeIn');
                             }
                             else if( destination.index == 5 ){
-                                $('.step4HeaderIn').animateCss('fadeIn');
-                                $('.step4TextIn').animateCss('fadeIn');
+                                // $('.step4HeaderIn').animateCss('fadeIn');
+                                $('.step4Text').animateCss('fadeIn');
                             }
                             else if( destination.index == 6 ){
                                 $('#bground').animateCss('logoFadeOut');
