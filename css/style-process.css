@@ -473,7 +473,7 @@ button.contactButton::before, button.contactButton::after {
     text-align: justify;
   }
   #overviewTextIn ul{ padding: 0 5% 0 12%; }
-  #ov,#p1,#p2,#p3,#p4{ padding: 40px 0; }
+  #ov,#p1,#p2,#p3,#p4{ margin: 40px auto; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
