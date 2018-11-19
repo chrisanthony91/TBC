@@ -129,7 +129,6 @@ ul#menu li{
 #logo{
   position: fixed;
   left: 1%;
-  /* width: 10%; */
   z-index: 5;
   transition: all 0.5s ease;
 }
@@ -138,7 +137,6 @@ ul#menu li{
   transform: scale(1.1);
 }
 #fullpage{
-  /* overflow-x: hidden; */
   animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
@@ -218,27 +216,7 @@ ul#menu li{
   background-color: #26A5E8;
   color: #000;
 }
-/* #mobileMenu ul{
-  list-style-type: none;
-}
-#mobileMenu ul li{
-  padding: 30px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-#mobileMenu ul li a{
-  display: block;
-  text-decoration: none;
-  color: #26A5E8;
-}
-#mobileMenu ul li a h2:hover{
-  background-color: #26A5E8;
-  color: #000;
-} */
-/*#mobileMenu ul li a:active{
-  color: #000;
-  background-color: #26A5E8
-} */
+
 #mobileContact{
   margin-top: 40px;
   background-image: url("../images/mobileContact_bg.jpg");
@@ -365,7 +343,6 @@ button.contactButton::before, button.contactButton::after {
 
 .aniWrap {
   position: absolute;
-  /* bottom: 10%; */
   left: 50%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -429,13 +406,11 @@ div.arrows span{
 @-webkit-keyframes scrolls {
   0%   {top: 5px; opacity: 0.5; height: 4px}
   80% {top: 20px; opacity: 1; height: 8px}
-  /* 95% {top: 20px; opacity: 0; height: 8px} */
   100% {top: 5px; opacity: 0S; height: 4px}
 } 
 @keyframes scrolls {
   0%   {top: 5px; opacity: 0.5; height: 4px}
   80% {top: 20px; opacity: 1; height: 8px}
-  /* 95% {top: 20px; opacity: 0; height: 8px} */
   100% {top: 5px; opacity: 0; height: 4px}
 }
 @-webkit-keyframes chevron {
@@ -485,7 +460,6 @@ div.arrows span{
   }
   #introLogo{
     width: 260px;
-    /* width: 80%; */
     height: auto;
     position: absolute;
     top: 20%;
@@ -497,7 +471,6 @@ div.arrows span{
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
-    /* background-color: #26A5E8; */
     background-color: #fff;
   }
 
