@@ -125,7 +125,7 @@
                 <div id="phase1" class="row">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step1Parallax1" class="col-md-12 col-lg-4 align-self-center">
-                        <svg data-depth="0.2" width="90%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg data-depth="0.2" width="100%" version="1.1" id="researchImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 48.8 48.8" style="enable-background:new 0 0 48.8 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -182,7 +182,7 @@
                 <div id="phase2" class="row">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step2Parallax2" class="col-md-12 col-lg-4 align-self-center">
-                            <svg data-depth="0.2" width="90%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg data-depth="0.2" width="100%" version="1.1" id="ideateImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 50 51" style="enable-background:new 0 0 50 51;" xml:space="preserve">
                                 <style type="text/css">
                                     .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -242,7 +242,7 @@
                 <div id="phase3" class="row">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step3Parallax1" class="col-md-12 col-lg-4 align-self-center">
-                        <svg data-depth="0.2" width="90%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg data-depth="0.2" width="100%" version="1.1" id="testImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 50 50.3" style="enable-background:new 0 0 50 50.3;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -305,7 +305,7 @@
                 <div id="phase4" class="row">
                     <div class="col-md-12 col-lg-1"></div>
                     <div id="step4Parallax2" class="col-md-12 col-lg-4 align-self-center">
-                            <svg data-depth="0.2" width="90%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg data-depth="0.2" width="100%" version="1.1" id="developImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 50 48.8" style="enable-background:new 0 0 50 48.8;" xml:space="preserve">
                             <style type="text/css">
                                 .st0{fill:none;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;}
@@ -459,7 +459,7 @@
                     $('#p2').addClass('fp-auto-height');
                     $('#p3').addClass('fp-auto-height');
                     $('#p4').addClass('fp-auto-height');
-                
+                           
                 // menu toggles
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
@@ -564,27 +564,23 @@
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
                     // callbacks
-                        onLeave: function(origin, destination, direction){
-                            var leavingSection = this;
-                            if( destination.index == 0 || destination.index == 6 ){
-                                // $('#titleText').animateCss('fadeInRight');
-                                // $('#titleCharacter').animateCss('fadeInRight');
-                                $('#bground').animateCss('logoFadeOut');
-                                $('#bground').addClass('invisible');
-                            }
-                            // else if( destination.index == 6 ){
-                            //     $('#bground').animateCss('logoFadeOut');
-                            //     $('#bground').addClass('invisible');
-                            // }
-                            if( origin.index == 0 && destination.index != 6 ){
-                                $('#bground').removeClass('invisible');
-                                $('#bground').animateCss('fadeIn');
-                            }
-                            else if( origin.index == 6 && destination.index != 0 ){
-                                $('#bground').removeClass('invisible');
-                                $('#bground').animateCss('fadeIn');
-                            }
-                        }
+                        // onLeave: function(origin, destination, direction){
+                        //     var leavingSection = this;
+                        //     if( destination.index == 0 || destination.index == 6 ){
+                        //         // $('#titleText').animateCss('fadeInRight');
+                        //         // $('#titleCharacter').animateCss('fadeInRight');
+                        //         $('#bground').animateCss('logoFadeOut');
+                        //         $('#bground').addClass('invisible');
+                        //     }
+                        //     if( origin.index == 0 && destination.index != 6 ){
+                        //         $('#bground').removeClass('invisible');
+                        //         $('#bground').animateCss('fadeIn');
+                        //     }
+                        //     else if( origin.index == 6 && destination.index != 0 ){
+                        //         $('#bground').removeClass('invisible');
+                        //         $('#bground').animateCss('fadeIn');
+                        //     }
+                        // }
                     });
                 }
                 else{ //for desktop
