@@ -470,7 +470,7 @@ button.contactButton::before, button.contactButton::after {
   }
   #overviewTextIn ul{ padding: 0 5% 0 12%; }
   #phase1,#phase2,#phase3,#phase4{ margin: 40px auto; }
-  #ov{ margin-bottom: 20px;}
+  #ovMobile{ margin: 20px auto;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
