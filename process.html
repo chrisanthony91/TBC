@@ -430,6 +430,13 @@
                 var vivDevelop = new Vivus('developImage', {type: 'delayed', duration: 120} );
 
                 if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                // section sizing
+                    $('#ov').addClass('fp-auto-height');
+                    $('#p1').addClass('fp-auto-height');
+                    $('#p2').addClass('fp-auto-height');
+                    $('#p3').addClass('fp-auto-height');
+                    $('#p4').addClass('fp-auto-height');
+                
                 // menu toggles
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
@@ -439,13 +446,6 @@
                         $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
                     });
-
-                // // section sizing
-                //     $('#ov').addClass('fp-auto-height-responsive');
-                //     $('#p1').addClass('fp-auto-height-responsive');
-                //     $('#p2').addClass('fp-auto-height-responsive');
-                //     $('#p3').addClass('fp-auto-height-responsive');
-                //     $('#p4').addClass('fp-auto-height-responsive');
 
                 // particles.js
                     particlesJS("particles-js", {
@@ -540,19 +540,19 @@
                         responsiveWidth: 991,
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
-                        // callbacks
+                    // callbacks
                         onLeave: function(origin, destination, direction){
                             var leavingSection = this;
-                            if( destination.index == 0 ){
-                                $('#titleText').animateCss('fadeInRight');
-                                $('#titleCharacter').animateCss('fadeInRight');
+                            if( destination.index == 0 || destination.index == 6 ){
+                                // $('#titleText').animateCss('fadeInRight');
+                                // $('#titleCharacter').animateCss('fadeInRight');
                                 $('#bground').animateCss('logoFadeOut');
                                 $('#bground').addClass('invisible');
                             }
-                            else if( destination.index == 6 ){
-                                $('#bground').animateCss('logoFadeOut');
-                                $('#bground').addClass('invisible');
-                            }
+                            // else if( destination.index == 6 ){
+                            //     $('#bground').animateCss('logoFadeOut');
+                            //     $('#bground').addClass('invisible');
+                            // }
                             if( origin.index == 0 && destination.index != 6 ){
                                 $('#bground').removeClass('invisible');
                                 $('#bground').animateCss('fadeIn');
@@ -564,7 +564,7 @@
                         }
                     });
                 }
-                else{ //for tablet and desktop
+                else{ //for desktop
                 // menu toggle
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
