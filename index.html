@@ -35,12 +35,6 @@
             <a href="process.html"><div>Process</div></a>
             <a href="work.html"><div>Work</div></a>
             <a href="#Contact"><div id="con">Contact</div></a>
-            <!-- <ul>
-                <li id="abo"><a href="#About"><h2>About</h2></a></li>
-                <li><a href="process.html"><h2>Process</h2></a></li>
-                <li><a href="work.html"><h2>Work</h2></a></li>
-                <li id="con"><a href="#Contact"><h2>Contact</h2></a></li>
-            </ul> -->
         </div>
 
         <button id="menuToggle" class="hamburger hamburger--spin-r" type="button">
@@ -50,7 +44,7 @@
         </button>
 
         <div id="fullpage" class="invisible">
-            <div class="section active" data-anchor="Home">
+            <div class="section active fp-auto-height-responsive" data-anchor="Home">
                 <img id="introLogo" src="images/tbcLogo5.png" alt="TBC logo">
                 <div id="intro">
                     <h1>The Black Chris</h1>
@@ -69,8 +63,7 @@
                 <!-- particles.js container --> 
                 <div id="particles-js"></div>
             </div>
-            
-                    
+                             
             <div class="container-fluid section fp-auto-height-responsive" data-anchor="About">
                 <div class="row">
                     <div id="portraitParallax" class="col-lg-5 align-self-end text-center portraitAnimation">
@@ -90,21 +83,6 @@
                                 </p>
                             </div>
                             <div class="text2In" style="margin-top: 3%">
-                                <!-- <p> 1.	A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
-                                    tech problems.<br>
-                                    <i>By paying close attention to how small details affect the bigger picture, Chris’s goal is 
-                                    to always to strive for effective, feasible solutions that can be applied to current and future 
-                                    systems.</i><br><br>
-                                    2.	A jack of-all-trades with a multidisciplinary background in computer science, cognitive science, 
-                                    graphic design, and user experience design.<br>
-                                    <i>A varied background has taught Chris to consider problems from different angles, and to be able 
-                                    to communicate effectively across departments throughout the creative process.</i><br><br>
-                                    3.	An all-around amiable and very funny fellow<br>
-                                    <i>Some of Chris’s hobbies include snowboarding, cartoons, video games, and weight lifting. He has 
-                                    the random talent of vocal mimicry and making funny voices; Chris hopes to one day become a voice 
-                                    actor.</i><br><br>
-                                    Synonyms: “The Black Chris”, “Your Next Designer”
-                                </p> -->
                                 <div style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
                                     <p style="margin-left: 17px; text-indent: -17px;">
                                         1. A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
@@ -129,11 +107,10 @@
                                 <i>Synonyms: “The Black Chris”, “Your Next Designer”</i>
                             </div>
                         </div>
-                    <!-- </div> -->
                 </div>
             </div>
                 
-            <div class="container-fluid section fp-auto-height" data-anchor="Contact">
+            <div class="container-fluid section fp-auto-height-responsive" data-anchor="Contact">
                 <div class="row">
                     <div id="contactParallax" class="col-12 d-none d-md-block">
                         <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
@@ -149,7 +126,6 @@
                         </div>
                     </div>
                     <div id="mobileContact" class="col-12 d-md-none">
-                        <!-- <img src="images/background007-1.jpg" width="100%" height="auto" style="opacity: 0.4; z-index: -100;"> -->
                         <div class="align-self-center text-center" style="padding: 15% 0">
                             <h1>CONTACT</h1>
                             <p style="margin-bottom:20px">- Talk to the Man Himself -</p>
@@ -313,7 +289,6 @@
                         anchors:['Home', 'About', 'Contact'],
                         loopBottom: false,
                         loopTop: false,
-                        // autoScroll: false,
                         responsiveWidth: 991,
 
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
