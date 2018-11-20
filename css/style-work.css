@@ -7,15 +7,12 @@
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-
-
 html, body{
   margin:0; 
-  color: white;
-  background-color: black;
+  color: #fff;
+  background-color: #000;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1em;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -36,19 +33,13 @@ h1, h2{
   font-family: 'Audiowide', cursive;
   color: #26A5E8;
 }
-h5{
-  margin:0;
-}
-ol{
-  padding-left: 1.5em;
-}
-ul{
-  padding: 0;
-}
+h5{ margin:0; }
+ol{ padding-left: 1.5em; }
+ul{ padding: 0; }
 ul#menu li a{
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color: #fff;
   -webkit-transition: color 0.7s, border 0.5s;
   -moz-transition: color 0.7s, border 0.5s;
   -o-transition: color 0.7s, border 0.5s;
@@ -64,7 +55,7 @@ ul#menu{
 }
 ul#menu li{
   display: inline-block;
-  color: white;
+  color: #fff;
   padding: 0 7%;
 }
 
@@ -87,7 +78,7 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  top:5%;
+  top: 4%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
@@ -108,39 +99,15 @@ ul#menu li{
 #menuToggle.is-active .hamburger-inner,
 #menuToggle.is-active .hamburger-inner::before,
 #menuToggle.is-active .hamburger-inner::after{
-  background-color: white;
+  background-color: #fff;
 }
 #menuToggle:hover .hamburger-inner,
 #menuToggle:hover .hamburger-inner::before, 
 #menuToggle:hover .hamburger-inner::after{
-  background-color: white;
+  background-color: #fff;
 }
 
-/* section animations in */
-#overviewHeaderIn,
-.step1HeaderIn,
-.step2HeaderIn,
-.step3HeaderIn,
-.step4HeaderIn{
-  animation-duration: 1.4s;
-  -webkit-animation-duration: 1.4s;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-}
-#overviewTextIn,
-.step1TextIn,
-.step2TextIn,
-.step3TextIn,
-.step4TextIn{
-  animation-duration: 1.4s;
-  -webkit-animation-duration: 1.4s;
-  animation-delay: 1.4s;
-  -webkit-animation-delay: 1.4s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-}
+
 .contactText1In{
   animation-duration: 1.4s;
   -webkit-animation-duration: 1.4s;
@@ -159,11 +126,8 @@ ul#menu li{
 }
 
 #logo{
-  /* display: none; */
   position: fixed;
-  top: 3%;
   left: 1%;
-  width: 10%;
   z-index: 5;
   transition: all 0.5s ease;
 }
@@ -174,9 +138,9 @@ ul#menu li{
 }
 
 #titleCharacter{
-  height: 80vh;
+  /* height: 80vh; */
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   right:0;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
@@ -188,7 +152,7 @@ ul#menu li{
 #titleText{
   position: absolute;
   top: 45%;
-  left: 40%;
+  /* left: 40%; */
   text-align: center;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
@@ -196,6 +160,92 @@ ul#menu li{
   -webkit-animation-delay: 1.3s;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
+}
+
+.aniWrap {
+  position: absolute;
+  /* bottom: 15%; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  display: block;
+  width: 30px;
+}
+.mouse {
+  width: 30px;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 14px;
+}
+.scroller {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #26A5E8;
+  position: relative;
+  top: 10px;
+  left: 11px;
+  -webkit-animation: scrolls 1.8s ease-out infinite;
+  animation: scrolls 1.8s ease-out infinite;
+}
+div.arrows span{
+  width: 14px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 3px solid #26A5E8;
+  border-bottom: 3px solid #26A5E8;
+  border-radius: 3px;
+}
+.top,.middle,.bottom {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+}
+.top {
+  margin-top: 36px;
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+.middle {
+  margin-top: 56px;
+  animation-delay: .5s;
+  animation-direction: alternate;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-direction: alternate;
+}
+.bottom {
+  margin-top: 76px;
+  animation-delay: .9s;
+  animation-direction: alternate;
+  -webkit-animation-delay: .9s;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes scrolls {
+  0%   {top: 5px; opacity: 0.5; height: 4px}
+  80% {top: 20px; opacity: 1; height: 8px}
+  /* 95% {top: 20px; opacity: 0; height: 8px} */
+  100% {top: 5px; opacity: 0S; height: 4px}
+} 
+@keyframes scrolls {
+  0%   {top: 5px; opacity: 0.5; height: 4px}
+  80% {top: 20px; opacity: 1; height: 8px}
+  /* 95% {top: 20px; opacity: 0; height: 8px} */
+  100% {top: 5px; opacity: 0; height: 4px}
+}
+@-webkit-keyframes chevron {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes chevron {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 @-webkit-keyframes logoFadeOut {
@@ -263,14 +313,11 @@ ul#menu li{
   animation-name: adjustLeft;
   animation-duration: 0.5s;
   -webkit-animation-duration: 0.5s;
-  /* animation-delay: 2.4s;
-  -webkit-animation-delay: 2.4s; */
   animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-
 
 @-webkit-keyframes projectFadeInLeft {
   from {
@@ -426,19 +473,12 @@ ul#menu li{
   transform: scale(1.1) rotate(15deg);
 } 
 
-.invisible{
-  opacity: 0.01;
-  /* display: none; */
-}
+.invisible{ opacity: 0.01; }
 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
   width: 100%; 
 }
-
-
-
-
 
 button.contactButton {
   background: none;
@@ -446,7 +486,7 @@ button.contactButton {
   box-sizing: border-box;
   padding: 1em 2em;
   box-shadow: inset 0 0 0 2px transparent;
-  color: white;
+  color: #fff;
   position: relative;
 }
 button.contactButton::before, button.contactButton::after {
@@ -493,6 +533,7 @@ button.contactButton::before, button.contactButton::after {
 
 .center:hover {
   color: #26A5E8;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .center::before, .center::after {
   top: 0;
@@ -523,4 +564,114 @@ button.contactButton::before, button.contactButton::after {
 
 .full{
   height: 100vh;
+}
+
+@media only screen and (max-width: 767px){ /* for mobile*/
+  h1{ font-size: 2.2em; }
+  h2{ font-size: 1.7em; }
+  h3{ font-size: 1.5em; }
+  h4{ font-size: 1.3em; }
+  h5{ font-size: 1.1em; }
+  p{
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  li a{ font-size: 1em; }
+  #titleCharacter{ bottom: 25%; }
+  #titleText{ left: 21%; }
+  #contactHeader{ margin-top: 40%; }
+  #contactLinks{ margin-top: 60%; }
+
+  #logo{
+    top: 4%; 
+    width: 20%;
+  }
+
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: #26A5E8;
+  }
+
+  .aniWrap{ bottom: 25%; }
+  #titleCharacter{ height: 60vh; }
+  #ovMobile{ margin: 20px auto;}
+  #ovMobile ul li{ margin: auto 20px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
+  h1{ font-size: 3em; }
+  h2{ font-size: 2.6em; }
+  h3{ font-size: 2.2em; }
+  h4{ font-size: 1.7em; }
+  h5{ font-size: 1.3em; }
+  p{
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  li a{ font-size: 1.3em; }
+  #titleCharacter{ bottom: 0; }
+  #titleText{ left: 36%; }
+  #contactHeader{ margin-top: 22.5%; }
+  #contactLinks{ margin-top: 35%; }
+  #menu{
+    /* width must be smaller than width for menu.show */
+    width: 50%;
+  }
+  #menu.show{
+    /* must be large enough to fit menu items */
+    width: 60%;
+  }
+  #logo{
+    top: 3%;
+    width: 15%;
+  }
+
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: #fff;
+  }
+ 
+  .aniWrap {
+    bottom: 20%;
+  }
+  #titleCharacter{
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 992px){ /*desktop and higher*/
+  h1{ font-size: 3.2em; }
+  h2{ font-size: 2.7em; }
+  h3{ font-size: 2.3em; }
+  h4{ font-size: 1.8em; }
+  h5{ font-size: 1.3em; }
+  p{
+    font-size: 1em;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+  }
+  #titleCharacter{ bottom: 0; }
+  #logo{
+    top: 3%;
+    width: 10%;
+  }
+
+  #titleText{ left: 42%; }
+  #contactHeader{ margin-top:15%; }
+  #contactLinks{ margin-top:22.5%; }
+  
+  #menuToggle.is-active .hamburger-inner,
+  #menuToggle.is-active .hamburger-inner::before,
+  #menuToggle.is-active .hamburger-inner::after{
+    background-color: #fff;
+  }
+  #menuToggle:hover .hamburger-inner,
+  #menuToggle:hover .hamburger-inner::before, 
+  #menuToggle:hover .hamburger-inner::after{
+    background-color: #fff;
+  }
+  .aniWrap { bottom: 15%; }
+  #titleCharacter{ height: 80vh; }
 }

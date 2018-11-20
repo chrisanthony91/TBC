@@ -23,19 +23,13 @@ h1, h2{
   font-family: 'Audiowide', cursive;
   color: #26A5E8;
 }
-h1, h2, h3, h4, h5, p{
-  margin: 0;
-}
-ol{
-  padding-left: 1.5em;
-}
-ul{
-  padding: 0;
-}
+h5{ margin: 0; }
+ol{ padding-left: 1.5em; }
+ul{ padding: 0; }
 ul#menu li a{
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color: #fff;
   -webkit-transition: color 0.7s, border 0.5s;
   -moz-transition: color 0.7s, border 0.5s;
   -o-transition: color 0.7s, border 0.5s;
@@ -51,7 +45,7 @@ ul#menu{
 }
 ul#menu li{
   display: inline-block;
-  color: white;
+  color: #fff;
   padding: 0 7%;
 }
 
@@ -77,20 +71,17 @@ ul#menu li{
 #menuToggle{
   z-index: 10;
   position: fixed;
-  top:4%;
+  top: 4%;
   right: 3%;
   -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 #menuToggle:hover{
+  -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
 .rotate{ 
   -webkit-transform:rotate(-180deg);
-  -moz-transform:rotate(-180deg);
-  -o-transform:rotate(-180deg);
   transform:rotate(-180deg);
 }
 .hamburger-inner,
@@ -101,12 +92,12 @@ ul#menu li{
 #menuToggle.is-active .hamburger-inner,
 #menuToggle.is-active .hamburger-inner::before,
 #menuToggle.is-active .hamburger-inner::after{
-  background-color: white;
+  background-color: #fff;
 }
 #menuToggle:hover .hamburger-inner,
 #menuToggle:hover .hamburger-inner::before, 
 #menuToggle:hover .hamburger-inner::after{
-  background-color: white;
+  background-color: #fff;
 }
 #mobileMenu{
   position: fixed;
@@ -130,8 +121,8 @@ ul#menu li{
 }
 #mobileMenu ul li{
   padding: 30px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 #mobileMenu ul li a{
   display: block;
@@ -159,16 +150,15 @@ ul#menu li{
 }
 
 #logo{
-  /* display: none; */
   position: fixed;
   left: 1%;
-  /* width: 10%; */
   z-index: 5;
   transition: all 0.5s ease;
 }
 #logo:hover{
   filter: invert(100%);
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 #titleCharacter{
@@ -208,7 +198,7 @@ ul#menu li{
 .mouse {
   width: 30px;
   height: 55px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 14px;
 }
 .scroller {
@@ -340,7 +330,7 @@ button.contactButton {
   box-sizing: border-box;
   padding: 1em 2em;
   box-shadow: inset 0 0 0 2px transparent;
-  color: white;
+  color: #fff;
   position: relative;
 }
 button.contactButton::before, button.contactButton::after {
@@ -505,7 +495,7 @@ button.contactButton::before, button.contactButton::after {
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
-    background-color: white;
+    background-color: #fff;
   }
  
   .aniWrap {
@@ -561,12 +551,12 @@ button.contactButton::before, button.contactButton::after {
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
-    background-color: white;
+    background-color: #fff;
   }
   #menuToggle:hover .hamburger-inner,
   #menuToggle:hover .hamburger-inner::before, 
   #menuToggle:hover .hamburger-inner::after{
-    background-color: white;
+    background-color: #fff;
   }
   .aniWrap { bottom: 15%; }
   #titleCharacter{ height: 80vh; }
