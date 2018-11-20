@@ -674,4 +674,5 @@ button.contactButton::before, button.contactButton::after {
   }
   .aniWrap { bottom: 15%; }
   #titleCharacter{ height: 80vh; }
+  button.contactButton{ cursor: pointer; }
 }

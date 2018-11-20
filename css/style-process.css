@@ -570,4 +570,5 @@ button.contactButton::before, button.contactButton::after {
     letter-spacing: 1.1px;
   }
   #phase1,#phase2,#phase3,#phase4{ height: 100vh; }
+  button.contactButton{ cursor: pointer; }
 }

@@ -265,7 +265,7 @@ ul#menu li{
 
 
 /* button outline effects */
-button.contactButton {
+button.contactButton{
   background: none;
   border: 0;
   box-sizing: border-box;
@@ -564,5 +564,6 @@ div.arrows span{
   .aniWrap {
     bottom: 15%;
   }
+  button.contactButton{ cursor: pointer; }
 
 }
