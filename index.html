@@ -70,49 +70,48 @@
                         <img id="portrait" data-depth="0.2" src="images/MePortrait-color2.png" width="100%">
                     </div>
                     <div id="aboutSection" class="col-md-12 col-lg-7 align-self-center">
-                        <!-- <div data-depth="0.1"> -->
-                            <div class="headerIn" style="margin-top: 4%">
-                                <h2>ABOUT ME</h2>
-                                <p>Everything you want to know, plus a lil extra<p>
-                            </div>
-                            <div class="text1In" style="margin-top: 6%">
-                                <h4 style="color: #26A5E8">Christopher Smith</h4>
-                                <p style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
-                                    /ˈkrɪstəfɚ/ /ˈsmɪθ/<br>
-                                    <i>noun</i>
-                                </p>
-                            </div>
-                            <div class="text2In" style="margin-top: 3%">
-                                <div style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
-                                    <p style="margin-left: 17px; text-indent: -17px;">
-                                        1. A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
-                                        tech problems.
-                                    </p>
-                                    <p style="margin-left: 17px; text-indent: -17px;">
-                                        2. A jack of-all-trades with a multidisciplinary background in computer science, cognitive science, 
-                                        graphic design, and user experience design.
-                                    </p>
-                                    <p style="margin-left: 17px; text-indent: -17px;">
-                                        3. An all-around amiable fellow.
-                                    </p><br>
-                                </div>
-                                <p>
-                                    By paying close attention to how small details affect the bigger picture, My goal is 
-                                    to always strive for effective, feasible solutions that can be applied to current and future 
-                                    systems. A varied background has taught me to consider problems from different angles, and 
-                                    to be able to communicate effectively across departments throughout the creative process. Some 
-                                    of my interests include snowboarding, video games, weight lifting, adn tattoos. I also have a 
-                                    passion for cartoons and hope to one day become a voice actor for animated media. <br><br>
-                                </p>
-                                <i>Synonyms: “The Black Chris”, “Your Next Designer”</i>
-                            </div>
+                        <div class="headerIn" style="margin-top: 4%">
+                            <h2>ABOUT ME</h2>
+                            <p>Everything you want to know, plus a lil extra<p>
                         </div>
+                        <div class="text1In" style="margin-top: 6%">
+                            <h4 style="color: #26A5E8">Christopher Smith</h4>
+                            <p style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
+                                /ˈkrɪstəfɚ/ /ˈsmɪθ/<br>
+                                <i>noun</i>
+                            </p>
+                        </div>
+                        <div class="text2In" style="margin-top: 3%">
+                            <div style="font-size: 0.9em; line-height:1.5; letter-spacing: normal;">
+                                <p style="margin-left: 17px; text-indent: -17px;">
+                                    1. A UI/UX Designer who provides directly applicable, user-driven solutions for digital and 
+                                    tech problems.
+                                </p>
+                                <p style="margin-left: 17px; text-indent: -17px;">
+                                    2. A jack of-all-trades with a multidisciplinary background in computer science, cognitive science, 
+                                    graphic design, and user experience design.
+                                </p>
+                                <p style="margin-left: 17px; text-indent: -17px;">
+                                    3. An all-around amiable fellow.
+                                </p><br>
+                            </div>
+                            <p>
+                                By paying close attention to how small details affect the bigger picture, My goal is 
+                                to always strive for effective, feasible solutions that can be applied to current and future 
+                                systems. A varied background has taught me to consider problems from different angles, and 
+                                to be able to communicate effectively across departments throughout the creative process. Some 
+                                of my interests include snowboarding, video games, weight lifting, adn tattoos. I also have a 
+                                passion for cartoons and hope to one day become a voice actor for animated media. <br><br>
+                            </p>
+                            <i>Synonyms: “The Black Chris”, “Your Next Designer”</i>
+                        </div>
+                    </div>
                 </div>
             </div>
                 
             <div class="container-fluid section fp-auto-height-responsive" data-anchor="Contact">
                 <div class="row">
-                    <div id="contactParallax" class="col-12 d-none d-md-block">
+                    <div id="contactParallax" class="col-12 d-none d-lg-block">
                         <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
                         <div id="contactHeader" data-depth="0.2" class="col-12 align-self-center text-center contactText1In">
                             <h1>CONTACT</h1>
@@ -125,7 +124,7 @@
                             <button class="contactButton center" onclick="location.href='https://github.com/chrisanthony91'"><h5>GitHub</h5></button>
                         </div>
                     </div>
-                    <div id="mobileContact" class="col-12 d-md-none">
+                    <div id="mobileContact" class="col-12 d-lg-none">
                         <div class="align-self-center text-center" style="padding: 15% 0">
                             <h1>CONTACT</h1>
                             <p style="margin-bottom:20px">- Talk to the Man Himself -</p>
@@ -152,7 +151,7 @@
         <script>
             $(document).ready(function() {
                    
-            // animate.css helper function
+                // animate.css helper function
                 $.fn.extend({
                     animateCss: function(animationName, callback) {
                         var animationEnd = (function(el) {
@@ -180,13 +179,12 @@
                     },
                 });
 
-            // faux fade in effect on page load
+                // faux fade in effect on page load
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
                 
-                
                 if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
-                // menu toggles
+                    // menu toggles
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
@@ -199,7 +197,8 @@
                         $('#menuToggle').toggleClass('is-active');
                         $('#mobileMenu').toggle('fade');
                     });    
-                // particles
+                    
+                    // particles
                     particlesJS("particles-js", {
                         "particles":{
                             "number":{
@@ -279,18 +278,17 @@
                         "retina_detect":true}
                     );
                     
-                // fullpage.js
+                    // fullpage.js
                     if ($('html').hasClass( 'fp-enabled' )){
                         fullpage_api.destroy('all');
                     }
                     $('#fullpage').fullpage({
-                    //options here
+                        // options
                         navigation: false,
                         anchors:['Home', 'About', 'Contact'],
                         loopBottom: false,
                         loopTop: false,
                         responsiveWidth: 991,
-
                         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                         
                         // callbacks
@@ -312,12 +310,12 @@
                     });
                 }
                 else{ //if not mobile
-                // menu toggle
+                    // menu toggle
                     $('#menuToggle').click(function(){
                         $('#menuToggle').toggleClass('is-active');
                         $('#menu').toggleClass( 'show', 600, 'swing' );
                     });
-                // particles
+                    // particles
                     particlesJS("particles-js", {
                         "particles":{
                             "number":{
@@ -396,12 +394,12 @@
                         },
                         "retina_detect":true}
                     );
-                // fullpage.js
+                    // fullpage.js
                     if ($('html').hasClass( 'fp-enabled' )){
                         fullpage_api.destroy('all');
                     }
                     $('#fullpage').fullpage({
-                    //options here
+                        //options
                         navigation: true,
                         navigationPosition: 'left',
                         navigationTooltips: ['Home', 'About', 'Contact'],
@@ -440,8 +438,7 @@
                         }
                     });
                     
-                // parallax.js
-                    // parallax scenes
+                    // parallax.js
                     var scene1 = $('#portraitParallax').get(0);
                     var parallaxInstance = new Parallax(scene1, {
                         relativeInput: true,

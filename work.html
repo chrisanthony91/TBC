@@ -35,7 +35,7 @@
         </ul>
         <!-- mobile menu -->
         <div id="mobileMenu">
-            <a href="#About"><div id="abo">About</div></a>
+            <a href="index.html#About"><div id="abo">About</div></a>
             <a href="process.html"><div>Process</div></a>
             <a href="work.html"><div>Work</div></a>
             <a href="#Contact"><div id="con">Contact</div></a>
@@ -69,19 +69,19 @@
                 <div id="particles-js"></div>
             </div>
                         
-            <div class="container-fluid section" data-anchor="Insights">
-                <div id="project1" class="row full">
+            <div id="proj1" class="container-fluid section" data-anchor="Insights">
+                <div id="project1" class="row">
                     <div class="col-12 text-center">
                         <h2 style="padding-top: 8%">Insights</h2>
                         <p>Responsive Web Design</p>
                         <a href="https://www.behance.net/gallery/69274593/INSIGHTS-Event-Landing-Page">
-                            <img id="insightsImage" src="images/insights-preview.png" alt="Insights screen on different devices" width="30%">
+                            <img id="insightsImage" src="images/insights-preview.png" alt="Insights screen on different devices">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Profade">
-                <div id="project2" class="row full">
+            <div id="proj2" class="container-fluid section" data-anchor="Profade">
+                <div id="project2" class="row">
                     <div class="col-12 text-center">
                         <h2 style="padding-top: 8%">Profade</h2>
                         <p>Responsive Web Design</p>
@@ -91,8 +91,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Bbct">
-                <div id="project3" class="row full">
+            <div id="proj3" class="container-fluid section" data-anchor="Bbct">
+                <div id="project3" class="row">
                     <div class="col-12 text-center">
                         <h2 style="padding-top: 8%">Big Bear Concert Techs</h2>
                         <p>Responsive Web Design</p>
@@ -102,8 +102,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Oda">
-                <div id="project4" class="row full">
+            <div id="proj4" class="container-fluid section" data-anchor="Oda">
+                <div id="project4" class="row">
                     <div class="col-12 text-center">
                         <h2 style="padding-top: 8%">Ocean Defenders Alliance</h2>
                         <p>UX Case Study</p>
@@ -113,8 +113,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section" data-anchor="Dtf">
-                <div id="project5" class="row full">
+            <div id="proj5" class="container-fluid section" data-anchor="Dtf">
+                <div id="project5" class="row">
                     <div class="col-12 text-center">
                         <h2 style="padding-top: 8%">Din Tai Fung</h2>
                         <p>UI Design</p>
@@ -125,37 +125,48 @@
                 </div>
             </div>
             
-            <div class="container-fluid section" data-anchor="Contact">
-                <div id="contactParallax" class="row">
-                    <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
-                    <div data-depth="0.2" class="col-12 text-center contactText1In" style="margin-top:15%" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: removeAnim">
-                        <h1>CONTACT</h1>
-                        <p>- Get Your Project on the Wall  -</p>
+            <div class="container-fluid section fp-auto-height-responsive" data-anchor="Contact">
+                <div class="row">
+                    <div id="contactParallax" class="col-12 d-none d-md-block">
+                        <img data-depth="0.05" src="images/background007-1.jpg" width="100%" style="opacity: 0.2">
+                        <div id="contactHeader" data-depth="0.2" class="col-12 align-self-center text-center contactText1In">
+                            <h1>CONTACT</h1>
+                            <p>- Get Your Project on the Wall -</p>
+                        </div>
+                        <div id="contactLinks" data-depth="0.3" class="col-12 text-center contactText2In">
+                            <button class="contactButton center" onclick="location.href='mailto:chrisanthonysmith91@gmail.address'"><h5>Email</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://www.linkedin.com/in/christopher-smith0917'"><h5>LinkedIn</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://www.behance.net/chrisantho9783'"><h5>Behance</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://github.com/chrisanthony91'"><h5>GitHub</h5></button>
+                        </div>
                     </div>
-                    <div data-depth="0.3" class="col-12 text-center contactText2In" style="margin-top:22.5%" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal, after: removeAnim">
-                        <button class="contactButton center" onclick="location.href='mailto:chrisanthonysmith91@gmail.address'"><h5>Email</h5></button><br>
-                        <button class="contactButton center" onclick="location.href='https://www.linkedin.com/in/christopher-smith0917'"><h5>LinkedIn</h5></button><br>
-                        <button class="contactButton center" onclick="location.href='https://www.behance.net/chrisantho9783'"><h5>Behance</h5></button><br>
-                        <button class="contactButton center" onclick="location.href='https://github.com/chrisanthony91'"><h5>GitHub</h5></button>
+                    <div id="mobileContact" class="col-12 d-md-none">
+                        <div class="align-self-center text-center" style="padding: 15% 0">
+                            <h1>CONTACT</h1>
+                            <p style="margin-bottom:20px">- Get Your Project on the Wall -</p>
+                            <button class="contactButton center" onclick="location.href='mailto:chrisanthonysmith91@gmail.address'"><h5>Email</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://www.linkedin.com/in/christopher-smith0917'"><h5>LinkedIn</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://www.behance.net/chrisantho9783'"><h5>Behance</h5></button><br>
+                            <button class="contactButton center" onclick="location.href='https://github.com/chrisanthony91'"><h5>GitHub</h5></button>
+                        </div>
                     </div>
                 </div>
-            </div>   
+            </div>  
         </div>
-
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-        <script src="js/parallax.min.js"></script>
-        <script src="js/particles.min.js"></script>
-        <script src="js/particleSettings.js"></script>
+        <script src="js/parallax.min.js" type="text/javascript"></script>
+        <script src="js/particles.min.js" type="text/javascript"></script>
         <script src="js/fullpage.js" type="text/javascript"></script>
+
         <script>
             $(document).ready(function() {
             
-            // animate.css helper function
+                // animate.css helper function
                 $.fn.extend({
                     animateCss: function(animationName, callback) {
                         var animationEnd = (function(el) {
@@ -183,198 +194,304 @@
                     },
                 });
                 
-                // faux fade in on page load
+                // faux fade in effect on page load
                 $('#fullpage').removeClass('invisible');
                 $('#fullpage').animateCss('fadeIn');
                 $('#titleCharacter').animateCss('fadeInRight');
                 $('#titleText').animateCss('fadeInRight');
 
-            // particles.js
-                particlesJS("particles-js", {
-                    "particles":{
-                        "number":{
-                            "value":80,
-                            "density":{"enable":true,"value_area":800
-                            }
-                        },
-                        "color":{"value":"#5F94B4"},
-                        "shape":{
-                            "type":"circle",
-                            "stroke":{"width":0,"color":"#000000"},
-                            "polygon":{"nb_sides":5},
-                            "image":{"src":"","width":100,"height":100}
-                        },
-                        "opacity":{
-                            "value":0.5,
-                            "random":false,
-                            "anim":{
-                                "enable":false,
-                                "speed":1,
-                                "opacity_min":0.1,
-                                "sync":false
-                            }
-                        },
-                        "size":{
-                            "value":3,
-                            "random":true,
-                            "anim":{
-                                "enable":false,
-                                "speed":40,
-                                "size_min":0.1,
-                                "sync":false
-                            }
-                        },
-                        "line_linked":{
-                            "enable":true,
-                            "distance":150,
-                            "color":"#5f8fbb",
-                            "opacity":0.3,
-                            "width":1
-                        },
-                        "move":{
-                            "enable":true,
-                            "speed":6,
-                            "direction":"none",
-                            "random":false,
-                            "straight":false,
-                            "out_mode":"out",
-                            "bounce":false,
-                            "attract":{
-                                "enable":false,
-                                "rotateX":600,
-                                "rotateY":1200
-                            }
-                        }
-                    },
-                    "interactivity":{
-                        "detect_on":"canvas",
-                        "events":{
-                            "onhover":{
-                                "enable":true,
-                                "mode":"grab"
+                if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){ //if mobile
+                    // section sizing
+                    $('#proj1').addClass('fp-auto-height');
+                    $('#proj2').addClass('fp-auto-height');
+                    $('#proj3').addClass('fp-auto-height');
+                    $('#proj4').addClass('fp-auto-height');
+                    $('#proj5').addClass('fp-auto-height');
+
+                    // menu toggles
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });
+                    $('#con').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#mobileMenu').toggle('fade');
+                    });
+
+                    // particles.js
+                    particlesJS("particles-js", {
+                        "particles":{
+                            "number":{
+                                "value":80,
+                                "density":{"enable":true,"value_area":800
+                                }
                             },
-                            "onclick":{
-                                "enable":true,
-                                "mode":"repulse"
+                            "color":{"value":"#5F94B4"},
+                            "shape":{
+                                "type":"circle",
+                                "stroke":{"width":0,"color":"#000000"},
+                                "polygon":{"nb_sides":5},
+                                "image":{"src":"","width":100,"height":100}
                             },
-                            "resize":true
+                            "opacity":{
+                                "value":0.5,
+                                "random":false,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":1,
+                                    "opacity_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "size":{
+                                "value":3,
+                                "random":true,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":40,
+                                    "size_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "line_linked":{
+                                "enable":true,
+                                "distance":150,
+                                "color":"#5f8fbb",
+                                "opacity":0.3,
+                                "width":1
+                            },
+                            "move":{
+                                "enable":true,
+                                "speed":6,
+                                "direction":"none",
+                                "random":false,
+                                "straight":false,
+                                "out_mode":"out",
+                                "bounce":false,
+                                "attract":{
+                                    "enable":false,
+                                    "rotateX":600,
+                                    "rotateY":1200
+                                }
+                            }
                         },
-                        "modes":{
-                            "grab":{"distance":400,"line_linked":{"opacity":1}},
-                            "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
-                            "repulse":{"distance":200,"duration":0.4},
-                            "push":{"particles_nb":4},
-                            "remove":{"particles_nb":2}}
-                    },
-                    "retina_detect":true}
-                );
-                    
-            // menutoggle
-                $('#menuToggle').click(function(){
-                    $('#menuToggle').toggleClass('is-active');
-                    $('#menu').toggleClass( 'show', 600, 'swing' );
-                });   
-                
-            // parallax
-                var scene8 = $('#contactParallax').get(0);
-                var parallaxInstance = new Parallax(scene8, {
-                    relativeInput: true,
-                    pointerEvents: true,
-                    hoverOnly: true,
-                });
+                        "interactivity":{
+                            "detect_on":"canvas",
+                            "events":{
+                                "onhover":{
+                                    "enable":false,
+                                    "mode":"grab"
+                                },
+                                "onclick":{
+                                    "enable":false,
+                                    "mode":"repulse"
+                                },
+                                "resize":true
+                            },
+                            "modes":{
+                                "grab":{"distance":400,"line_linked":{"opacity":1}},
+                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
+                                "repulse":{"distance":200,"duration":0.4},
+                                "push":{"particles_nb":4},
+                                "remove":{"particles_nb":2}}
+                        },
+                        "retina_detect":true}
+                    );
 
-            // fullpage.js
-                if ($('html').hasClass( 'fp-enabled' )){
-                    fullpage_api.destroy('all');
-                }
-
-                $('#fullpage').fullpage({
-                //options
-                    navigation: true,
-                    navigationPosition: 'left',
-                    navigationTooltips: ['Work Samples', 'Insights', 'Profade', 'B.B.C.T', 'O.D.A.', 'Din Tai Fung','Contact'],
-                    showActiveTooltip: true,
-                    anchors:['Work', 'Insights', 'Profade', 'Bbct', 'Oda', 'Dtf', 'Contact'],
-                    loopBottom: true,
-                    loopTop: true,
-                    scrollBar: false,
-                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                    
-                // callbacks
-                    afterLoad: function(origin, destination, direction){
-                        var loadedSection = this;
-                        if( destination.index == 7){
-                            vivPortfolio.play();
-                        }
-                    },
-                    onLeave: function(origin, destination, direction){
-                        var leavingSection = this;
-
-                        if( destination.index == 0 ){
-                            $('#titleText').animateCss('fadeInRight');
-                            $('#titleCharacter').animateCss('fadeInRight');
-                            $('#bgroundContainer').animateCss('logoFadeOut');
-                            $('#bgroundContainer').addClass('invisible');
-                        }
-                        else if( destination.index == 1){
-                            $('#bgroundImage').removeClass('rotateLeft');
-                            $('#bgroundImage').addClass('rotateRight');
-                            $('#insightsImage').animateCss('projectFadeInLeft');
-                        }
-                        else if( destination.index == 2){
-                            $('#bgroundImage').removeClass('rotateRight');
-                            $('#bgroundImage').addClass('rotateLeft');
-                            $('#profadeImage').animateCss('projectFadeInRight');
-                        }
-                        else if( destination.index == 3){
-                            $('#bgroundImage').removeClass('rotateLeft');
-                            $('#bgroundImage').addClass('rotateRight');
-                            $('#bbctImage').animateCss('projectFadeInLeft');
-                        }
-                        else if( destination.index == 4){
-                            $('#bgroundImage').removeClass('rotateRight');
-                            $('#bgroundImage').addClass('rotateLeft');
-                            $('#odaImage').animateCss('projectFadeInRight');
-                        }
-                        else if( destination.index == 5){
-                            $('#bgroundImage').removeClass('rotateLeft');
-                            $('#bgroundImage').addClass('rotateRight');
-                            $('#dtfImage').animateCss('projectFadeInLeft');
-                        }
-                        else if( destination.index == 6 ){
-                            $('#bgroundContainer').animateCss('logoFadeOut');
-                            $('#bgroundContainer').addClass('invisible');
-                        }
-                        
-                        if( origin.index == 1 ){
-                            $('#insightsImage').animateCss('projectFadeOutRight');
-                        }
-                        else if( origin.index == 2 ){
-                            $('#profadeImage').animateCss('projectFadeOutLeft');
-                        }
-                        else if( origin.index == 3 ){
-                            $('#bbctImage').animateCss('projectFadeOutRight');
-                        }
-                        else if( origin.index == 4 ){
-                            $('#odaImage').animateCss('projectFadeOutLeft');
-                        }
-                        else if( origin.index == 5 ){
-                            $('#dtfImage').animateCss('projectFadeOutRight');
-                        }
-
-                        if( origin.index == 0 && destination.index != 6 ){
-                            $('#bgroundContainer').removeClass('invisible');
-                            $('#bgroundContainer').animateCss('fadeIn');
-                        }
-                        else if( origin.index == 6 && destination.index != 0 ){
-                            $('#bgroundContainer').removeClass('invisible');
-                            $('#bgroundContainer').animateCss('fadeIn');
-                        }
-                        
+                    // fullpage.js   
+                    if ($('html').hasClass( 'fp-enabled' )){ //for mobile
+                        fullpage_api.destroy('all');
                     }
-                });
+                    $('#fullpage').fullpage({
+                    // options
+                        navigation: false,
+                        anchors:['Work', 'Insights', 'Profade', 'Bbct', 'Oda', 'Dtf', 'Contact'],
+                        loopBottom: false,
+                        loopTop: false,
+                        responsiveWidth: 991,
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    });
+                }
+                else{ //for desktop
+                    // particles.js
+                    particlesJS("particles-js", {
+                        "particles":{
+                            "number":{
+                                "value":80,
+                                "density":{"enable":true,"value_area":800
+                                }
+                            },
+                            "color":{"value":"#5F94B4"},
+                            "shape":{
+                                "type":"circle",
+                                "stroke":{"width":0,"color":"#000000"},
+                                "polygon":{"nb_sides":5},
+                                "image":{"src":"","width":100,"height":100}
+                            },
+                            "opacity":{
+                                "value":0.5,
+                                "random":false,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":1,
+                                    "opacity_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "size":{
+                                "value":3,
+                                "random":true,
+                                "anim":{
+                                    "enable":false,
+                                    "speed":40,
+                                    "size_min":0.1,
+                                    "sync":false
+                                }
+                            },
+                            "line_linked":{
+                                "enable":true,
+                                "distance":150,
+                                "color":"#5f8fbb",
+                                "opacity":0.3,
+                                "width":1
+                            },
+                            "move":{
+                                "enable":true,
+                                "speed":6,
+                                "direction":"none",
+                                "random":false,
+                                "straight":false,
+                                "out_mode":"out",
+                                "bounce":false,
+                                "attract":{
+                                    "enable":false,
+                                    "rotateX":600,
+                                    "rotateY":1200
+                                }
+                            }
+                        },
+                        "interactivity":{
+                            "detect_on":"canvas",
+                            "events":{
+                                "onhover":{
+                                    "enable":false,
+                                    "mode":"grab"
+                                },
+                                "onclick":{
+                                    "enable":false,
+                                    "mode":"repulse"
+                                },
+                                "resize":true
+                            },
+                            "modes":{
+                                "grab":{"distance":400,"line_linked":{"opacity":1}},
+                                "bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},
+                                "repulse":{"distance":200,"duration":0.4},
+                                "push":{"particles_nb":4},
+                                "remove":{"particles_nb":2}}
+                        },
+                        "retina_detect":true}
+                    );
+                
+                    // menutoggle
+                    $('#menuToggle').click(function(){
+                        $('#menuToggle').toggleClass('is-active');
+                        $('#menu').toggleClass( 'show', 600, 'swing' );
+                    });
+                
+                    // parallax
+                    var scene8 = $('#contactParallax').get(0);
+                    var parallaxInstance = new Parallax(scene8, {
+                        relativeInput: true,
+                        pointerEvents: true,
+                        hoverOnly: true,
+                    });
+                    
+                    // fullpage.js
+                    if ($('html').hasClass( 'fp-enabled' )){
+                        fullpage_api.destroy('all');
+                    }
+                    $('#fullpage').fullpage({
+                        //options
+                        navigation: true,
+                        navigationPosition: 'left',
+                        navigationTooltips: ['Work Samples', 'Insights', 'Profade', 'B.B.C.T', 'O.D.A.', 'Din Tai Fung','Contact'],
+                        showActiveTooltip: true,
+                        anchors:['Work', 'Insights', 'Profade', 'Bbct', 'Oda', 'Dtf', 'Contact'],
+                        loopBottom: true,
+                        loopTop: true,
+                        scrollBar: false,
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                        
+                        // callbacks
+                        onLeave: function(origin, destination, direction){
+                            var leavingSection = this;
+
+                            if( destination.index == 0 ){
+                                $('#titleText').animateCss('fadeInRight');
+                                $('#titleCharacter').animateCss('fadeInRight');
+                                $('#bgroundContainer').animateCss('logoFadeOut');
+                                $('#bgroundContainer').addClass('invisible');
+                            }
+                            else if( destination.index == 1){
+                                $('#bgroundImage').removeClass('rotateLeft');
+                                $('#bgroundImage').addClass('rotateRight');
+                                $('#insightsImage').animateCss('projectFadeInLeft');
+                            }
+                            else if( destination.index == 2){
+                                $('#bgroundImage').removeClass('rotateRight');
+                                $('#bgroundImage').addClass('rotateLeft');
+                                $('#profadeImage').animateCss('projectFadeInRight');
+                            }
+                            else if( destination.index == 3){
+                                $('#bgroundImage').removeClass('rotateLeft');
+                                $('#bgroundImage').addClass('rotateRight');
+                                $('#bbctImage').animateCss('projectFadeInLeft');
+                            }
+                            else if( destination.index == 4){
+                                $('#bgroundImage').removeClass('rotateRight');
+                                $('#bgroundImage').addClass('rotateLeft');
+                                $('#odaImage').animateCss('projectFadeInRight');
+                            }
+                            else if( destination.index == 5){
+                                $('#bgroundImage').removeClass('rotateLeft');
+                                $('#bgroundImage').addClass('rotateRight');
+                                $('#dtfImage').animateCss('projectFadeInLeft');
+                            }
+                            else if( destination.index == 6 ){
+                                $('#bgroundContainer').animateCss('logoFadeOut');
+                                $('#bgroundContainer').addClass('invisible');
+                            }
+                            
+                            if( origin.index == 1 ){
+                                $('#insightsImage').animateCss('projectFadeOutRight');
+                            }
+                            else if( origin.index == 2 ){
+                                $('#profadeImage').animateCss('projectFadeOutLeft');
+                            }
+                            else if( origin.index == 3 ){
+                                $('#bbctImage').animateCss('projectFadeOutRight');
+                            }
+                            else if( origin.index == 4 ){
+                                $('#odaImage').animateCss('projectFadeOutLeft');
+                            }
+                            else if( origin.index == 5 ){
+                                $('#dtfImage').animateCss('projectFadeOutRight');
+                            }
+
+                            if( origin.index == 0 && destination.index != 6 ){
+                                $('#bgroundContainer').removeClass('invisible');
+                                $('#bgroundContainer').animateCss('fadeIn');
+                            }
+                            else if( origin.index == 6 && destination.index != 0 ){
+                                $('#bgroundContainer').removeClass('invisible');
+                                $('#bgroundContainer').animateCss('fadeIn');
+                            }   
+                        }
+                    });
+                }
+                
             });
-               
         </script>
     </body>
 </html>
