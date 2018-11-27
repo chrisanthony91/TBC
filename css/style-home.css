@@ -219,6 +219,7 @@ ul#menu li{
 
 #mobileContact{
   margin-top: 40px;
+  padding-bottom: 60px;
   background-image: url("../images/mobileContact_bg.jpg");
   background-size: cover;
 }
@@ -474,18 +475,16 @@ div.arrows span{
     background-color: #fff;
   }
 
-  .aniWrap {
-    bottom: 25%;
-  }
+  .aniWrap { bottom: 25%; }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
-  h1{ font-size: 3em; }
+  h1{ font-size: 3.2em; }
   h2{ font-size: 2.6em; }
   h3{ font-size: 2.2em; }
   h4{ font-size: 1.7em; }
-  h5{ font-size: 1.3em; }
+  h5{ font-size: 1.5em; }
   p{
     font-size: 1.2em;
     line-height: 1.5;
@@ -506,6 +505,7 @@ div.arrows span{
   }
   #portrait{ width: 80%; }
   #introLogo{ display: none; }
+  #aboutSection{ padding: 0 5%; }
 
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
@@ -513,10 +513,7 @@ div.arrows span{
     background-color: white;
   }
  
-  .aniWrap {
-    bottom: 20%;
-  }
-
+  .aniWrap { bottom: 20%; }
 }
 
 @media only screen and (min-width: 992px){ /*desktop and higher*/
@@ -542,12 +539,8 @@ div.arrows span{
     width: 10%;
   }
   #intro{ top: 52%; }
-  #contactHeader{ 
-    margin-top:15%; 
-  }
-  #contactLinks{ 
-    margin-top:22.5%;
-  }
+  #contactHeader{ margin-top:15%; }
+  #contactLinks{ margin-top:22.5%; }
   #portrait{ width: 100%; }
   #introLogo{ display: none; }
   
@@ -561,9 +554,7 @@ div.arrows span{
   #menuToggle:hover .hamburger-inner::after{
     background-color: white;
   }
-  .aniWrap {
-    bottom: 15%;
-  }
+  .aniWrap{ bottom: 15%; }
   button.contactButton{ cursor: pointer; }
 
 }

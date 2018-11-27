@@ -107,6 +107,46 @@ ul#menu li{
   background-color: #fff;
 }
 
+#mobileMenu{
+  position: fixed;
+  display: none;  
+  overflow: hidden;
+  padding-top: 30%;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+  z-index: 9;
+  text-align: center;
+  background-color: #000;
+}
+#mobileMenu.show{
+  opacity: 0.9;
+  width: 100%;
+  height: 50vh;
+}
+#mobileMenu a{
+  display: block;
+  text-decoration: none;
+}
+#mobileMenu a div{
+  font-family: 'Audiowide', cursive;
+  font-size: 1.7em;
+  color: #26A5E8;
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+#mobileMenu a div:hover{
+  background-color: #26A5E8;
+  color: #000;
+}
+#mobileContact{
+  margin-top: 40px;
+  padding-bottom: 60px;
+  background-image: url("../images/mobileContact_bg.jpg");
+  background-size: cover;
+}
+
 
 .contactText1In{
   animation-duration: 1.4s;
@@ -152,7 +192,6 @@ ul#menu li{
 #titleText{
   position: absolute;
   top: 45%;
-  /* left: 40%; */
   text-align: center;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
@@ -443,41 +482,12 @@ div.arrows span{
   -webkit-animation-timing-function: ease;
 }
 
-#insightsImage, 
-#profadeImage, 
-#bbctImage, 
-#odaImage, 
-#dtfImage, 
-#graphicsImage, 
-#portfolioImage{
-  padding-top: 8%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: all 0.5s ease;
-}
-
-#insightsImage:hover,
-#bbctImage:hover,
-#dtfImage:hover{
-  -webkit-filter: none;
-  filter: none;
-  -webkit-transform: scale(1.1) rotate(-15deg);
-  transform: scale(1.1) rotate(-15deg);
-} 
-#profadeImage:hover, 
-#odaImage:hover, 
-#graphicsImage:hover{
-  -webkit-filter: none;
-  filter: none;
-  -webkit-transform: scale(1.1) rotate(15deg);
-  transform: scale(1.1) rotate(15deg);
-} 
-
 .invisible{ opacity: 0.01; }
 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
-  width: 100%; 
+  width: 100%;
+  height: 100vh;
 }
 
 button.contactButton {
@@ -578,7 +588,7 @@ button.contactButton::before, button.contactButton::after {
   }
   li a{ font-size: 1em; }
   #titleCharacter{ bottom: 25%; }
-  #titleText{ left: 21%; }
+  #titleText{ left: 26.5%; }
   #contactHeader{ margin-top: 40%; }
   #contactLinks{ margin-top: 60%; }
 
@@ -590,13 +600,27 @@ button.contactButton::before, button.contactButton::after {
   #menuToggle.is-active .hamburger-inner,
   #menuToggle.is-active .hamburger-inner::before,
   #menuToggle.is-active .hamburger-inner::after{
-    background-color: #26A5E8;
+    background-color: #fff;
   }
 
   .aniWrap{ bottom: 25%; }
   #titleCharacter{ height: 60vh; }
-  #ovMobile{ margin: 20px auto;}
-  #ovMobile ul li{ margin: auto 20px;}
+
+  #project1, #project2, #project3,
+  #project4{
+    margin-bottom: 50px;
+  }
+  #insightsImage, #bbctImage, #dtfImage{
+    width: 90%;
+    -webkit-transform: rotate(-15deg) translate(-4%, 0);
+    transform: rotate(-15deg) translate(-4%, 0);
+  } 
+  #profadeImage, #odaImage{
+    width: 90%;
+    -webkit-transform: rotate(15deg) translate(1%, 0);
+    transform: rotate(15deg) translate(1%, 0);
+  } 
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /*tablet*/
@@ -675,4 +699,33 @@ button.contactButton::before, button.contactButton::after {
   .aniWrap { bottom: 15%; }
   #titleCharacter{ height: 80vh; }
   button.contactButton{ cursor: pointer; }
+
+  #project1, #project2, #project3,
+  #project4, #project5{
+    height: 100vh;
+  }
+
+  #insightsImage, #profadeImage, 
+  #bbctImage, #odaImage, #dtfImage{
+    padding-top: 8%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    width: 30%;
+  }
+
+  #insightsImage:hover,
+  #bbctImage:hover,
+  #dtfImage:hover{
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transform: scale(1.1) rotate(-15deg);
+    transform: scale(1.1) rotate(-15deg);
+  } 
+  #profadeImage:hover, #odaImage:hover{
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transform: scale(1.1) rotate(15deg);
+    transform: scale(1.1) rotate(15deg);
+  } 
 }
