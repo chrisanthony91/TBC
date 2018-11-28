@@ -713,6 +713,13 @@ button.contactButton::before, button.contactButton::after {
     transition: all 0.5s ease;
     width: 30%;
   }
+  #dtfImage{
+    padding-top: 5%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    width: 25%;
+  }
 
   #insightsImage:hover,
   #bbctImage:hover,
